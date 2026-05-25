@@ -1,0 +1,1856 @@
+[
+  {
+    "name_ar": "212",
+    "name_en": "212",
+    "image": "app/static/images/French/man/212.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-1-1"
+  },
+  {
+    "name_ar": "212 GLAM",
+    "name_en": "212 GLAM",
+    "image": "app/static/images/French/man/212 GLAM.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-1-2"
+  },
+  {
+    "name_ar": "212 SEXY",
+    "name_en": "212 SEXY",
+    "image": "app/static/images/French/man/212 SEXY.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-1-3"
+  },
+  {
+    "name_ar": "212 VIP",
+    "name_en": "212 VIP",
+    "image": "app/static/images/French/man/212 VIP.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-1-4"
+  },
+  {
+    "name_ar": "موصوف VIP",
+    "name_en": "Moussouf VIP",
+    "image": "app/static/images/French/man/Moussouf VIP.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-1-4"
+  },
+  {
+    "name_ar": "212 VIP الكسير",
+    "name_en": "212 VIP ELIXIR",
+    "image": "app/static/images/French/man/212 VIP ELIXIR.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-1-5"
+  },
+  {
+    "name_ar": "BMW",
+    "name_en": "BMW",
+    "image": "app/static/images/French/man/BMW.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-1-6"
+  },
+  {
+    "name_ar": "C.H",
+    "name_en": "C.H",
+    "image": "app/static/images/French/man/C.H.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-1-7"
+  },
+  {
+    "name_ar": "C.H SPORT",
+    "name_en": "C.H SPORT",
+    "image": "app/static/images/French/man/C.H SPORT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-1-8"
+  },
+  {
+    "name_ar": "CK FREE",
+    "name_en": "CK FREE",
+    "image": "app/static/images/French/man/CK FREE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-1-9"
+  },
+  {
+    "name_ar": "CK N2U",
+    "name_en": "CK N2U",
+    "image": "app/static/images/French/man/CK N2U.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-1-10"
+  },
+  {
+    "name_ar": "CK1",
+    "name_en": "CK1",
+    "image": "app/static/images/French/man/CK1.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-1-11"
+  },
+  {
+    "name_ar": "L.V ايميجنيشن",
+    "name_en": "L.V Imagination",
+    "image": "app/static/images/French/man/Imagination.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-1-12"
+  },
+  {
+    "name_ar": "NOW",
+    "name_en": "NOW",
+    "image": "app/static/images/French/man/NOW.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-2-1"
+  },
+  {
+    "name_ar": "ذا جيم",
+    "name_en": "THE GAME",
+    "image": "app/static/images/French/man/THE GAME.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-2-2"
+  },
+  {
+    "name_ar": "XXL",
+    "name_en": "XXL",
+    "image": "app/static/images/French/man/XXL.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-2-3"
+  },
+  {
+    "name_ar": "واي",
+    "name_en": "Y",
+    "image": "app/static/images/French/man/Y.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-2-4"
+  },
+  {
+    "name_ar": "ابل براند",
+    "name_en": "APPLE BRANDY",
+    "image": "app/static/images/French/man/APPLE BRANDY.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-2-5"
+  },
+  {
+    "name_ar": "اتيرنتي",
+    "name_en": "ETERNITY",
+    "image": "app/static/images/French/man/ETERNITY.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-2-6"
+  },
+  {
+    "name_ar": "اديداس",
+    "name_en": "ADIDAS",
+    "image": "app/static/images/French/man/ADIDAS.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-2-7"
+  },
+  {
+    "name_ar": "اراميس 900",
+    "name_en": "ARAMIS 900",
+    "image": "app/static/images/French/man/ARAMIS 900.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-2-8"
+  },
+  {
+    "name_ar": "اراميس ديفن",
+    "name_en": "ARAMIS DEVIN",
+    "image": "app/static/images/French/man/ARAMIS DEVIN.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-2-9"
+  },
+  {
+    "name_ar": "ارماني YOU",
+    "name_en": "ARMANI YOU",
+    "image": "app/static/images/French/man/ARMANI YOU.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-2-10"
+  },
+  {
+    "name_ar": "ارماني كود",
+    "name_en": "ARMANI CODE",
+    "image": "app/static/images/French/man/ARMANI CODE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-2-11"
+  },
+  {
+    "name_ar": "ارماني كود سبورت",
+    "name_en": "ARMANI CODE SPORT",
+    "image": "app/static/images/French/man/ARMANI CODE SPORT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-2-12"
+  },
+  {
+    "name_ar": "اريبين تونكا",
+    "name_en": "ARABIAN TONKA",
+    "image": "app/static/images/French/man/ARABIAN TONKA.jpg",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-3-1"
+  },
+  {
+    "name_ar": "ازارو",
+    "name_en": "AZZARO",
+    "image": "app/static/images/French/man/AZZARO.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-3-2"
+  },
+  {
+    "name_ar": "ازارو كروم سبورت",
+    "name_en": "AZZARO CHROME SPORT",
+    "image": "app/static/images/French/man/AZZARO CHROME SPORT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-3-3"
+  },
+  {
+    "name_ar": "اسبرت",
+    "name_en": "ESPRIT",
+    "image": "app/static/images/French/man/ESPRIT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-3-4"
+  },
+  {
+    "name_ar": "اتيرنتي اكوا",
+    "name_en": "Eternity Aqua",
+    "image": "app/static/images/French/man/Eternity Aqua.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-3-4"
+  },
+  {
+    "name_ar": "اسمياكي",
+    "name_en": "ISSEY MIYAKE",
+    "image": "app/static/images/French/man/ISSEY MIYAKE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-3-5"
+  },
+  {
+    "name_ar": "اسمياكي بلو",
+    "name_en": "ISSEY MIYAKE BLUE",
+    "image": "app/static/images/French/man/ISSEY MIYAKE BLUE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-3-6"
+  },
+  {
+    "name_ar": "اسمياكي سبورت",
+    "name_en": "ISSEY MIYAKE SPORT",
+    "image": "app/static/images/French/man/ISSEY MIYAKE SPORT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-3-7"
+  },
+  {
+    "name_ar": "افيشان",
+    "name_en": "AFESHN",
+    "image": "app/static/images/French/man/AFESHN.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-3-8"
+  },
+  {
+    "name_ar": "هاواي",
+    "name_en": "Hawaii",
+    "image": "app/static/images/French/man/Hawaii.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-3-8"
+  },
+  {
+    "name_ar": "اكسبلور بلاتينيوم",
+    "name_en": "Explorer Platinum",
+    "image": "app/static/images/French/man/Explorer Platinum.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-3-9"
+  },
+  {
+    "name_ar": "اكسيريوس روج",
+    "name_en": "XERYUS ROUGE",
+    "image": "app/static/images/French/man/XERYUS ROUGE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-3-10"
+  },
+  {
+    "name_ar": "اكوا بولجري",
+    "name_en": "AQUA BLVGARI",
+    "image": "app/static/images/French/man/AQUA BLVGARI.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-3-11"
+  },
+  {
+    "name_ar": "اكوا دي جيو",
+    "name_en": "ACQUA DI GIO",
+    "image": "app/static/images/French/man/ACQUA DI GIO.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-3-12"
+  },
+  {
+    "name_ar": "الاصيل",
+    "name_en": "ALASEEL",
+    "image": "app/static/images/French/man/ALASEEL.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-4-1"
+  },
+  {
+    "name_ar": "الترا ميل",
+    "name_en": "ULTRA MALE",
+    "image": "app/static/images/French/man/ULTRA MALE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-4-2"
+  },
+  {
+    "name_ar": "القلب الذهبي",
+    "name_en": "ALQALB ALDAHABI",
+    "image": "app/static/images/French/man/ALQALB ALDAHABI.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-4-3"
+  },
+  {
+    "name_ar": "الور شانيل",
+    "name_en": "ALLURE CHANEL",
+    "image": "app/static/images/French/man/ALLURE CHANEL.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-4-4"
+  },
+  {
+    "name_ar": "الور شانيل سبورت",
+    "name_en": "ALLURE CHANEL SPORT",
+    "image": "app/static/images/French/man/ALLURE CHANEL SPORT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-4-5"
+  },
+  {
+    "name_ar": "الوسام",
+    "name_en": "ALWESAM",
+    "image": "app/static/images/French/man/ALWESAM.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-4-6"
+  },
+  {
+    "name_ar": "انجل",
+    "name_en": "ANGEL",
+    "image": "app/static/images/French/man/ANGEL.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-4-7"
+  },
+  {
+    "name_ar": "انطونيو بانديراس",
+    "name_en": "ANTINIO BANDERAS",
+    "image": "app/static/images/French/man/ANTINIO BANDERAS.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-4-8"
+  },
+  {
+    "name_ar": "انفكتوس",
+    "name_en": "INVICOTUS",
+    "image": "app/static/images/French/man/INVICOTUS.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-4-9"
+  },
+  {
+    "name_ar": "انفكتوس اليكسير",
+    "name_en": "INVICTUS ELIXIR",
+    "image": "app/static/images/French/man/INVICTUS ELIXIR.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-4-10"
+  },
+  {
+    "name_ar": "انفكتوس فيكتوري",
+    "name_en": "INVICTUS VICTORY",
+    "image": "app/static/images/French/man/INVICTUS VICTORY.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-4-11"
+  },
+  {
+    "name_ar": "انفكتوس ليجند",
+    "name_en": "Invictus Legend",
+    "image": "app/static/images/French/man/Invictus Legend.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "22-4-12"
+  },
+  {
+    "name_ar": "انكانتو هفين",
+    "name_en": "INCANTO HEAVEN",
+    "image": "app/static/images/French/man/INCANTO HEAVEN.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-1-1"
+  },
+  {
+    "name_ar": "اوبن",
+    "name_en": "OPEN",
+    "image": "app/static/images/French/man/OPEN.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-1-2"
+  },
+  {
+    "name_ar": "اوبن بلاك",
+    "name_en": "OPEN BLACK",
+    "image": "app/static/images/French/man/OPEN BLACK.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-1-3"
+  },
+  {
+    "name_ar": "اونلي ذا بريف تاتو",
+    "name_en": "ONLY THE BRAVE TATTOO",
+    "image": "app/static/images/French/man/ONLY THE BRAVE TATTOO.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-1-4"
+  },
+  {
+    "name_ar": "ايروس فرزاتشي",
+    "name_en": "EROS VERSACE",
+    "image": "app/static/images/French/man/EROS VERSACE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-1-5"
+  },
+  {
+    "name_ar": "ايفوريا",
+    "name_en": "EUPHORIA",
+    "image": "app/static/images/French/man/EUPHORIA.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-1-6"
+  },
+  {
+    "name_ar": "ايكو",
+    "name_en": "ECHO",
+    "image": "app/static/images/French/man/ECHO.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-1-7"
+  },
+  {
+    "name_ar": "باد بوي",
+    "name_en": "BAD BOY",
+    "image": "app/static/images/French/man/BAD BOY.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-1-8"
+  },
+  {
+    "name_ar": "باريس هيلتون",
+    "name_en": "PARIS HILTON",
+    "image": "app/static/images/French/man/PARIS HILTON.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-1-9"
+  },
+  {
+    "name_ar": "باي جيفنشي",
+    "name_en": "Pi Givenchy",
+    "image": "app/static/images/French/man/Pi Givenchy.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-1-10"
+  },
+  {
+    "name_ar": "برسياني YSL",
+    "name_en": "PARISIENNE YSL",
+    "image": "app/static/images/French/man/PARISIENNE YSL.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-1-11"
+  },
+  {
+    "name_ar": "بكرات روج",
+    "name_en": "Baccarat Rouge",
+    "image": "app/static/images/French/man/Baccarat Rouge.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-1-12"
+  },
+  {
+    "name_ar": "انا الابيض احمر",
+    "name_en": "Ana Abiyedh Rouge",
+    "image": "app/static/images/French/man/Ana Abiyedh Rouge.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-1-12"
+  },
+  {
+    "name_ar": "بلاك  لكزس",
+    "name_en": "BLACK LEXCES",
+    "image": "app/static/images/French/man/BLACK LEXCES.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-2-1"
+  },
+  {
+    "name_ar": "بلاك X.S ",
+    "name_en": "BLACK X.S",
+    "image": "app/static/images/French/man/BLACK X.S.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-2-2"
+  },
+  {
+    "name_ar": "بلاك افغانو",
+    "name_en": "BLACK AFGANO ",
+    "image": "app/static/images/French/man/OPEN BLACK.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-2-3"
+  },
+  {
+    "name_ar": "بلو جينز",
+    "name_en": "BLUE JEANS",
+    "image": "app/static/images/French/man/ONLY THE BRAVE TATTOO.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-2-4"
+  },
+  {
+    "name_ar": "بلو شانيل",
+    "name_en": "BLUE CHANEL",
+    "image": "app/static/images/French/man/BLUE CHANEL.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-2-5"
+  },
+  {
+    "name_ar": "بلو ليبل جيفنشي",
+    "name_en": "BLUE LABEL GIVENCHY",
+    "image": "app/static/images/French/man/BLUE LABEL GIVENCHY.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-2-6"
+  },
+  {
+    "name_ar": "بلي جيفنشي سبورت",
+    "name_en": "PLAY GIVENCHY SPORT",
+    "image": "app/static/images/French/man/PLAY GIVENCHY SPORT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-2-7"
+  },
+  {
+    "name_ar": "بوس ان موشن",
+    "name_en": "BOSS IN MOTION",
+    "image": "app/static/images/French/man/BOSS IN MOTION.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-2-8"
+  },
+  {
+    "name_ar": "بوس اورنج",
+    "name_en": "BOSS ORANGE",
+    "image": "app/static/images/French/man/BOSS ORANGE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-2-9"
+  },
+  {
+    "name_ar": "بوس بوتل",
+    "name_en": "BOSS BOTTLE",
+    "image": "app/static/images/French/man/BOSS BOTTLE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-2-10"
+  },
+  {
+    "name_ar": "بوس بوتل سينت",
+    "name_en": "BOSS BOTTLE SCENT",
+    "image": "app/static/images/French/man/BOSS BOTTLE SCENT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-2-11"
+  },
+  {
+    "name_ar": "بوس بوتل نايت",
+    "name_en": "BOSS BOTTLE NIGHT",
+    "image": "app/static/images/French/man/BOSS BOTTLE NIGHT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-2-12"
+  },
+  {
+    "name_ar": "بوس سبورت",
+    "name_en": "BOSS BOTTLE SPORT",
+    "image": "app/static/images/French/man/BOSS BOTTLE SPORT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-3-1"
+  },
+  {
+    "name_ar": "بوس سول",
+    "name_en": "BOSS SOUL",
+    "image": "app/static/images/French/man/BOSS SOUL.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-3-2"
+  },
+  {
+    "name_ar": "بولغاري تايجر",
+    "name_en": "TYGAR BVLGARI",
+    "image": "app/static/images/French/man/TYGAR BVLGARI.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-3-3"
+  },
+  {
+    "name_ar": "بولو اكسبلور",
+    "name_en": "POLO EXPLORER",
+    "image": "app/static/images/French/man/POLO EXPLORER.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-3-4"
+  },
+  {
+    "name_ar": "بولو بلاك",
+    "name_en": "POLO BLACK",
+    "image": "app/static/images/French/man/POLO BLACK.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-3-5"
+  },
+  {
+    "name_ar": "بولو بلو",
+    "name_en": "POLO BLUE",
+    "image": "app/static/images/French/man/POLO BLUE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-3-6"
+  },
+  {
+    "name_ar": "بولو بلو سبورت",
+    "name_en": "POLO BLUE SPORT",
+    "image": "app/static/images/French/man/POLO BLUE SPORT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-3-7"
+  },
+  {
+    "name_ar": "بولو ريد",
+    "name_en": "POLO RED",
+    "image": "app/static/images/French/man/POLO RED.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-3-8"
+  },
+  {
+    "name_ar": "بولو ريد اند وايت",
+    "name_en": "POLO RED & WHITE",
+    "image": "app/static/images/French/man/POLO RED & WHITE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-3-9"
+  },
+  {
+    "name_ar": "بولو سبورت",
+    "name_en": "POLO SPORT",
+    "image": "app/static/images/French/man/POLO SPORT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-3-10"
+  },
+  {
+    "name_ar": "بيبي جونسون",
+    "name_en": "BABY Johnson",
+    "image": "app/static/images/French/man/BABY Johnson.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-3-11"
+  },
+  {
+    "name_ar": "تاتش بربريس",
+    "name_en": "TOUCH BURBERRY",
+    "image": "app/static/images/French/man/TOUCH BURBERRY.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-3-12"
+  },
+  {
+    "name_ar": "توباكو ريد",
+    "name_en": "RED TOBACCO",
+    "image": "app/static/images/French/man/RED TOBACCO.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-4-1"
+  },
+  {
+    "name_ar": "توباكو فانيلا",
+    "name_en": "TOBACCO VANILLE",
+    "image": "app/static/images/French/man/TOBACCO VANILLE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-4-2"
+  },
+  {
+    "name_ar": "توسكا",
+    "name_en": "TOSCA",
+    "image": "app/static/images/French/man/TOSCA.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-4-3"
+  },
+  {
+    "name_ar": "توم فورد بلاك اوركيدا",
+    "name_en": "Tom Ford Black Orchid",
+    "image": "app/static/images/French/man/Tom Ford Black Orchid.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-4-4"
+  },
+  {
+    "name_ar": "تومي بوي",
+    "name_en": "Tommy Boy",
+    "image": "app/static/images/French/man/Tommy Boy.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-4-5"
+  },
+  {
+    "name_ar": "جاكمو",
+    "name_en": "JACOMO",
+    "image": "app/static/images/French/man/JACOMO.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-4-6"
+  },
+  {
+    "name_ar": "جواد الليل ",
+    "name_en": "JAWAD ALLAYL",
+    "image": "app/static/images/French/man/JAWAD ALLAYL.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-4-7"
+  },
+  {
+    "name_ar": "جوب",
+    "name_en": "JOOP",
+    "image": "app/static/images/French/man/JOOP.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-4-8"
+  },
+  {
+    "name_ar": "جوب GO",
+    "name_en": "JOOP GO",
+    "image": "app/static/images/French/man/JOOP GO.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-4-9"
+  },
+  {
+    "name_ar": "جوتشي جلتي",
+    "name_en": "GUCCI GUILTY",
+    "image": "app/static/images/French/man/GUCCI GUILTY.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-4-10"
+  },
+  {
+    "name_ar": "جوتشي سبورت",
+    "name_en": "GUCCI SPORT",
+    "image": "app/static/images/French/man/GUCCI SPORT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-4-11"
+  },
+  {
+    "name_ar": "جود اوف  فاير",
+    "name_en": "GOD OF FIRE",
+    "image": "app/static/images/French/man/GOD OF FIRE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "24-4-12"
+  },
+  {
+    "name_ar": "جورج قرداحي",
+    "name_en": "George Kordahi",
+    "image": "app/static/images/French/man/George Kordahi.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-1-1"
+  },
+  {
+    "name_ar": "جيفنشي بور هوم",
+    "name_en": "GIVENCHY POUR HOME",
+    "image": "app/static/images/French/man/GIVENCHY POUR HOME.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-1-2"
+  },
+  {
+    "name_ar": "جيم",
+    "name_en": "GAME",
+    "image": "app/static/images/French/man/GAME.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-1-3"
+  },
+  {
+    "name_ar": "دارك بلو",
+    "name_en": "DARK BLUE",
+    "image": "app/static/images/French/man/DARK BLUE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-1-4"
+  },
+  {
+    "name_ar": "دراكار نوير",
+    "name_en": "DRAKKAR NOIR",
+    "image": "app/static/images/French/man/DRAKKAR NOIR.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-1-5"
+  },
+  {
+    "name_ar": "دفدوف شامبيون",
+    "name_en": "DAVIDOFF CHAMPION",
+    "image": "app/static/images/French/man/DAVIDOFF CHAMPION.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-1-6"
+  },
+  {
+    "name_ar": "دنهل بلاك",
+    "name_en": "DUNHILL BLACK",
+    "image": "app/static/images/French/man/DUNHILL BLACK.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-1-7"
+  },
+  {
+    "name_ar": "دنهل بيور هوم",
+    "name_en": "DUNHILL POUR HOME",
+    "image": "app/static/images/French/man/DUNHILL POUR HOME.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-1-8"
+  },
+  {
+    "name_ar": "دنهل ديزاير بلو",
+    "name_en": "DUNHILL DESIRE BLUE",
+    "image": "app/static/images/French/man/DUNHILL DESIRE BLUE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-1-9"
+  },
+  {
+    "name_ar": "دنهل ديزاير",
+    "name_en": "DUNHILL DESIRE",
+    "image": "app/static/images/French/man/DUNHILL DESIRE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-2-1"
+  },
+  {
+    "name_ar": "دنهل فريش",
+    "name_en": "DUNHILL FRESH",
+    "image": "app/static/images/French/man/DUNHILL FRESH.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-2-2"
+  },
+  {
+    "name_ar": "دنهل كلاسيك",
+    "name_en": "DUNHILL CLASSIC",
+    "image": "app/static/images/French/man/DUNHILL CLASSIC.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-2-3"
+  },
+  {
+    "name_ar": "دنهل لندن",
+    "name_en": "DUNHILL LONDON",
+    "image": "app/static/images/French/man/DUNHILL LONDON.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-2-4"
+  },
+  {
+    "name_ar": "ديزل",
+    "name_en": "DIESEL",
+    "image": "app/static/images/French/man/DIESEL.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-2-5"
+  },
+  {
+    "name_ar": "ديزل اونلي",
+    "name_en": "DIESEL ONLY",
+    "image": "app/static/images/French/man/DIESEL ONLY.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-2-6"
+  },
+  {
+    "name_ar": "ديمارلي لايتون",
+    "name_en": "DEMARLY LAYTON",
+    "image": "app/static/images/French/man/DEMARLY LAYTON.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-2-7"
+  },
+  {
+    "name_ar": "ديور هوم انتنس",
+    "name_en": "DIOR HOMME INTENSE",
+    "image": "app/static/images/French/man/DIOR HOMME INTENSE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-2-8"
+  },
+  {
+    "name_ar": "ديور هوم سبورت",
+    "name_en": "DIOR HOME SPORT",
+    "image": "app/static/images/French/man/DIOR HOME SPORT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-2-9"
+  },
+  {
+    "name_ar": "ذا ون D&G",
+    "name_en": "THE ONE D&G",
+    "image": "app/static/images/French/man/THE ONE D&G.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-3-1"
+  },
+  {
+    "name_ar": "ذا ون سبورت",
+    "name_en": "THE ONE SPORT",
+    "image": "app/static/images/French/man/THE ONE SPORT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-3-2"
+  },
+  {
+    "name_ar": "روشاز ",
+    "name_en": "ROCHAS",
+    "image": "app/static/images/French/man/ROCHAS.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-3-3"
+  },
+  {
+    "name_ar": "ريلاكس دفدوف",
+    "name_en": "RELAX DAVIDOFF",
+    "image": "app/static/images/French/man/RELAX DAVIDOFF.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-3-4"
+  },
+  {
+    "name_ar": "سبلاندد",
+    "name_en": "SPLENDID",
+    "image": "app/static/images/French/man/SPLENDID.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-3-5"
+  },
+  {
+    "name_ar": "سترونج ويذ يو عود",
+    "name_en": "STRONGER WHITH YOU OUDH",
+    "image": "app/static/images/French/man/STRONGER WHITH YOU OUDH.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-3-6"
+  },
+  {
+    "name_ar": "ستيلار تايمز",
+    "name_en": "STELLAR TIMES",
+    "image": "app/static/images/French/man/STELLAR TIMES.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-3-7"
+  },
+  {
+    "name_ar": "سكاندل هوم رجالي",
+    "name_en": "SCANDAL HOMME",
+    "image": "app/static/images/French/man/SCANDAL HOMME.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-3-8"
+  },
+  {
+    "name_ar": "سكلبشر",
+    "name_en": "SCULPTURE",
+    "image": "app/static/images/French/man/SCULPTURE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-3-9"
+  },
+  {
+    "name_ar": "سكيب ",
+    "name_en": "ESCAPE",
+    "image": "app/static/images/French/man/ESCAPE",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-4-1"
+  },
+  {
+    "name_ar": "سلفر سنت",
+    "name_en": "Silver Scent",
+    "image": "app/static/images/French/man/Silver Scent.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-4-2"
+  },
+  {
+    "name_ar": "سلفر شادو ",
+    "name_en": "SILVER SHADOW",
+    "image": "app/static/images/French/man/SILVER SHADOW.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-4-3"
+  },
+  {
+    "name_ar": "سلفر شادو برايفت",
+    "name_en": "SILVER SHADOW PRIVTE",
+    "image": "app/static/images/French/man/SILVER SHADOW PRIVTE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-4-4"
+  },
+  {
+    "name_ar": "سلفر كريد",
+    "name_en": "SILVER CREED",
+    "image": "app/static/images/French/man/SILVER CREED.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-4-5"
+  },
+  {
+    "name_ar": "سموك فور سول",
+    "name_en": "SMOKE FOR SOUL",
+    "image": "app/static/images/French/man/SMOKE FOR SOUL.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-4-6"
+  },
+  {
+    "name_ar": "سوفاج",
+    "name_en": "SUVAGE",
+    "image": "app/static/images/French/man/SUVAGE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-4-7"
+  },
+  {
+    "name_ar": "سوفاج اليكسير",
+    "name_en": "SAUVAGE ELIXIR",
+    "image": "app/static/images/French/man/SAUVAGE ELIXIR.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-4-8"
+  },
+  {
+    "name_ar": "سيجار",
+    "name_en": "Cigar",
+    "image": "app/static/images/French/man/Cigar.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "25-4-9"
+  },
+  {
+    "name_ar": "شاليز",
+    "name_en": "SHALIS",
+    "image": "app/static/images/French/man/SHALIS.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-1-1"
+  },
+  {
+    "name_ar": "شانيل بلاتينيوم",
+    "name_en": "CHANEL PLATINUM",
+    "image": "app/static/images/French/man/CHANEL PLATINUM.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-1-2"
+  },
+  {
+    "name_ar": "شوروتي ",
+    "name_en": "CERRUTTI",
+    "image": "app/static/images/French/man/CERRUTTI.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-1-3"
+  },
+  {
+    "name_ar": "شوك CK",
+    "name_en": "CK SHOCK",
+    "image": "app/static/images/French/man/CK SHOCK.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-1-4"
+  },
+  {
+    "name_ar": "عمبر ليذر",
+    "name_en": "OMBRE LEATHER",
+    "image": "app/static/images/French/man/OMBRE LEATHER.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-1-5"
+  },
+  {
+    "name_ar": "غبار الذهب",
+    "name_en": "GOLDEN DUST",
+    "image": "app/static/images/French/man/GOLDEN DUST.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-1-6"
+  },
+  {
+    "name_ar": "غبار الفضة",
+    "name_en": "SELVER DUST",
+    "image": "app/static/images/French/man/SELVER DUST.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-1-7"
+  },
+  {
+    "name_ar": "غرام الليل",
+    "name_en": "NIGHT FLIGHT",
+    "image": "app/static/images/French/man/NIGHT FLIGHT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-1-8"
+  },
+  {
+    "name_ar": "فانتوم باكوريبان",
+    "name_en": "PHANTOM PACO",
+    "image": "app/static/images/French/man/PHANTOM PACO.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-1-9"
+  },
+  {
+    "name_ar": "فراري بلاك",
+    "name_en": "FERRARI BLACK",
+    "image": "app/static/images/French/man/FERRARI BLACK.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-2-1"
+  },
+  {
+    "name_ar": "فراري ريد بور",
+    "name_en": "FERRARI RED POWER",
+    "image": "app/static/images/French/man/FERRARI RED POWER.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-2-2"
+  },
+  {
+    "name_ar": "فراري سيلفر اسينس ",
+    "name_en": "FERRARI SELVER ESSENCE",
+    "image": "app/static/images/French/man/FERRARI SELVER ESSENCE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-2-3"
+  },
+  {
+    "name_ar": "فرانكو فيري",
+    "name_en": "FRANCO FERRE",
+    "image": "app/static/images/French/man/FRANCO FERRE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-2-4"
+  },
+  {
+    "name_ar": "فرزاتشي فريش",
+    "name_en": "VERSACE FRESH",
+    "image": "app/static/images/French/man/VERSACE FRESH.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-2-5"
+  },
+  {
+    "name_ar": "فندي",
+    "name_en": "FENDI",
+    "image": "app/static/images/French/man/FENDI.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-2-6"
+  },
+  {
+    "name_ar": "فهرنهايت",
+    "name_en": "FAHRENHEIT",
+    "image": "app/static/images/French/man/FAHRENHEIT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-2-7"
+  },
+  {
+    "name_ar": "فهرنهايت 32",
+    "name_en": "FAHRENHEIT 32",
+    "image": "app/static/images/French/man/FAHRENHEIT 32.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-2-8"
+  },
+  {
+    "name_ar": "فوياج",
+    "name_en": "VOYAGE",
+    "image": "app/static/images/French/man/VOYAGE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-2-9"
+  },
+  {
+    "name_ar": "فياجرا",
+    "name_en": "HAPPY CLINIQUE",
+    "image": "app/static/images/French/man/HAPPY CLINIQUE",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-3-1"
+  },
+  {
+    "name_ar": "كابتن بلاك",
+    "name_en": "CAPTIN BALCK",
+    "image": "app/static/images/French/man/CAPTIN BALCK.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-3-2"
+  },
+  {
+    "name_ar": "كارتير باشا",
+    "name_en": "CARTIER BASHA",
+    "image": "app/static/images/French/man/CARTIER BASHA.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-3-3"
+  },
+  {
+    "name_ar": "كارتير ديكلاريشن",
+    "name_en": "CARTER DECLARITION",
+    "image": "app/static/images/French/man/CARTER DECLARITION.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-3-4"
+  },
+  {
+    "name_ar": "كارون",
+    "name_en": "CARON",
+    "image": "app/static/images/French/man/CARON.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-3-5"
+  },
+  {
+    "name_ar": "كاريزما",
+    "name_en": "KARIZMA",
+    "image": "app/static/images/French/man/KARIZMA.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-3-6"
+  },
+  {
+    "name_ar": "كالونيا فرسكال",
+    "name_en": "FRESCAL COLOGNE",
+    "image": "app/static/images/French/man/FRESCAL COLOGNE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-3-7"
+  },
+  {
+    "name_ar": "كريد افنتوس",
+    "name_en": "CREED AVENTUS",
+    "image": "app/static/images/French/man/CREED AVENTUS.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-3-8"
+  },
+  {
+    "name_ar": "كزنوفا",
+    "name_en": "CASANOVA",
+    "image": "app/static/images/French/man/CASANOVA.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-3-9"
+  },
+  {
+    "name_ar": "كشمير",
+    "name_en": "CASHMIR",
+    "image": "app/static/images/French/man/CASHMIR.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-4-1"
+  },
+  {
+    "name_ar": "كنزو بور هوم",
+    "name_en": "KINZO POWER HOME",
+    "image": "app/static/images/French/man/KINZO POWER HOME.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-4-2"
+  },
+  {
+    "name_ar": "كوروس ",
+    "name_en": "KOUROS",
+    "image": "app/static/images/French/man/KOUROS.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-4-3"
+  },
+  {
+    "name_ar": "كوكو ريكو",
+    "name_en": "KOKO RICO",
+    "image": "app/static/images/French/man/KOKO RICO.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-4-4"
+  },
+  {
+    "name_ar": "كول ووتر ",
+    "name_en": "COOL WATER",
+    "image": "app/static/images/French/man/COOL WATER.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-4-5"
+  },
+  {
+    "name_ar": "كينج ",
+    "name_en": "KING",
+    "image": "app/static/images/French/man/KING.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-4-6"
+  },
+  {
+    "name_ar": "موصوف ازرق",
+    "name_en": "Mousuf Blue",
+    "image": "app/static/images/French/man/Mousuf Blue.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-4-6"
+  },
+  {
+    "name_ar": "كينزو",
+    "name_en": "KENZO",
+    "image": "app/static/images/French/man/KENZO.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-4-7"
+  },
+  {
+    "name_ar": "لابيدوس",
+    "name_en": "LABIDOS",
+    "image": "app/static/images/French/man/LABIDOS.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-4-8"
+  },
+  {
+    "name_ar": "لاكوست وايت",
+    "name_en": "LACOST WHITE",
+    "image": "app/static/images/French/man/LACOST 12.12 WHITE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "26-4-9"
+  },
+  {
+    "name_ar": "لاكوست اخضر",
+    "name_en": "LACOST 12.12 GREEN",
+    "image": "app/static/images/French/man/LACOST 12.12 GREEN.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-1-1"
+  },
+  {
+    "name_ar": "لاكوست اسينشال ",
+    "name_en": "LACOST ESSENTIAL",
+    "image": "app/static/images/French/man/LACOST ESSENTIAL.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-1-2"
+  },
+  {
+    "name_ar": "لاكوست اسينشال سبورت",
+    "name_en": "LACOST ESSENTIAL SPORT",
+    "image": "app/static/images/French/man/LACOST ESSENTIAL SPORT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-1-3"
+  },
+  {
+    "name_ar": "لاكوست اصفر",
+    "name_en": "LACOST YELLOW",
+    "image": "app/static/images/French/man/LACOST 12.12 YELLOW.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-1-4"
+  },
+  {
+    "name_ar": "لاكوست بلاك",
+    "name_en": "LACOST BLACK",
+    "image": "app/static/images/French/man/LACOST BLACK.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-1-5"
+  },
+  {
+    "name_ar": "لاكوست تشالنج ",
+    "name_en": "LACOST CHALLENGE",
+    "image": "app/static/images/French/man/LACOST CHALLENGE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-1-6"
+  },
+  {
+    "name_ar": "لاكوست ريد",
+    "name_en": "LACOST RED",
+    "image": "app/static/images/French/man/LACOST RED 12.12.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-1-7"
+  },
+  {
+    "name_ar": "لي ميل اليكسير",
+    "name_en": "LE MALE ELIXIR",
+    "image": "app/static/images/French/man/LE MALE ELIXIR.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-1-8"
+  },
+  {
+    "name_ar": "ماي سيلف",
+    "name_en": "MYSELF YSL",
+    "image": "app/static/images/French/man/MYSELF YSL.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-1-9"
+  },
+  {
+    "name_ar": "مذهلة",
+    "name_en": "MUTHEELA",
+    "image": "app/static/images/French/man/MUTHEELA.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-2-1"
+  },
+  {
+    "name_ar": "مرسيدس بينز",
+    "name_en": "MARCEDES BENZ",
+    "image": "app/static/images/French/man/MARCEDES BENZ.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-2-2"
+  },
+  {
+    "name_ar": "مونت بلانك ابيض",
+    "name_en": "MONT BLANC WHITE",
+    "image": "app/static/images/French/man/MONT BLANC WHITE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-2-3"
+  },
+  {
+    "name_ar": "مونت بلانك ليجند",
+    "name_en": "MONT BLANC LEGEND",
+    "image": "app/static/images/French/man/MONT BLANC LEGEND.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-2-4"
+  },
+  {
+    "name_ar": "مونتانا",
+    "name_en": "MONTANA",
+    "image": "app/static/images/French/man/MONTANA.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-2-5"
+  },
+  {
+    "name_ar": "ميجمار",
+    "name_en": "MEGAMARE",
+    "image": "app/static/images/French/man/MEGAMARE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-2-6"
+  },
+  {
+    "name_ar": "نايت فلايت",
+    "name_en": "NIGHT FLIGHT",
+    "image": "app/static/images/French/man/NIGHT FLIGHT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-2-7"
+  },
+  {
+    "name_ar": "هابي كلينك",
+    "name_en": "HAPPY CLINIQUE",
+    "image": "app/static/images/French/man/HAPPY CLINIQUE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-2-8"
+  },
+  {
+    "name_ar": "هاريرا",
+    "name_en": "HERRERA",
+    "image": "app/static/images/French/man/HERRERA.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-2-9"
+  },
+  {
+    "name_ar": "هافوك",
+    "name_en": "HAVOC",
+    "image": "app/static/images/French/man/HAVOC.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-3-1"
+  },
+  {
+    "name_ar": "هاير ديور",
+    "name_en": "HIGHER DIOR",
+    "image": "app/static/images/French/man/HIGHER DIOR.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-3-2"
+  },
+  {
+    "name_ar": "هوت وتر",
+    "name_en": "HOT WATER",
+    "image": "app/static/images/French/man/HOT WATER.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-3-3"
+  },
+  {
+    "name_ar": "هوجو X.Y",
+    "name_en": "HUGO X.Y",
+    "image": "app/static/images/French/man/HUGO X.Y.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-3-4"
+  },
+  {
+    "name_ar": "هوجو انرجايز",
+    "name_en": "HUGO ENRGISE",
+    "image": "app/static/images/French/man/HUGO ENRGISE.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-3-5"
+  },
+  {
+    "name_ar": "هوجو اوربان",
+    "name_en": "HUGO URBAN",
+    "image": "app/static/images/French/man/HUGO URBAN.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-3-6"
+  },
+  {
+    "name_ar": "هوجو بوس",
+    "name_en": "HUGO BOOS",
+    "image": "app/static/images/French/man/HUGO BOOS.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-3-7"
+  },
+  {
+    "name_ar": "هوجو ديفرنت",
+    "name_en": "HUGO DIFFERENT",
+    "image": "app/static/images/French/man/HUGO DIFFERENT.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-3-8"
+  },
+  {
+    "name_ar": "هوجو ريد",
+    "name_en": "HUGO RED",
+    "image": "app/static/images/French/man/HUGO RED.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-3-9"
+  },
+  {
+    "name_ar": "هيريرا تشيك",
+    "name_en": "HERRERA CHIC",
+    "image": "app/static/images/French/man/HERRERA CHIC.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-4-1"
+  },
+  {
+    "name_ar": "ون مان شو",
+    "name_en": "ONE MAN SHOW",
+    "image": "app/static/images/French/man/ONE MAN SHOW.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-4-2"
+  },
+  {
+    "name_ar": "ون مليون",
+    "name_en": "ONE MILLION",
+    "image": "app/static/images/French/man/ONE MILLION.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-4-3"
+  },
+  {
+    "name_ar": "ون مليون لاكي",
+    "name_en": "ONE MILLION LUCKY",
+    "image": "app/static/images/French/man/ONE MILLION LUCKY.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-4-4"
+  },
+  {
+    "name_ar": "موصوف بني",
+    "name_en": "Mousuf brown",
+    "image": "app/static/images/French/man/Mousuf brown.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-4-4"
+  },
+  {
+    "name_ar": "ويك اند",
+    "name_en": "WEEKEND",
+    "image": "app/static/images/French/man/WEEKEND.webp",
+    "gender": "Men",
+    "oil_type": "فرنسي",
+    "price": 50,
+    "num": "27-4-5"
+  }
+]

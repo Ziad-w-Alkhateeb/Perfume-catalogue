@@ -1,0 +1,1613 @@
+[
+    {
+        "name_ar": "212 VIP",
+        "name_en": "212 VIP",
+        "image": "app/static/images/French/women/212 VIP.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-1"
+    },
+    {
+        "name_ar": "212 سكسي",
+        "name_en": "212 SEXY",
+        "image": "app/static/images/French/women/212 SEXY.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-2"
+    },
+    {
+        "name_ar": "CK IN 2U",
+        "name_en": "CK IN 2U",
+        "image": "app/static/images/French/women/CK IN 2U.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-3"
+    },
+    {
+        "name_ar": "SI احمر",
+        "name_en": "SI RED",
+        "image": "app/static/images/French/women/SI RED.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-4"
+    },
+    {
+        "name_ar": "SI ارمني",
+        "name_en": "Armani SI",
+        "image": "app/static/images/French/women/Armani SI.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-5"
+    },
+    {
+        "name_ar": "اتيرنتي",
+        "name_en": "Eternity",
+        "image": "app/static/images/French/women/Eternity.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-6"
+    },
+    {
+        "name_ar": "ارماني YOU",
+        "name_en": "YOU Armani",
+        "image": "app/static/images/French/women/YOU Armani.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-7"
+    },
+    {
+        "name_ar": "اسكادا S",
+        "name_en": "Escada S",
+        "image": "app/static/images/French/women/Escada S.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-8"
+    },
+    {
+        "name_ar": "اسكادا ابسلوتي مي",
+        "name_en": "Escada absolutely me",
+        "image": "app/static/images/French/women/Escada absolutely me.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-9"
+    },
+    {
+        "name_ar": "اسكادا برادايس",
+        "name_en": "Escada paradise",
+        "image": "app/static/images/French/women/Escada paradise.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-10"
+    },
+    {
+        "name_ar": "اسكادا بلو",
+        "name_en": "Escada blue",
+        "image": "app/static/images/French/women/Escada blue.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-11"
+    },
+    {
+        "name_ar": "اسكادا تاج",
+        "name_en": "Escada Taj",
+        "image": "app/static/images/French/women/Escada Taj.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-2-1"
+    },
+    {
+        "name_ar": "اسكادا روكن ريو ",
+        "name_en": "escada rockin rio",
+        "image": "app/static/images/French/women/escada rockin rio.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-2-2"
+    },
+    {
+        "name_ar": "اسكادا سبيشال",
+        "name_en": "espiecially escada",
+        "image": "app/static/images/French/women/espiecially escada.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-2-3"
+    },
+    {
+        "name_ar": "اسكادا سكسي جرافيت",
+        "name_en": "Escada sexy graffiti",
+        "image": "app/static/images/French/women/Escada sexy graffiti.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-2-4"
+    },
+    {
+        "name_ar": "اسكادا سينت مينت",
+        "name_en": "Escada sentiments",
+        "image": "app/static/images/French/women/Escada sentiments.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-2-5"
+    },
+    {
+        "name_ar": "اسكادا شيري",
+        "name_en": "Escada cherry",
+        "image": "app/static/images/French/women/Escada cherry.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-2-6"
+    },
+    {
+        "name_ar": "اسكادا كوليكشن",
+        "name_en": "Escada collection",
+        "image": "app/static/images/French/women/Escada collection.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-2-7"
+    },
+    {
+        "name_ar": "اسكادا مارين ",
+        "name_en": "Escada marine",
+        "image": "app/static/images/French/women/Escada marine.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-2-8"
+    },
+    {
+        "name_ar": "اسكادا مغنيسيوم",
+        "name_en": "Escada magnesium",
+        "image": "app/static/images/French/women/Escada magnesium.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-2-9"
+    },
+    {
+        "name_ar": "افري داي سكسي",
+        "name_en": "EVERY DAY SEXY",
+        "image": "app/static/images/French/women/EVERY DAY SEXY.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-2-10"
+    },
+    {
+        "name_ar": "اكليت لانفن",
+        "name_en": "Eclat Lanven",
+        "image": "app/static/images/French/women/Eclat Lanven.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-2-11"
+    },
+    {
+        "name_ar": "الاماكن",
+        "name_en": "Al Amaken",
+        "image": "app/static/images/French/women/Al Amaken.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-1"
+    },
+    {
+        "name_ar": "الترا فوليت",
+        "name_en": "Altraviolet",
+        "image": "app/static/images/French/women/Altraviolet.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-2"
+    },
+    {
+        "name_ar": "الور شانيل",
+        "name_en": "Allure",
+        "image": "app/static/images/French/women/Allure.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-3"
+    },
+    {
+        "name_ar": "الي صعب",
+        "name_en": "Elie Saab",
+        "image": "app/static/images/French/women/Elie Saab.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-4"
+    },
+    {
+        "name_ar": "الين موجلر",
+        "name_en": "Alien Mugler",
+        "image": "app/static/images/French/women/Alien Mugler.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-5"
+    },
+    {
+        "name_ar": "اماريج",
+        "name_en": "Amarige",
+        "image": "app/static/images/French/women/Amarige.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-6"
+    },
+    {
+        "name_ar": "امور امور",
+        "name_en": "Amor Amor",
+        "image": "app/static/images/French/women/Amor Amor.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-7"
+    },
+    {
+        "name_ar": "انايس انايس",
+        "name_en": "Anais Anais",
+        "image": "app/static/images/French/women/Anais Anais.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-8"
+    },
+    {
+        "name_ar": "انت عمري",
+        "name_en": "ANTA OMRI",
+        "image": "app/static/images/French/women/ANTA OMRI.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-9"
+    },
+    {
+        "name_ar": "اورجنزا",
+        "name_en": "Organza",
+        "image": "app/static/images/French/women/Organza.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-10"
+    },
+    {
+        "name_ar": "اولومبيا باكوريبان",
+        "name_en": "Olympea Rabanne",
+        "image": "app/static/images/French/women/Olympea Rabanne.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-3-11"
+    },
+    {
+        "name_ar": "ايدول لانكوم",
+        "name_en": "Idôle Lancôme",
+        "image": "app/static/images/French/women/Idôle Lancôme.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-4-1"
+    },
+    {
+        "name_ar": "ايموشن",
+        "name_en": "Emotion",
+        "image": "app/static/images/French/women/Emotion.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-4-2"
+    },
+    {
+        "name_ar": "باريس",
+        "name_en": "Paris",
+        "image": "app/static/images/French/women/Paris.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-4-3"
+    },
+    {
+        "name_ar": "باريس هلتون",
+        "name_en": "Paris Hilton",
+        "image": "app/static/images/French/women/Paris Hilton.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-4-4"
+    },
+    {
+        "name_ar": "بانادورا كابوتين",
+        "name_en": "Pandora",
+        "image": "app/static/images/French/women/Pandora.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-4-5"
+    },
+    {
+        "name_ar": "بائعة الورد",
+        "name_en": "Bae'ah Alward",
+        "image": "app/static/images/French/women/Bae'ah Alward.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-4-6"
+    },
+    {
+        "name_ar": "برادا انتنس",
+        "name_en": "PRADA INTENS",
+        "image": "app/static/images/French/women/PRADA INTENS.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-4-7"
+    },
+    {
+        "name_ar": "برادا بارادوكس",
+        "name_en": "PRADA PARDOXE",
+        "image": "app/static/images/French/women/PRADA PARDOXE.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-4-8"
+    },
+    {
+        "name_ar": "بربري بدي",
+        "name_en": "Burberry body",
+        "image": "app/static/images/French/women/Burberry body.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-4-9"
+    },
+    {
+        "name_ar": "بربري هير",
+        "name_en": "Burberry Her",
+        "image": "app/static/images/French/women/Burberry Her.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-4-10"
+    },
+    {
+        "name_ar": "موصوف وردي",
+        "name_en": "Mousuf Wardi",
+        "image": "app/static/images/French/women/Mousuf Wardi.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-4-10"
+    },
+    {
+        "name_ar": "بربريس",
+        "name_en": "Burberry",
+        "image": "app/static/images/French/women/Burberry.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "15-4-11"
+    },
+    {
+        "name_ar": "برت بربري",
+        "name_en": "Brit Burberry",
+        "image": "app/static/images/French/women/Brit Burberry.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-1-1"
+    },
+    {
+        "name_ar": "بلاتس بليز",
+        "name_en": "Pleats Please",
+        "image": "app/static/images/French/women/Pleats Please.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-1-2"
+    },
+    {
+        "name_ar": "بلاك XS",
+        "name_en": "Black XS",
+        "image": "app/static/images/French/women/Black XS.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-1-3"
+    },
+    {
+        "name_ar": "بلاك اوبيوم",
+        "name_en": "BLACK OPIUM",
+        "image": "app/static/images/French/women/BLACK OPIUM.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-1-4"
+    },
+    {
+        "name_ar": "بلاي جيفنشي",
+        "name_en": "Play Givenchy",
+        "image": "app/static/images/French/women/Play Givenchy.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-1-5"
+    },
+    {
+        "name_ar": "بلجر",
+        "name_en": "Pleasures",
+        "image": "app/static/images/French/women/Pleasures.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-1-6"
+    },
+    {
+        "name_ar": "بلو ليدي",
+        "name_en": "Blue Lady",
+        "image": "app/static/images/French/women/Blue Lady.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-1-7"
+    },
+    {
+        "name_ar": "بوس اورانج",
+        "name_en": "Boss Orange",
+        "image": "app/static/images/French/women/Boss Orange.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-2-1"
+    },
+    {
+        "name_ar": "بوس سنت",
+        "name_en": "BOSS SCENT",
+        "image": "app/static/images/French/women/BOSS SCENT.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-2-2"
+    },
+    {
+        "name_ar": "بوس فيم",
+        "name_en": "Boss femme",
+        "image": "app/static/images/French/women/Boss femme.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-2-3"
+    },
+    {
+        "name_ar": "بوس ليبز",
+        "name_en": "BOSS LIPS",
+        "image": "app/static/images/French/women/BOSS LIPS.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-2-4"
+    },
+    {
+        "name_ar": "بومب شيل",
+        "name_en": "BOMBSHELL",
+        "image": "app/static/images/French/women/BOMBSHELL.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-2-5"
+    },
+    {
+        "name_ar": "بون بون",
+        "name_en": "BonBon V&R",
+        "image": "app/static/images/French/women/BonBon V&R.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-2-6"
+    },
+    {
+        "name_ar": "بي ديليشص",
+        "name_en": "Be Delicious",
+        "image": "app/static/images/French/women/Be Delicious.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-2-7"
+    },
+    {
+        "name_ar": "بيانكو لاتيه",
+        "name_en": "Bianco Latte",
+        "image": "app/static/images/French/women/Bianco Latte.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-3-1"
+    },
+    {
+        "name_ar": "بيلي اوبيوم",
+        "name_en": "Belle Opium",
+        "image": "app/static/images/French/women/Belle Opium.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-3-2"
+    },
+    {
+        "name_ar": "بيوتيفول",
+        "name_en": "Beeautiful",
+        "image": "app/static/images/French/women/Beeautiful.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-3-3"
+    },
+    {
+        "name_ar": "بيور بويزن",
+        "name_en": "Pure poison",
+        "image": "app/static/images/French/women/Pure poison.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-3-4"
+    },
+    {
+        "name_ar": "بيونسي هيت",
+        "name_en": "Beyonce Heat",
+        "image": "app/static/images/French/women/Beyonce Heat.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-3-5"
+    },
+    {
+        "name_ar": "تايتنيك",
+        "name_en": "Titanic",
+        "image": "app/static/images/French/women/Titanic.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-3-6"
+    },
+    {
+        "name_ar": "تريزور ان لف",
+        "name_en": "Tresor in love",
+        "image": "app/static/images/French/women/Tresor in love.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-3-7"
+    },
+    {
+        "name_ar": "تشانص شنيل",
+        "name_en": "chance chanel",
+        "image": "app/static/images/French/women/chance chanel.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-4-1"
+    },
+    {
+        "name_ar": "تشيك هريرا",
+        "name_en": "Chick Herrera",
+        "image": "app/static/images/French/women/Chick Herrera.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-4-2"
+    },
+    {
+        "name_ar": "تومي جيرل",
+        "name_en": "Tommy Girl",
+        "image": "app/static/images/French/women/Tommy Girl.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-4-3"
+    },
+    {
+        "name_ar": "جادور",
+        "name_en": "J'adore Dior",
+        "image": "app/static/images/French/women/J'adore Dior.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-4-4"
+    },
+    {
+        "name_ar": "جاردينا عطر",
+        "name_en": "Gardenia",
+        "image": "app/static/images/French/women/Gardenia.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-4-5"
+    },
+    {
+        "name_ar": "جلدا",
+        "name_en": "GILDA",
+        "image": "app/static/images/French/women/GILDA.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-4-6"
+    },
+    {
+        "name_ar": "جوتشي باموبو",
+        "name_en": "GUCCI BAMBOO",
+        "image": "app/static/images/French/women/GUCCI BAMBOO.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "16-4-7"
+    },
+    {
+        "name_ar": "جوتشي بريمير",
+        "name_en": "GUCCI PREMIERE",
+        "image": "app/static/images/French/women/GUCCI PREMIERE.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-1-1"
+    },
+    {
+        "name_ar": "جوتشي جيلتي",
+        "name_en": "GUCCI GUILTY",
+        "image": "app/static/images/French/women/GUCCI GUILTY.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-1-2"
+    },
+    {
+        "name_ar": "جوتشي رش",
+        "name_en": "GUCCI RUSH",
+        "image": "app/static/images/French/women/GUCCI RUSH.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-1-3"
+    },
+    {
+        "name_ar": "جوتشي فلورا",
+        "name_en": "GUCCI FLORA",
+        "image": "app/static/images/French/women/GUCCI FLORA.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-1-4"
+    },
+    {
+        "name_ar": "جود جيرل",
+        "name_en": "GOOD GIRL",
+        "image": "app/static/images/French/women/GOOD GIRL.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-1-5"
+    },
+    {
+        "name_ar": "جوي ديور",
+        "name_en": "Joy Dior",
+        "image": "app/static/images/French/women/Joy Dior.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-1-6"
+    },
+    {
+        "name_ar": "جيل ساندر",
+        "name_en": "Jil Sander",
+        "image": "app/static/images/French/women/Jil Sander.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-1-7"
+    },
+    {
+        "name_ar": "دازيل باريس هيلتون",
+        "name_en": "DAZZEL PARIS HILLTON",
+        "image": "app/static/images/French/women/DAZZEL PARIS HILLTON.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-2-1"
+    },
+    {
+        "name_ar": "دلوعة",
+        "name_en": "D'ALOA",
+        "image": "app/static/images/French/women/D'ALOA.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-2-2"
+    },
+    {
+        "name_ar": "ديزل لافردوس",
+        "name_en": "DIESEL LOVERDOSE",
+        "image": "app/static/images/French/women/DIESEL LOVERDOSE.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-2-3"
+    },
+    {
+        "name_ar": "ديلينا",
+        "name_en": "DELINA",
+        "image": "app/static/images/French/women/DELINA.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-2-4"
+    },
+    {
+        "name_ar": "ذا ون",
+        "name_en": "THE ONE",
+        "image": "app/static/images/French/women/THE ONE.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-2-5"
+    },
+    {
+        "name_ar": "ذا ون روز",
+        "name_en": "THE ONE ROSE",
+        "image": "app/static/images/French/women/THE ONE ROSE.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-2-6"
+    },
+    {
+        "name_ar": "رالف لورين",
+        "name_en": "Ralph Lauren",
+        "image": "app/static/images/French/women/Ralph Lauren.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-2-7"
+    },
+    {
+        "name_ar": "رامبا",
+        "name_en": "Rumba",
+        "image": "app/static/images/French/women/Rumba.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-3-1"
+    },
+    {
+        "name_ar": "ربرتو كفالي",
+        "name_en": "ROBERTO CAVALLY",
+        "image": "app/static/images/French/women/ROBERTO CAVALLY.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-3-2"
+    },
+    {
+        "name_ar": "روز فانيلا",
+        "name_en": "ROSE VANILLE",
+        "image": "app/static/images/French/women/ROSE VANILLE.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-3-3"
+    },
+    {
+        "name_ar": "روشاز",
+        "name_en": "ROSHAS MARILYS",
+        "image": "app/static/images/French/women/ROSHAS MARILYS.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-3-4"
+    },
+    {
+        "name_ar": "روكن روز",
+        "name_en": "Rock'n Rose",
+        "image": "app/static/images/French/women/Rock'n Rose.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-3-5"
+    },
+    {
+        "name_ar": "رومانس",
+        "name_en": "ROMANCE",
+        "image": "app/static/images/French/women/ROMANCE.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-3-6"
+    },
+    {
+        "name_ar": "رويال",
+        "name_en": "ROYAL",
+        "image": "app/static/images/French/women/ROYAL.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-3-7"
+    },
+    {
+        "name_ar": "ريتشي ريتشي",
+        "name_en": "RICCI RICCI",
+        "image": "app/static/images/French/women/RICCI RICCI.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-4-1"
+    },
+    {
+        "name_ar": "سبرت",
+        "name_en": "Spiritus",
+        "image": "app/static/images/French/women/Spiritus.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-4-2"
+    },
+    {
+        "name_ar": "ستيلا رالف لورين",
+        "name_en": "STELLA",
+        "image": "app/static/images/French/women/STELLA.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-4-3"
+    },
+    {
+        "name_ar": "سكارلت",
+        "name_en": "SCARLETT",
+        "image": "app/static/images/French/women/SCARLETT.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-4-4"
+    },
+    {
+        "name_ar": "سكاندل",
+        "name_en": "Scandal",
+        "image": "app/static/images/French/women/Scandal.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-4-5"
+    },
+    {
+        "name_ar": "سكر بنات",
+        "name_en": "PINK SUGAR",
+        "image": "app/static/images/French/women/PINK SUGAR.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-4-6"
+    },
+    {
+        "name_ar": "سكسي ليدي",
+        "name_en": "SEXY LADY",
+        "image": "app/static/images/French/women/SEXY LADY.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "17-4-7"
+    },
+    {
+        "name_ar": "سكيب",
+        "name_en": "ESCAPE",
+        "image": "app/static/images/French/women/ESCAPE.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-1-1"
+    },
+    {
+        "name_ar": "سمسارا",
+        "name_en": "SAMSARA",
+        "image": "app/static/images/French/women/SAMSARA.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-1-2"
+    },
+    {
+        "name_ar": "سو سكسي",
+        "name_en": "SO SEXY",
+        "image": "app/static/images/French/women/SO SEXY.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-1-3"
+    },
+    {
+        "name_ar": "سيكرت اوبسيشن",
+        "name_en": "SECRET OBSESSION",
+        "image": "app/static/images/French/women/SECRET OBSESSION.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-1-4"
+    },
+    {
+        "name_ar": "سينما",
+        "name_en": "SINEMA",
+        "image": "app/static/images/French/women/SINEMA.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-1-5"
+    },
+    {
+        "name_ar": "شاكيرا",
+        "name_en": "SHAKIRA",
+        "image": "app/static/images/French/women/SHAKIRA.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-1-6"
+    },
+    {
+        "name_ar": "شاليز",
+        "name_en": "SHALIS",
+        "image": "app/static/images/French/women/SHALIS.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-1-7"
+    },
+    {
+        "name_ar": "شانيل 5",
+        "name_en": "CHANEL 5",
+        "image": "app/static/images/French/women/CHANEL 5.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-2-1"
+    },
+    {
+        "name_ar": "شوك CK",
+        "name_en": "CK SHOCK",
+        "image": "app/static/images/French/women/CK SHOCK.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-2-2"
+    },
+    {
+        "name_ar": "صبايا",
+        "name_en": "SABAYA",
+        "image": "app/static/images/French/women/SABAYA.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-2-3"
+    },
+    {
+        "name_ar": "صدفة",
+        "name_en": "SUDFA",
+        "image": "app/static/images/French/women/SUDFA.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-2-4"
+    },
+    {
+        "name_ar": "صم داي",
+        "name_en": "SOMEDAY",
+        "image": "app/static/images/French/women/SOMEDAY.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-2-5"
+    },
+    {
+        "name_ar": "غبار الذهب",
+        "name_en": "GOLD DUST",
+        "image": "app/static/images/French/women/GOLD DUST.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-2-6"
+    },
+    {
+        "name_ar": "فاسيو",
+        "name_en": "Fasio",
+        "image": "app/static/images/French/women/Fasio.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-2-7"
+    },
+    {
+        "name_ar": "فالنتينا بينك",
+        "name_en": "VALANTINA PINK",
+        "image": "app/static/images/French/women/VALANTINA PINK.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-3-1"
+    },
+    {
+        "name_ar": "فرزاتشي اصفر دايموند",
+        "name_en": "VERSACE YELlOW",
+        "image": "app/static/images/French/women/VERSACE YELlOW.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-3-2"
+    },
+    {
+        "name_ar": "فرزاتشي بنك كريستال",
+        "name_en": "VERSACE PINK",
+        "image": "app/static/images/French/women/VERSACE PINK.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-3-3"
+    },
+    {
+        "name_ar": "فرزاتشي فانتاس",
+        "name_en": "VERSACE VANITAS",
+        "image": "app/static/images/French/women/VERSACE VANITAS.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-3-4"
+    },
+    {
+        "name_ar": "فري سكسي",
+        "name_en": "VERY SEXY",
+        "image": "app/static/images/French/women/VERY SEXY.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-3-5"
+    },
+    {
+        "name_ar": "فلنتينا",
+        "name_en": "Valentina",
+        "image": "app/static/images/French/women/Valentina.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-3-6"
+    },
+    {
+        "name_ar": "فنتازيا",
+        "name_en": "FANTASY",
+        "image": "app/static/images/French/women/FANTASY.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-3-7"
+    },
+    {
+        "name_ar": "فور ايفر",
+        "name_en": "FOREVER",
+        "image": "app/static/images/French/women/FOREVER.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-4-1"
+    },
+    {
+        "name_ar": "قبلة الجزيرة",
+        "name_en": "ISLAND KISS",
+        "image": "app/static/images/French/women/ISLAND KISS.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-4-2"
+    },
+    {
+        "name_ar": "كاتش مي ",
+        "name_en": "CATCH ME",
+        "image": "app/static/images/French/women/CATCH ME.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-4-3"
+    },
+    {
+        "name_ar": "كارولينا هريرا",
+        "name_en": "CAROLINA HERRERA",
+        "image": "app/static/images/French/women/CAROLINA HERRERA.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-4-4"
+    },
+    {
+        "name_ar": "كاسيليا حمراء",
+        "name_en": "CASSILIA RED",
+        "image": "app/static/images/French/women/CASSILIA RED.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-4-5"
+    },
+    {
+        "name_ar": "كاسيليا صفراء",
+        "name_en": "CASSILIA YELLOW",
+        "image": "app/static/images/French/women/CASSILIA YELLOW.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-4-6"
+    },
+    {
+        "name_ar": "كايالي بوجي مارشميلو",
+        "name_en": "KAYALI BOUJEE MARSHMALLOW",
+        "image": "app/static/images/French/women/KAYALI BOUJEE MARSHMALLOW.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "18-4-7"
+    },
+    {
+        "name_ar": "كايالي فانيلا 28",
+        "name_en": "KAYALI VANILLA 28",
+        "image": "app/static/images/French/women/KAYALI VANILLA 28.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-1-1"
+    },
+    {
+        "name_ar": "كايالي فلور ماجستي",
+        "name_en": "KAYALI FLUER MAJESTY",
+        "image": "app/static/images/French/women/KAYALI FLUER MAJESTY.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-1-2"
+    },
+    {
+        "name_ar": "كايالي يم بستاشيو",
+        "name_en": "KAYALI YUM PISTACHIO",
+        "image": "app/static/images/French/women/KAYALI YUM PISTACHIO.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-1-3"
+    },
+    {
+        "name_ar": "كرمينا كريد",
+        "name_en": "CARMINA CREED",
+        "image": "app/static/images/French/women/CARMINA CREED.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-1-4"
+    },
+    {
+        "name_ar": "كريزي لف",
+        "name_en": "CRAZY LOVE",
+        "image": "app/static/images/French/women/CRAZY LOVE.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-1-5"
+    },
+    {
+        "name_ar": "كلك فلور",
+        "name_en": "Quelques Fleurs",
+        "image": "app/static/images/French/women/Quelques Fleurs.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-1-6"
+    },
+    {
+        "name_ar": "كلوي نيرسيس",
+        "name_en": "CHOLE NARCISSE",
+        "image": "app/static/images/French/women/CHOLE NARCISSE.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-1-7"
+    },
+    {
+        "name_ar": "كنزو امورو",
+        "name_en": "KENZO AMOR",
+        "image": "app/static/images/French/women/KENZO AMOR.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-1-8"
+    },
+    {
+        "name_ar": "كنزو فلور",
+        "name_en": "KENZO FLOWER",
+        "image": "app/static/images/French/women/KENZO FLOWER.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-2-1"
+    },
+    {
+        "name_ar": "كوبرا",
+        "name_en": "COBRA",
+        "image": "app/static/images/French/women/COBRA.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-2-2"
+    },
+    {
+        "name_ar": "كوكو شانيل",
+        "name_en": "COCO CHANEL",
+        "image": "app/static/images/French/women/COCO CHANEL.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-2-3"
+    },
+    {
+        "name_ar": "كوكو مودموزيل",
+        "name_en": "COCO MADEMOISELLE",
+        "image": "app/static/images/French/women/COCO MADEMOISELLE.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-2-4"
+    },
+    {
+        "name_ar": "كول ووتر",
+        "name_en": "COOL WATER",
+        "image": "app/static/images/French/women/COOL WATER.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-2-5"
+    },
+    {
+        "name_ar": "لافي بيل لانكوم",
+        "name_en": "LANKOM LA VIE LA BELLE",
+        "image": "app/static/images/French/women/LANKOM LA VIE LA BELLE.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-2-6"
+    },
+    {
+        "name_ar": "لاكوست تتش اوف بينك",
+        "name_en": "LACOSTE TOUCH OF PINK",
+        "image": "app/static/images/French/women/LACOSTE TOUCH OF PINK.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-2-7"
+    },
+    {
+        "name_ar": "لاكوست جوي اوف بينك",
+        "name_en": "LACOSTE JOY OF PINK",
+        "image": "app/static/images/French/women/LACOSTE JOY OF PINK.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-2-8"
+    },
+    {
+        "name_ar": "لانوت تريزور",
+        "name_en": "LA NUIT TRESOR",
+        "image": "app/static/images/French/women/LA NUIT TRESOR.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-3-1"
+    },
+    {
+        "name_ar": "لايف جنفير لوبيز",
+        "name_en": "LIVE JENNIFER LOPEZ",
+        "image": "app/static/images/French/women/LIVE JENNIFER LOPEZ.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-3-2"
+    },
+    {
+        "name_ar": "لوليتا ليمبيكا",
+        "name_en": "LOLITA LEMPICKA",
+        "image": "app/static/images/French/women/LOLITA LEMPICKA.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-3-3"
+    },
+    {
+        "name_ar": "ليبرا",
+        "name_en": "LIBRE",
+        "image": "app/static/images/French/women/LIBRE.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-3-4"
+    },
+    {
+        "name_ar": "ليبرا انتنس",
+        "name_en": "Libre Intense",
+        "image": "app/static/images/French/women/Libre Intense.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-3-5"
+    },
+    {
+        "name_ar": "ليدي مليون",
+        "name_en": "LADY MILLION",
+        "image": "app/static/images/French/women/LADY MILLION.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-3-6"
+    },
+    {
+        "name_ar": "ليلة خميس",
+        "name_en": "LELAT KHAMIS (HUGO XX)",
+        "image": "app/static/images/French/women/LELAT KHAMIS (HUGO XX).webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-3-7"
+    },
+    {
+        "name_ar": "مارلين",
+        "name_en": "MARLEEN",
+        "image": "app/static/images/French/women/MARLEEN.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-3-8"
+    },
+    {
+        "name_ar": "ماي جولد",
+        "name_en": "MY GOLD",
+        "image": "app/static/images/French/women/MY GOLD.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-4-1"
+    },
+    {
+        "name_ar": "ماي واي",
+        "name_en": "My Way",
+        "image": "app/static/images/French/women/My Way.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-4-2"
+    },
+    {
+        "name_ar": "مد نايت روز",
+        "name_en": "MIDNIGHT ROSE",
+        "image": "app/static/images/French/women/MIDNIGHT ROSE.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-4-3"
+    },
+    {
+        "name_ar": "تريزور مد نايت",
+        "name_en": "Trésor Midnight",
+        "image": "app/static/images/French/women/Trésor Midnight.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-4-3"
+    },
+    {
+        "name_ar": "مذهلة",
+        "name_en": "MUTHEELA",
+        "image": "app/static/images/French/women/MUTHEELA.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-4-4"
+    },
+    {
+        "name_ar": "مزيونة",
+        "name_en": "MAZYONAH",
+        "image": "app/static/images/French/women/MAZYONAH.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-4-5"
+    },
+    {
+        "name_ar": "مندرين هرمز",
+        "name_en": "MANDARINE HERMES",
+        "image": "app/static/images/French/women/MANDARINE HERMES.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-4-6"
+    },
+    {
+        "name_ar": "منفيستو YSL",
+        "name_en": "MANIFESTO",
+        "image": "app/static/images/French/women/MANIFESTO.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-4-7"
+    },
+    {
+        "name_ar": "مون باريس",
+        "name_en": "MOON PARIS",
+        "image": "app/static/images/French/women/MOON PARIS.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "19-4-8"
+    },
+    {
+        "name_ar": "ميس ديور",
+        "name_en": "MISS DIOR",
+        "image": "app/static/images/French/women/MISS DIOR.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "20-1-1"
+    },
+    {
+        "name_ar": "نارسيسو بودر",
+        "name_en": "Narciso Poudrée",
+        "image": "app/static/images/French/women/Narciso Poudrée.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "20-1-2"
+    },
+    {
+        "name_ar": "نعومي كامبل",
+        "name_en": "NAOME CAMPBELL",
+        "image": "app/static/images/French/women/NAOME CAMPBELL.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "20-1-3"
+    },
+    {
+        "name_ar": "نوا باي كشريل",
+        "name_en": "NOA BY CACHAREL",
+        "image": "app/static/images/French/women/NOA BY CACHAREL.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "20-1-4"
+    },
+    {
+        "name_ar": "نينا براديس",
+        "name_en": "Nina Paradise",
+        "image": "app/static/images/French/women/Nina Paradise.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "20-1-5"
+    },
+    {
+        "name_ar": "نينا رتشي",
+        "name_en": "NINA RICCI",
+        "image": "app/static/images/French/women/NINA RICCI.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "20-1-6"
+    },
+    {
+        "name_ar": "هابي سبريت",
+        "name_en": "Happy Sprit",
+        "image": "app/static/images/French/women/Happy Sprit.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "20-1-7"
+    },
+    {
+        "name_ar": "هاواي",
+        "name_en": "HAWAI",
+        "image": "app/static/images/French/women/HAWAI.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "20-1-8"
+    },
+    {
+        "name_ar": "هوت كتور",
+        "name_en": "HOT COUTURE",
+        "image": "app/static/images/French/women/HOT COUTURE.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "20-2-1"
+    },
+    {
+        "name_ar": "هوت كيس",
+        "name_en": "HOT KISS",
+        "image": "app/static/images/French/women/HOT KISS.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "20-2-2"
+    },
+    {
+        "name_ar": "هوجو X.X",
+        "name_en": "HUGO X.X",
+        "image": "app/static/images/French/women/HUGO X.X.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "20-2-3"
+    },
+    {
+        "name_ar": "هوجو بوس",
+        "name_en": "HUGO BOOS",
+        "image": "app/static/images/French/women/HUGO BOOS.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "20-2-4"
+    },
+    {
+        "name_ar": "هيبنوتيك بويزن",
+        "name_en": "HYPONTIC POISON",
+        "image": "app/static/images/French/women/HYPONTIC POISON.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "20-2-5"
+    },
+    {
+        "name_ar": "هيبنوس لانكوم",
+        "name_en": "HYPONOSE LANKOOM",
+        "image": "app/static/images/French/women/HYPONOSE LANKOOM.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "20-2-6"
+    },
+    {
+        "name_ar": "وش شوبارد",
+        "name_en": "WISH CHOPARD",
+        "image": "app/static/images/French/women/WISH CHOPARD.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "20-2-7"
+    },
+    {
+        "name_ar": "ويك اند",
+        "name_en": "WEEKEND",
+        "image": "app/static/images/French/women/WEEKEND.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "20-2-8"
+    },
+    {
+        "name_ar": "يس ايم كاشاريل",
+        "name_en": "YES I AM CASHAREL",
+        "image": "app/static/images/French/women/YES I AM CASHAREL.webp",
+        "gender": "Women",
+        "oil_type": "فرنسي",
+        "price": 50,
+        "num": "20-2-9"
+    }
+]

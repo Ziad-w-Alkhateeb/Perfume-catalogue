@@ -1,0 +1,236 @@
+[
+  {
+    "name_ar": "ابسوليو افنتوس",
+    "name_en": "ABSOLU AVENTUS",
+    "image": "app/static/images/niche/ABSOLU AVENTUS.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 70,
+    "num": "4-0-1"
+  },
+  {
+    "name_ar": "ازارو ذا موست ونتد",
+    "name_en": "AZZARO THE MOST WANTED",
+    "image": "app/static/images/niche/AZZARO THE MOST WANTED.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 110,
+    "num": "4-0-2"
+  },
+  {
+    "name_ar": "افتر نون سويم",
+    "name_en": "AFTERNOON SWIM",
+    "image": "app/static/images/niche/AFTERNOON SWIM.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 125,
+    "num": "4-0-3"
+  },
+  {
+    "name_ar": "امواج غايدنس 46",
+    "name_en": "AMOUAGE GUIDANCE 46",
+    "image": "app/static/images/niche/AMOUAGE GUIDANCE 46.webp",
+    "gender": "Women",
+    "oil_type": "نيش",
+    "price": 70,
+    "num": "4-0-4"
+  },
+  {
+    "name_ar": "انجل شير",
+    "name_en": "ANGEL SHAREBY KILIAN",
+    "image": "app/static/images/niche/ANGEL SHAREBY KILIAN.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 110,
+    "num": "4-0-5"
+  },
+  {
+    "name_ar": "ايمينسايت",
+    "name_en": "L.V I'MMENSITE",
+    "image": "app/static/images/niche/L.V I'MMENSITE.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 125,
+    "num": "4-1-1"
+  },
+  {
+    "name_ar": "بيبي كات",
+    "name_en": "Baby Cat",
+    "image": "app/static/images/niche/Baby Cat.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 250,
+    "num": "4-1-2"
+  },
+  {
+    "name_ar": "بيلي إيليش",
+    "name_en": "BILLE ELLISH",
+    "image": "app/static/images/niche/BILLE ELLISH.webp",
+    "gender": "Women",
+    "oil_type": "نيش",
+    "price": 130,
+    "num": "130"
+  },
+  {
+    "name_ar": "جراند سوار",
+    "name_en": "MFK GRAND SOIR",
+    "image": "app/static/images/niche/MFK GRAND SOIR.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 120,
+    "num": "4-1-4"
+  },
+  {
+    "name_ar": "جود جيرل بلاش",
+    "name_en": "GOOD GIRL BLUSH",
+    "image": "app/static/images/niche/GOOD GIRL BLUSH.webp",
+    "gender": "Women",
+    "oil_type": "نيش",
+    "price": 120,
+    "num": "4-1-5"
+  },
+  {
+    "name_ar": "ريبليكا باي ذا فاير بليس",
+    "name_en": "REPLICA BY THE FIREPLACE",
+    "image": "app/static/images/niche/REPLICA BY THE FIREPLACE.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 125,
+    "num": "4-2-1"
+  },
+  {
+    "name_ar": "زيرجوف الكسندريا ||",
+    "name_en": "XERJOFF ALXENDRIA ||",
+    "image": "app/static/images/niche/XERJOFF ALXENDRIA.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 125,
+    "num": "4-2-2"
+  },
+  {
+    "name_ar": "زيرجوف ناكسوس",
+    "name_en": "XERJOFF NAXOS",
+    "image": "app/static/images/niche/XERJOFF NAXOS.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 300,
+    "num": "4-2-3"
+  },
+  {
+    "name_ar": "سترونجر وذ يو انتنسلي",
+    "name_en": "STRONGER WITH YOU INTENSELY",
+    "image": "app/static/images/niche/STRONGER WITH YOU INTENSELY.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 95,
+    "num": "4-2-4"
+  },
+  {
+    "name_ar": "سيتي اوف ستارز",
+    "name_en": "L.V CITY OF STARS",
+    "image": "app/static/images/niche/L.V CITY OF STARS.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 105,
+    "num": "4-2-5"
+  },
+  {
+    "name_ar": "عنبر نوماد",
+    "name_en": "NOMAD AMBER",
+    "image": "app/static/images/niche/NOMAD AMBER.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 150,
+    "num": "4-3-1"
+  },
+  {
+    "name_ar": "عود فور جريتنس",
+    "name_en": "OUD FOR GREATNESS",
+    "image": "app/static/images/niche/OUD FOR GREATNESS.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 70,
+    "num": "4-3-2"
+  },
+  {
+    "name_ar": "عود ماركوجا",
+    "name_en": "OUD MARCUJA",
+    "image": "app/static/images/niche/OUD MARCUJA.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 125,
+    "num": "4-3-3"
+  },
+  {
+    "name_ar": "فالنتينو بورن ان روم",
+    "name_en": "VALENTINO BORN IN ROME",
+    "image": "app/static/images/niche/VALENTINO BORN IN ROME.webp",
+    "gender": "Women",
+    "oil_type": "نيش",
+    "price": 90,
+    "num": "4-3-4"
+  },
+  {
+    "name_ar": "فالنتينو دونا بورن ان روم انتنس",
+    "name_en": "VALENTINO DONNA BORN IN ROME INTESE",
+    "image": "app/static/images/niche/VALENTINO DONNA BORN IN ROME INTESE.webp",
+    "gender": "Women",
+    "oil_type": "نيش",
+    "price": 140,
+    "num": "4-3-5"
+  },
+  {
+    "name_ar": "فانيلا باودر",
+    "name_en": "VANILLA POWDER",
+    "image": "app/static/images/niche/VANILLA POWDER.webp",
+    "gender": "Women",
+    "oil_type": "نيش",
+    "price": 150,
+    "num": "4-4-1"
+  },
+  {
+    "name_ar": "لا ميل",
+    "name_en": "LE MALE JPG",
+    "image": "app/static/images/niche/LE MALE JPG.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 100,
+    "num": "4-4-2"
+  },
+  {
+    "name_ar": "ماي سيلف لي بريفيوم",
+    "name_en": "MYSLF LE PARFUM",
+    "image": "app/static/images/niche/MYSLF LE PARFUM.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 150,
+    "num": "4-4-3"
+  },
+  {
+    "name_ar": "نضالكو سبيشال",
+    "name_en": "NIDALCO SPECIAL",
+    "image": "app/static/images/niche/NIDALCO SPECIAL.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 100,
+    "num": "4-4-4"
+  },
+  {
+    "name_ar": "نيشان هاشفيات",
+    "name_en": "NISHAN HACIVAT",
+    "image": "app/static/images/niche/NISHAN HACIVAT.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 110,
+    "num": "4-4-5"
+  },
+  {
+    "name_ar": "ون مليون اليكسير",
+    "name_en": "ONE MILLON ELIXIR",
+    "image": "app/static/images/niche/ONE MILLON ELIXIR.webp",
+    "gender": "Men",
+    "oil_type": "نيش",
+    "price": 150,
+    "num": "4-5-1"
+  }
+]

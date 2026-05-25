@@ -1,0 +1,668 @@
+[
+    {
+        "name_ar": "اجمل",
+        "name_en": "AGMAL",
+        "image": "static/images/arabic/AGMAL.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "اجمل لمسة",
+        "name_en": "AGMAL LAMSAH",
+        "image": "static/images/arabic/AGMAL LAMSAH.webp",
+        "gender": "Men",
+        "oil_type": "فرنسي",
+        "price": 60,
+        "num": "28-1-2"
+    },
+    {
+        "name_ar": "اجود لطافة",
+        "name_en": "AJWAD LATTAFA",
+        "image": "static/images/arabic/AJWAD LATTAFA.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-3"
+    },
+    {
+        "name_ar": "احلام العرب",
+        "name_en": "AHLAM AL ARAB",
+        "image": "static/images/arabic/AHLAM AL ARAB.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-4"
+    },
+    {
+        "name_ar": "اسد بوربون ",
+        "name_en": "ASAD BOURBON",
+        "image": "static/images/arabic/ASAD BOURBON.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-5"
+    },
+    {
+        "name_ar": "اسد لطافة ",
+        "name_en": "ASAD LATTAFA",
+        "image": "static/images/arabic/ASAD LATTAFA.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-6"
+    },
+    {
+        "name_ar": "اطفال",
+        "name_en": "CHILDREN",
+        "image": "static/images/arabic/CHILDREN.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 50,
+        "num": "28-1-7"
+    },
+    {
+        "name_ar": "اعجازي",
+        "name_en": "EJAAZI",
+        "image": "static/images/arabic/EJAAZI.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-8"
+    },
+    {
+        "name_ar": "اغراء",
+        "name_en": "Ighra",
+        "image": "static/images/arabic/Ighra.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-9"
+    },
+    {
+        "name_ar": "الفارس",
+        "name_en": "AL FARIS",
+        "image": "static/images/arabic/AL FARIS.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-10"
+    },
+    {
+        "name_ar": "المسني",
+        "name_en": "TOUCH ME",
+        "image": "static/images/arabic/TOUCH ME.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-11"
+    },
+    {
+        "name_ar": "انا الابيض",
+        "name_en": "I AM WHITE",
+        "image": "static/images/arabic/I AM WHITE.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-12"
+    },
+    {
+        "name_ar": "بخور",
+        "name_en": "BUKHAUR",
+        "image": "static/images/arabic/BUKHAUR.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-2-1"
+    },
+    {
+        "name_ar": "بديع العود ",
+        "name_en": "BADE'E AL OUD",
+        "image": "static/images/arabic/BADE'E AL OUD.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-2-2"
+    },
+    {
+        "name_ar": "بلو اجمل",
+        "name_en": "BLUE AJMAL",
+        "image": "static/images/arabic/BLUE AJMAL.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-2-3"
+    },
+    {
+        "name_ar": "تي روز",
+        "name_en": "TEA ROSE",
+        "image": "static/images/arabic/TEA ROSE.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-2-4"
+    },
+    {
+        "name_ar": "جذور العود ",
+        "name_en": "OUD ROOTS",
+        "image": "static/images/arabic/OUD ROOTS.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-2-5"
+    },
+    {
+        "name_ar": "حريم السلطان",
+        "name_en": "HAREM AL SULTAN",
+        "image": "static/images/arabic/HAREM AL SULTAN.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-2-6"
+    },
+    {
+        "name_ar": "اجمل",
+        "name_en": "AGMAL",
+        "image": "static/images/arabic/AGMAL.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-2-7"
+    },
+    {
+        "name_ar": "خمرة",
+        "name_en": "KHUMRA",
+        "image": "static/images/arabic/KHUMRA.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-2-8"
+    },
+    {
+        "name_ar": "خمرة قهوة",
+        "name_en": "KHUMRA QAHWA",
+        "image": "static/images/arabic/KHUMRA QAHWA.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-2-9"
+    },
+    {
+        "name_ar": "خنجر",
+        "name_en": "Khanjar",
+        "image": "static/images/arabic/Khanjar.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-2-10"
+    },
+    {
+        "name_ar": "دارج رصاصي",
+        "name_en": "DAREJ RASASI",
+        "image": "static/images/arabic/DAREJ RASASI.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-2-11"
+    },
+    {
+        "name_ar": "دعاء الجنة",
+        "name_en": "DUA'A ALJANAH",
+        "image": "static/images/arabic/DUA'A ALJANAH.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-2-12"
+    },
+    {
+        "name_ar": "زهرة الشمام",
+        "name_en": "Melon flower",
+        "image": "static/images/arabic/Melon flower.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-2-12"
+    },
+    {
+        "name_ar": "رغبة للرجال ",
+        "name_en": "RAGBA FOR MEN",
+        "image": "static/images/arabic/RAGBA FOR MEN.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "رمز اللطافة سلفر",
+        "name_en": "RAMZ AL LATAFA SILVER",
+        "image": "static/images/arabic/RAMZ AL LATAFA SILVER.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "روز باريس",
+        "name_en": "ROSE PARIS",
+        "image": "static/images/arabic/ROSE PARIS.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "زعفران",
+        "name_en": "ZAFFARAN",
+        "image": "static/images/arabic/ZAFFARAN.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 1000,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "زهرة الخليج",
+        "name_en": "ZAHRET AL KHALIJ",
+        "image": "static/images/arabic/ZAHRET AL KHALIJ.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "سلطان العطور",
+        "name_en": "SULTAN AL OTOUR",
+        "image": "static/images/arabic/SULTAN AL OTOUR.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "شمس الامارات",
+        "name_en": "SHAMS AL EMARAT",
+        "image": "static/images/arabic/SHAMS AL EMARAT.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-3-9"
+    },
+    {
+        "name_ar": "شهرة",
+        "name_en": "SHUHRA",
+        "image": "static/images/arabic/SHUHRA.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "شيخ الشيوخ",
+        "name_en": "SHIKH AL SHUYKH",
+        "image": "static/images/arabic/SHIKH AL SHUYKH.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "شيخة",
+        "name_en": "SHEIKHAH",
+        "image": "static/images/arabic/SHEIKHAH.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "صندل الاصيل",
+        "name_en": "SANDAL Al-Aseel",
+        "image": "static/images/arabic/SANDAL AASAL.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 1000,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "عروسة الخليج",
+        "name_en": "AROOSAH ALKHALEEJ",
+        "image": "static/images/arabic/AROOSAH ALKHALEEJ.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 1000,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "عنبر",
+        "name_en": "AMBER",
+        "image": "static/images/arabic/AMBER.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "عود ابيض",
+        "name_en": "WHITE OUD",
+        "image": "static/images/arabic/WHITE OUD.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "عود ابيض ثقيل",
+        "name_en": "WHITE OUD",
+        "image": "static/images/arabic/WHITE OUD.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 1000,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "عود المدينة",
+        "name_en": "OUD ALMADINA",
+        "image": "static/images/arabic/OUD ALMADINA.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 1000,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "عود عطر",
+        "name_en": "OUD OTOR",
+        "image": "static/images/arabic/OUD OTOR.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "عود عنبر",
+        "name_en": "OUD AMBER",
+        "image": "static/images/arabic/OUD AMBER.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "عود كمبودي",
+        "name_en": "OUD CAMBODIE",
+        "image": "static/images/arabic/OUD CAMBODIE.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 1000,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "عود مود",
+        "name_en": "OUD MOOD",
+        "image": "static/images/arabic/OUD MOOD.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "فانيلا",
+        "name_en": "VANILLA",
+        "image": "static/images/arabic/VANILLA.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "فواكه سعودي",
+        "name_en": "Saudi Fruits",
+        "image": "static/images/arabic/Saudi Fruits.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "قصة اكويا",
+        "name_en": "GISSAH AKOYA",
+        "image": "static/images/arabic/GISSAH AKOYA.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "قصة امبريال",
+        "name_en": "Gissah Imperial",
+        "image": "static/images/arabic/Gissah Imperial.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "عساف وايلد كولت",
+        "name_en": "Wild Colt Assaf",
+        "image": "static/images/arabic/Wild Colt Assaf.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "كشخة",
+        "name_en": "KASHA",
+        "image": "static/images/arabic/KASHA.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "لهب سكسي",
+        "name_en": "LAHAB SEXY",
+        "image": "static/images/arabic/LAHAB SEXY.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "ليل ملكي",
+        "name_en": "LAIL MALKEY ",
+        "image": "static/images/arabic/LAIL MALKEY .webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "مخلط الحرمين",
+        "name_en": "MUKHALAT AL HARAMIN",
+        "image": "static/images/arabic/MUKHALAT AL HARAMIN.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "مخلط الكعبة",
+        "name_en": "MUKHALAT AL KAABA",
+        "image": "static/images/arabic/MUKHALAT AL KAABA.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "مخلط ملكي",
+        "name_en": "MUKHALAT MALAKI",
+        "image": "static/images/arabic/MUKHALAT MALAKI.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "مسك ابيض",
+        "name_en": "WHITE MUSK",
+        "image": "static/images/arabic/WHITE MUSK.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "مسك اسود",
+        "name_en": "MISK ASWAD",
+        "image": "static/images/arabic/MISK ASWAD.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "مسك اصفر",
+        "name_en": "YALLOW MUSK",
+        "image": "static/images/arabic/YALLOW MUSK.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "مسك احمر",
+        "name_en": "RED MUSK",
+        "image": "static/images/arabic/RED MUSK.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "مسك الرحاب",
+        "name_en": "MUSK ALREHAB",
+        "image": "static/images/arabic/MUSK ALREHAB.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "مسك الورد",
+        "name_en": "FLOWEER MUSK",
+        "image": "static/images/arabic/FLOWEER MUSK.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "مسك عمبري",
+        "name_en": "AMBARE MUSK",
+        "image": "static/images/arabic/AMBARE MUSK.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "مضاوي",
+        "name_en": "Madawi",
+        "image": "static/images/arabic/Madawi.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "نجدية",
+        "name_en": "NAJDIA",
+        "image": "static/images/arabic/NAJDIA.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "هيرش لهب",
+        "name_en": "HERSH LAHAB",
+        "image": "static/images/arabic/HERSH LAHAB.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "بوا امبريال",
+        "name_en": "Bois Impérial",
+        "image": "static/images/arabic/Bois Impérial.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "ورد طائفي",
+        "name_en": "Ward Taifi",
+        "image": "static/images/arabic/Ward Taifi.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "وشوشة",
+        "name_en": "WASHOUSHA",
+        "image": "static/images/arabic/WASHOUSHA.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "وصال ",
+        "name_en": "WESAL",
+        "image": "static/images/arabic/WESAL.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "يارا",
+        "name_en": "Yara",
+        "image": "static/images/arabic/Yara.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "يارا موي",
+        "name_en": "YARA MOI",
+        "image": "static/images/arabic/YARA MOI.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "يارا كاندي",
+        "name_en": "YARA CANDY",
+        "image": "static/images/arabic/YARA CANDY.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    },
+    {
+        "name_ar": "ياسمين",
+        "name_en": "JASMINE",
+        "image": "static/images/arabic/JASMINE.webp",
+        "gender": "Men",
+        "oil_type": "عربي",
+        "price": 60,
+        "num": "28-1-1"
+    }
+]

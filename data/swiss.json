@@ -1,0 +1,281 @@
+[
+  {
+    "name_ar": "الترا ميل",
+    "name_en": "ULTRA MALE",
+    "image": "app/static/images/swiss/ULTRA MALE.webp",
+    "gender": "Men",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-1-1"
+  },
+  {
+    "name_ar": "الثائر",
+    "name_en": "ALTHAIR",
+    "image": "app/static/images/swiss/ALTHAIR.webp",
+    "gender": "Men",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-1-2"
+  },
+  {
+    "name_ar": "انفكتوس فيكتوري",
+    "name_en": "INVICTUS VICTORY",
+    "image": "app/static/images/swiss/INVICTUS VICTORY.webp",
+    "gender": "Men",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-1-3"
+  },
+  {
+    "name_ar": "بربري هير",
+    "name_en": "BURBERRY HER",
+    "image": "app/static/images/swiss/BURBERRY HER.webp",
+    "gender": "Women",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-1-4"
+  },
+  {
+    "name_ar": "بلاك اوبيوم",
+    "name_en": "BLACK OPIUM",
+    "image": "app/static/images/swiss/BLACK OPIUM.webp",
+    "gender": "Women",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-1-5"
+  },
+  {
+    "name_ar": "بلو شانيل",
+    "name_en": "BLUE CHANEL",
+    "image": "app/static/images/swiss/BLUE CHANEL.webp",
+    "gender": "Men",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-1-6"
+  },
+  {
+    "name_ar": "بومب شيل انتنس",
+    "name_en": "BOMBSHELL INTENSE",
+    "image": "app/static/images/swiss/BOMBSHELL INTENSE.webp",
+    "gender": "Women",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-1-7"
+  },
+  {
+    "name_ar": "جود جيرل",
+    "name_en": "GOOD GIRL",
+    "image": "app/static/images/swiss/GOOD GIRL.webp",
+    "gender": "Women",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-1-8"
+  },
+  {
+    "name_ar": "سترونجر وذ يو",
+    "name_en": "STRONGER WITH YOU",
+    "image": "app/static/images/swiss/STRONGER WITH YOU.webp",
+    "gender": "Men",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-1-9"
+  },
+  {
+    "name_ar": "سكاندل رجالي",
+    "name_en": "SCANDAL MEN",
+    "image": "app/static/images/swiss/SCANDAL MEN.webp",
+    "gender": "Men",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-2-1"
+  },
+  {
+    "name_ar": "سكاندل ستاتي",
+    "name_en": "SCANDAL WOMEN",
+    "image": "app/static/images/swiss/SCANDAL WOMEN.webp",
+    "gender": "Women",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-2-2"
+  },
+  {
+    "name_ar": "سوفاج",
+    "name_en": "SUVAGE",
+    "image": "app/static/images/swiss/SUVAGE.webp",
+    "gender": "Men",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-2-3"
+  },
+  {
+    "name_ar": "فلورا جوتشي",
+    "name_en": "FLORA GUCCI",
+    "image": "app/static/images/swiss/FLORA GUCCI.webp",
+    "gender": "Women",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-2-4"
+  },
+  {
+    "name_ar": "لافي بيل",
+    "name_en": "LA VIE EST BELLE",
+    "image": "app/static/images/swiss/LA VIE EST BELLE.webp",
+    "gender": "Women",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-2-5"
+  },
+  {
+    "name_ar": "ليبرا انتنس",
+    "name_en": "LIBRE INTENSE",
+    "image": "app/static/images/swiss/LIBRE INTENSE.webp",
+    "gender": "Women",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-2-6"
+  },
+  {
+    "name_ar": "ماي واي",
+    "name_en": "MY WAY",
+    "image": "app/static/images/swiss/MY WAY.webp",
+    "gender": "Women",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-2-7"
+  },
+  {
+    "name_ar": "مس ديور",
+    "name_en": "MISS DIOR",
+    "image": "app/static/images/swiss/MISS DIOR.webp",
+    "gender": "Women",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-2-8"
+  },
+  {
+    "name_ar": "هوجو بوس",
+    "name_en": "HUGO BOSS",
+    "image": "app/static/images/swiss/HUGO BOSS.webp",
+    "gender": "Men",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-2-9"
+  },
+  {
+    "name_ar": "ون مليون لاكي",
+    "name_en": "ONE MILLION LUCKY",
+    "image": "app/static/images/swiss/ONE MILLION LUCKY.webp",
+    "gender": "Men",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-3-1"
+  },
+  {
+    "name_ar": "يو انتنسلي",
+    "name_en": "STRONGER WITH YOU INTENSELY",
+    "image": "app/static/images/swiss/STRONGER WITH YOU INTENSELY.webp",
+    "gender": "Men",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-3-2"
+  },
+  {
+    "name_ar": "خمرة جوفيدان",
+    "name_en": "Khamra",
+    "image": "app/static/images/swiss/KHUMRA.webp",
+    "gender": "Men",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-4-1"
+  },
+  {
+    "name_ar": "واي جوفيدان",
+    "name_en": "Y",
+    "image": "app/static/images/swiss/Y.webp",
+    "gender": "Men",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-4-2"
+  },
+  {
+    "name_ar": "سوفاج جوفيدان",
+    "name_en": "SUVAGE",
+    "image": "app/static/images/swiss/SUVAGE.webp",
+    "gender": "Men",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-4-3"
+  },
+  {
+    "name_ar": "توم  فورد عود جوفيدان",
+    "name_en": "Tome Ford Oud",
+    "image": "app/static/images/swiss/Tome Ford Oud.webp",
+    "gender": "Men",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-4-4"
+  },
+  {
+    "name_ar": "ليبرا جوفيدان",
+    "name_en": "LIBRE",
+    "image": "app/static/images/swiss/LIBRE.webp",
+    "gender": "Women",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-4-5"
+  },
+  {
+    "name_ar": "كلوب دي نويت انتنس جوفيدان",
+    "name_en": "Club de Nuit Intnes",
+    "image": "app/static/images/swiss/Club de Nuit Intnes.webp",
+    "gender": "Men",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-4-6"
+  },
+  {
+    "name_ar": "بلاك اوبيوم جوفيدان",
+    "name_en": "BLACK OPIUM",
+    "image": "app/static/images/swiss/BLACK OPIUM.webp",
+    "gender": "Women",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-4-7"
+  },
+  {
+    "name_ar": "جود جيرل جوفيدان",
+    "name_en": "GOOD GIRL",
+    "image": "app/static/images/swiss/GOOD GIRL.webp",
+    "gender": "Women",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "1-4-8"
+  },
+  {
+    "name_ar": "بلو شانيل جوفيدان",
+    "name_en": "BLEU DE CAHNEL",
+    "image": "app/static/images/swiss/BLUE CHANEL.webp",
+    "gender": "Men",
+    "oil_type": "سويسري",
+    "price": 80,
+    "num": "1-4-9"
+  },
+  {
+    "name_ar": "جادور جوفيدان",
+    "name_en": "J'adore",
+    "image": "app/static/images/swiss/J'adore.webp",
+    "gender": "Women",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "2-4-1"
+  },
+  {
+    "name_ar": "فانيلا كاندي جوفيدان",
+    "name_en": "Vanilla Candy",
+    "image": "app/static/images/swiss/Vanilla Candy.webp",
+    "gender": "Women",
+    "oil_type": "سويسري",
+    "price": 70,
+    "num": "2-4-2"
+  }
+]
