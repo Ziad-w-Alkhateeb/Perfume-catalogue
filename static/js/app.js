@@ -28,6 +28,8 @@ let isDark = localStorage.getItem('perfumeTheme') === 'dark';
 let loadErrors = [];
 let categoryNames = [];
 let isInitialized = false;
+let currentPage = 1;
+const ITEMS_PER_PAGE = 12;
 
 // ==========================================================================
 // INITIALIZATION
@@ -197,7 +199,7 @@ async function loadData() {
         });
 
         const results = await Promise.all(loadPromises);
-        allPerfumes = results.flat();
+        allPerfumes = shuffleArray(results.flat());
 
         const isFileProtocol = window.location.protocol === 'file:';
         const hasErrors = loadErrors.length > 0;
@@ -230,40 +232,54 @@ async function loadData() {
 // ==========================================================================
 function renderPerfumes(perfumes) {
     const grid = document.getElementById('perfumeGrid');
+    const paginationContainer = document.getElementById('paginationContainer');
     if (!grid) return;
 
     if (perfumes.length === 0) {
         showEmptyState('noResultsTitle', 'noResultsDesc');
+        if (paginationContainer) paginationContainer.innerHTML = '';
         return;
     }
 
+    // 1. Calculate pagination values
+    const totalItems = perfumes.length;
+    const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE);
+    
+    // Safety check on currentPage bounds
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, totalItems);
+    const paginatedItems = perfumes.slice(startIndex, endIndex);
+
     const t = i18n[currentLang];
 
-    grid.innerHTML = perfumes.map((perfume, index) => {
-        // Switch layout names based on application language state
+    // 2. Render cards for paginated items
+    grid.innerHTML = paginatedItems.map((perfume, index) => {
+        // Calculate the absolute index in filteredPerfumes array
+        const absoluteIndex = startIndex + index;
         const isArabic = currentLang === 'ar';
         const primaryName = isArabic ? perfume.name_ar : perfume.name_en;
         const secondaryName = isArabic ? perfume.name_en : perfume.name_ar;
-
-        // Custom micro-animation delay list slide-in behavior
         const delay = Math.min(index * 0.04, 0.4);
 
         return `
-        <div class="perfume-card" onclick="openModal(${index})" style="animation-delay: ${delay}s">
+        <div class="perfume-card" onclick="openModal(${absoluteIndex})" style="animation-delay: ${delay}s">
             <div class="card-image-wrapper">
-                <img class="card-image"
-                     src="${perfume.image}"
-                     alt="${escapeHtml(perfume.name_en)}"
-                     loading="lazy"
-                     onerror="this.src='data:image/svg+xml,&lt;svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'320\'&gt;&lt;rect fill=\'%23f0f0f0\' width=\'400\' height=\'320\'/&gt;&lt;text fill=\'%23999\' font-family=\'sans-serif\' font-size=\'16\' x=\'50%\' y=\'50%\' text-anchor=\'middle\'&gt;No Image&lt;/text&gt;&lt;/svg&gt;'">
+                 <img class="card-image"
+                      src="${perfume.image}"
+                      alt="${escapeHtml(perfume.name_en)}"
+                      loading="lazy"
+                      onerror="this.onerror=null; this.src='static/images/logo.webp';">
             </div>
             <div class="card-body">
                 <div class="card-header">
-                    <div>
+                    <div class="card-title-container">
                         <div class="card-title-primary">${escapeHtml(primaryName)}</div>
                         <div class="card-title-secondary">${escapeHtml(secondaryName)}</div>
                     </div>
-                    <div class="card-price">${perfume.price} ${t.currency}</div>
+                    <div class="card-code">${perfume.num}</div>
                 </div>
                 <div class="card-meta">
                     <span class="badge badge-gender-${perfume.gender.toLowerCase()}">${translateGender(perfume.gender)}</span>
@@ -274,7 +290,57 @@ function renderPerfumes(perfumes) {
         `;
     }).join('');
 
+    // 3. Render pagination controls
+    if (paginationContainer) {
+        if (totalPages <= 1) {
+            paginationContainer.innerHTML = '';
+        } else {
+            paginationContainer.innerHTML = buildPaginationHTML(currentPage, totalPages);
+        }
+    }
+
     updateStats();
+}
+
+function buildPaginationHTML(current, total) {
+    let html = '';
+
+    // First and Prev buttons
+    const prevDisabled = current === 1 ? 'disabled' : '';
+    html += `<button class="page-btn ${prevDisabled}" onclick="changePage(1)" title="First Page">«</button>`;
+    html += `<button class="page-btn ${prevDisabled}" onclick="changePage(${current - 1})" title="Previous Page">‹</button>`;
+
+    // Determine range of page buttons to show (e.g. up to 5 buttons)
+    let startPage = Math.max(1, current - 2);
+    let endPage = Math.min(total, startPage + 4);
+    
+    // Adjust start page if we are near the end
+    if (endPage - startPage < 4) {
+        startPage = Math.max(1, endPage - 4);
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+        const activeClass = i === current ? 'active' : '';
+        html += `<button class="page-btn ${activeClass}" onclick="changePage(${i})">${i}</button>`;
+    }
+
+    // Next and Last buttons
+    const nextDisabled = current === total ? 'disabled' : '';
+    html += `<button class="page-btn ${nextDisabled}" onclick="changePage(${current + 1})" title="Next Page">›</button>`;
+    html += `<button class="page-btn ${nextDisabled}" onclick="changePage(${total})" title="Last Page">»</button>`;
+
+    return html;
+}
+
+function changePage(page) {
+    currentPage = page;
+    renderPerfumes(filteredPerfumes);
+
+    // Smooth scroll to top of grid
+    const filtersBar = document.getElementById('filtersBar');
+    if (filtersBar) {
+        filtersBar.scrollIntoView({ behavior: 'smooth' });
+    }
 }
 
 function translateGender(gender) {
@@ -348,7 +414,10 @@ function showServerRequired() {
 // ==========================================================================
 // SEARCH, FILTER & SORT SYSTEM
 // ==========================================================================
-function applyFilters() {
+function applyFilters(resetPage = true) {
+    if (resetPage) {
+        currentPage = 1;
+    }
     let result = [...allPerfumes];
 
     // 1. Filter by designated categories (JSON source aggregation)
@@ -373,7 +442,8 @@ function applyFilters() {
             result.sort((a, b) => a.oil_type.localeCompare(b.oil_type) || a.name_en.localeCompare(b.name_en));
             break;
         default:
-            result.sort((a, b) => a.name_en.localeCompare(b.name_en));
+            // Do not sort, preserving the initial randomized stable array order
+            break;
     }
 
     filteredPerfumes = result;
@@ -396,18 +466,97 @@ function openModal(index) {
     if (!perfume) return;
 
     const t = i18n[currentLang];
+    const isArabic = currentLang === 'ar';
 
-    // Load data properties into template fields
+    // 1. Load data properties into template fields
     document.getElementById('modalImage').src = perfume.image;
     document.getElementById('modalTitleEn').textContent = perfume.name_en;
     document.getElementById('modalTitleAr').textContent = perfume.name_ar;
-    document.getElementById('modalPrice').textContent = perfume.price + ' ' + t.currency;
     document.getElementById('modalGender').textContent = translateGender(perfume.gender);
     document.getElementById('modalType').textContent = perfume.oil_type;
     document.getElementById('modalNum').textContent = perfume.num;
     document.getElementById('modalCollection').textContent = t[perfume.collection] || perfume.collection;
 
-    // Animate layouts into display
+    // 2. Resolve Description
+    let desc = isArabic ? perfume.description_ar : perfume.description_en;
+    if (!desc) {
+        if (isArabic) {
+            desc = `عطر فاخر ومميز يجسد التراث الأصيل لـ ${perfume.oil_type}. تم تصميمه بعناية فائقة ليلائم الذوق الرفيع للـ ${translateGender(perfume.gender)}، مع تباينات رائعة تدوم طويلاً وتمنحك حضوراً ساحراً.`;
+        } else {
+            desc = `A luxury fragrance that perfectly embodies the rich heritage of ${perfume.oil_type} scents. Meticulously crafted for ${perfume.gender.toLowerCase()}, it opens with vibrant notes leading into a warm, lingering and sophisticated trail.`;
+        }
+    }
+    document.getElementById('modalDesc').textContent = desc;
+
+    // 3. Resolve Scent Character
+    let char = isArabic ? perfume.character_ar : perfume.character_en;
+    if (!char) {
+        if (perfume.oil_type === 'عربي') {
+            char = isArabic ? 'خشبي، شرقي ودافئ' : 'Woody, Oriental & Warm';
+        } else if (perfume.gender === 'Women') {
+            char = isArabic ? 'زهري، حلو وناعم' : 'Floral, Sweet & Soft';
+        } else {
+            char = isArabic ? 'منعش، حمضيات وأخشاب' : 'Fresh, Citrus & Woods';
+        }
+    }
+    document.getElementById('modalCharacter').textContent = char;
+
+    // 4. Resolve Olfactory Pyramid Notes (Top, Heart, Base)
+    let notesTop = isArabic ? perfume.notes_top_ar : perfume.notes_top_en;
+    if (!notesTop) {
+        if (perfume.oil_type === 'عربي') {
+            notesTop = isArabic ? 'البرغموت، الزعفران، الهيل' : 'Bergamot, Saffron, Cardamom';
+        } else if (perfume.gender === 'Women') {
+            notesTop = isArabic ? 'الفراولة، الياسمين، الحمضيات' : 'Strawberry, Jasmine, Citrus';
+        } else {
+            notesTop = isArabic ? 'الليمون، النعناع، الجريب فروت' : 'Lemon, Mint, Grapefruit';
+        }
+    }
+    document.getElementById('modalNotesTop').textContent = notesTop;
+
+    let notesHeart = isArabic ? perfume.notes_heart_ar : perfume.notes_heart_en;
+    if (!notesHeart) {
+        if (perfume.oil_type === 'عربي') {
+            notesHeart = isArabic ? 'الورد التركي، الياسمين، العود الخفيف' : 'Turkish Rose, Jasmine, Soft Oud';
+        } else if (perfume.gender === 'Women') {
+            notesHeart = isArabic ? 'الفانيليا، الغاردينيا، أزهار البرتقال' : 'Vanilla, Gardenia, Orange Blossom';
+        } else {
+            notesHeart = isArabic ? 'الزنجبيل، اللافندر، المريمية' : 'Ginger, Lavender, Sage';
+        }
+    }
+    document.getElementById('modalNotesHeart').textContent = notesHeart;
+
+    let notesBase = isArabic ? perfume.notes_base_ar : perfume.notes_base_en;
+    if (!notesBase) {
+        if (perfume.oil_type === 'عربي') {
+            notesBase = isArabic ? 'خشب الصندل، العنبر، المسك، العود الفاخر' : 'Sandalwood, Amber, Musk, Premium Oud';
+        } else if (perfume.gender === 'Women') {
+            notesBase = isArabic ? 'المسك الأبيض، حبوب التونكا، خشب الأرز' : 'White Musk, Tonka Bean, Cedarwood';
+        } else {
+            notesBase = isArabic ? 'خشب الصندل، الباتشولي، المسك، نجيل الهند' : 'Sandalwood, Patchouli, Musk, Vetiver';
+        }
+    }
+    document.getElementById('modalNotesBase').textContent = notesBase;
+
+    // 5. Resolve Manufacturer/Brand
+    let brand = isArabic ? perfume.manufacturer_ar : perfume.manufacturer_en;
+    if (!brand) {
+        brand = t.fallbackBrand;
+    }
+    document.getElementById('modalBrand').textContent = brand;
+
+    // 6. Reset Interactive Tabs to default Overview panel
+    const tabs = document.querySelectorAll('.modal-tab-btn');
+    const panels = document.querySelectorAll('.modal-tab-panel');
+    tabs.forEach(tBtn => tBtn.classList.remove('active'));
+    panels.forEach(pnl => pnl.classList.remove('active'));
+    
+    const defaultTab = document.querySelector('.modal-tab-btn[data-tab="overview"]');
+    const defaultPanel = document.getElementById('panelOverview');
+    if (defaultTab) defaultTab.classList.add('active');
+    if (defaultPanel) defaultPanel.classList.add('active');
+
+    // 7. Animate overlays and body scroll into display
     document.getElementById('modalOverlay').classList.add('active');
     document.body.style.overflow = 'hidden';
 }
@@ -424,19 +573,22 @@ function closeModal() {
 function openSearch() {
     const overlay = document.getElementById('searchOverlay');
     const input = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
     
     if (overlay) overlay.classList.add('active');
+    if (searchBtn) searchBtn.classList.add('active');
     if (input) {
         input.focus();
         input.value = searchQuery; // Preserve query string
     }
-    document.body.style.overflow = 'hidden';
 }
 
 function closeSearch() {
     const overlay = document.getElementById('searchOverlay');
+    const searchBtn = document.getElementById('searchBtn');
+    
     if (overlay) overlay.classList.remove('active');
-    document.body.style.overflow = '';
+    if (searchBtn) searchBtn.classList.remove('active');
 }
 
 // ==========================================================================
@@ -514,6 +666,14 @@ function matchesFuzzy(query, perfume) {
     });
 }
 
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 // ==========================================================================
 // SECURITY UTILITIES
 // ==========================================================================
@@ -530,19 +690,47 @@ function escapeHtml(text) {
 function setupEventListeners() {
     // 1. Search Actions
     const searchBtn = document.getElementById('searchBtn');
-    if (searchBtn) searchBtn.addEventListener('click', openSearch);
-    
     const searchOverlay = document.getElementById('searchOverlay');
-    if (searchOverlay) {
-        searchOverlay.addEventListener('click', (e) => {
-            if (e.target === e.currentTarget) closeSearch();
+    const searchInput = document.getElementById('searchInput');
+    const searchCloseBtn = document.getElementById('searchCloseBtn');
+    const searchClearBtn = document.getElementById('searchClearBtn');
+
+    if (searchBtn) {
+        searchBtn.addEventListener('click', () => {
+            if (searchOverlay && searchOverlay.classList.contains('active')) {
+                closeSearch();
+            } else {
+                openSearch();
+            }
         });
     }
-    
-    const searchInput = document.getElementById('searchInput');
+
+    if (searchCloseBtn) {
+        searchCloseBtn.addEventListener('click', closeSearch);
+    }
+
+    if (searchClearBtn) {
+        searchClearBtn.addEventListener('click', () => {
+            if (searchInput) {
+                searchInput.value = '';
+                searchQuery = '';
+                searchClearBtn.classList.remove('visible');
+                searchInput.focus();
+                applyFilters();
+            }
+        });
+    }
+
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
             searchQuery = e.target.value;
+            if (searchClearBtn) {
+                if (searchQuery.trim().length > 0) {
+                    searchClearBtn.classList.add('visible');
+                } else {
+                    searchClearBtn.classList.remove('visible');
+                }
+            }
             applyFilters();
         });
     }
@@ -591,6 +779,22 @@ function setupEventListeners() {
             if (e.target === e.currentTarget) closeModal();
         });
     }
+
+    // 3.5 Interactive Modal Tab Switching
+    const tabs = document.querySelectorAll('.modal-tab-btn');
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(tBtn => tBtn.classList.remove('active'));
+            tab.classList.add('active');
+            
+            const target = tab.dataset.tab;
+            const panels = document.querySelectorAll('.modal-tab-panel');
+            panels.forEach(pnl => pnl.classList.remove('active'));
+            
+            const activePanel = document.getElementById('panel' + target.charAt(0).toUpperCase() + target.slice(1));
+            if (activePanel) activePanel.classList.add('active');
+        });
+    });
 
     // 4. Keyboard Shortcuts Hook
     document.addEventListener('keydown', (e) => {

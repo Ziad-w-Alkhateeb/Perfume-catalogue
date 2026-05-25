@@ -162,15 +162,6 @@
         "num": "28-2-6"
     },
     {
-        "name_ar": "اجمل",
-        "name_en": "AGMAL",
-        "image": "static/images/arabic/AGMAL.webp",
-        "gender": "Men",
-        "oil_type": "عربي",
-        "price": 60,
-        "num": "28-2-7"
-    },
-    {
         "name_ar": "خمرة",
         "name_en": "KHUMRA",
         "image": "static/images/arabic/KHUMRA.webp",

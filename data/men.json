@@ -6,7 +6,19 @@
     "gender": "Men",
     "oil_type": "فرنسي",
     "price": 50,
-    "num": "22-1-1"
+    "num": "22-1-1",
+    "description_en": "A modern, vibrant fresh scent representing the youthful energy of New York. Distinctly magnetic and sophisticated.",
+    "description_ar": "عطر عصري ونابض بالحياة يمثل الطاقة الشبابية لمدينة نيويورك. عطر مغناطيسي راقٍ وجذاب.",
+    "character_en": "Fresh, Energetic & Urban",
+    "character_ar": "منعش، مفعم بالحيوية وحضري",
+    "notes_top_en": "Green Leaves, Grapefruit, Spice Petals",
+    "notes_top_ar": "الأوراق الخضراء، الجريب فروت، بتلات التوابل",
+    "notes_heart_en": "Ginger, Green Pepper, Gardenia",
+    "notes_heart_ar": "الزنجبيل، الفلفل الأخضر، الغاردينيا",
+    "notes_base_en": "Sandalwood, White Musk, Incense",
+    "notes_base_ar": "خشب الصندل، المسك الأبيض، البخور",
+    "manufacturer_en": "Carolina Herrera",
+    "manufacturer_ar": "كارولينا هيريرا"
   },
   {
     "name_ar": "212 GLAM",
@@ -15,7 +27,19 @@
     "gender": "Men",
     "oil_type": "فرنسي",
     "price": 50,
-    "num": "22-1-2"
+    "num": "22-1-2",
+    "description_en": "A lively and sparkling nocturnal scent. Crafted for active men who seek an elegant, magnetic contrast.",
+    "description_ar": "عطر ليلي حيوي ومتألق. مصمم للرجل النشط الذي يبحث عن تباين أنيق ومغناطيسي جذاب.",
+    "character_en": "Sweet, Woody & Magnetic",
+    "character_ar": "حلو، خشبي ومغناطيسي",
+    "notes_top_en": "Chocolate, Cocoa Bean",
+    "notes_top_ar": "الشوكولاتة، حبوب الكاكاو",
+    "notes_heart_en": "Tonka Bean, Tobacco Leaf",
+    "notes_heart_ar": "حبوب التونكا، أوراق التبغ",
+    "notes_base_en": "Woody Notes, Light Musk",
+    "notes_base_ar": "النوتات الخشبية، المسك الخفيف",
+    "manufacturer_en": "Carolina Herrera",
+    "manufacturer_ar": "كارولينا هيريرا"
   },
   {
     "name_ar": "212 SEXY",
