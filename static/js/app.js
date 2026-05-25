@@ -23,7 +23,7 @@ let filteredPerfumes = [];
 let currentFilter = 'all';
 let currentSort = 'name';
 let searchQuery = '';
-let currentLang = localStorage.getItem('perfumeLang') || 'en';
+let currentLang = localStorage.getItem('perfumeLang') || 'ar';
 let isDark = localStorage.getItem('perfumeTheme') === 'dark';
 let loadErrors = [];
 let categoryNames = [];
@@ -237,6 +237,8 @@ function renderPerfumes(perfumes) {
         return;
     }
 
+    const t = i18n[currentLang];
+
     grid.innerHTML = perfumes.map((perfume, index) => {
         // Switch layout names based on application language state
         const isArabic = currentLang === 'ar';
@@ -261,7 +263,7 @@ function renderPerfumes(perfumes) {
                         <div class="card-title-primary">${escapeHtml(primaryName)}</div>
                         <div class="card-title-secondary">${escapeHtml(secondaryName)}</div>
                     </div>
-                    <div class="card-price">$${perfume.price}</div>
+                    <div class="card-price">${perfume.price} ${t.currency}</div>
                 </div>
                 <div class="card-meta">
                     <span class="badge badge-gender-${perfume.gender.toLowerCase()}">${translateGender(perfume.gender)}</span>
@@ -277,9 +279,7 @@ function renderPerfumes(perfumes) {
 
 function translateGender(gender) {
     const t = i18n[currentLang];
-    if (gender === 'Women') return t.filterWomen || 'Women';
-    if (gender === 'Men') return t.filterMen || 'Men';
-    return gender;
+    return t[gender] || gender;
 }
 
 // ==========================================================================
@@ -358,13 +358,7 @@ function applyFilters() {
 
     // 2. Filter by search input match
     if (searchQuery) {
-        const q = searchQuery.toLowerCase();
-        result = result.filter(p =>
-            p.name_en.toLowerCase().includes(q) ||
-            p.name_ar.includes(q) ||
-            p.oil_type.toLowerCase().includes(q) ||
-            p.num.includes(q)
-        );
+        result = result.filter(p => matchesFuzzy(searchQuery, p));
     }
 
     // 3. Sort dynamic results array
@@ -407,7 +401,7 @@ function openModal(index) {
     document.getElementById('modalImage').src = perfume.image;
     document.getElementById('modalTitleEn').textContent = perfume.name_en;
     document.getElementById('modalTitleAr').textContent = perfume.name_ar;
-    document.getElementById('modalPrice').textContent = '$' + perfume.price;
+    document.getElementById('modalPrice').textContent = perfume.price + ' ' + t.currency;
     document.getElementById('modalGender').textContent = translateGender(perfume.gender);
     document.getElementById('modalType').textContent = perfume.oil_type;
     document.getElementById('modalNum').textContent = perfume.num;
@@ -456,6 +450,68 @@ function openSettings() {
 function closeSettings() {
     const wrapper = document.getElementById('settingsWrapper');
     if (wrapper) wrapper.classList.remove('active');
+}
+
+// ==========================================================================
+// FUZZY SEARCH UTILITIES
+// ==========================================================================
+function getLevenshteinDistance(s1, s2) {
+    const len1 = s1.length;
+    const len2 = s2.length;
+    const matrix = [];
+
+    for (let i = 0; i <= len1; i++) {
+        matrix[i] = [i];
+    }
+    for (let j = 0; j <= len2; j++) {
+        matrix[0][j] = j;
+    }
+
+    for (let i = 1; i <= len1; i++) {
+        for (let j = 1; j <= len2; j++) {
+            const cost = s1[i - 1] === s2[j - 1] ? 0 : 1;
+            matrix[i][j] = Math.min(
+                matrix[i - 1][j] + 1,       // deletion
+                matrix[i][j - 1] + 1,       // insertion
+                matrix[i - 1][j - 1] + cost // substitution
+            );
+        }
+    }
+    return matrix[len1][len2];
+}
+
+function matchesFuzzy(query, perfume) {
+    if (!query) return true;
+    
+    // Split the query into separate search terms
+    const queryTokens = query.toLowerCase().split(/\s+/).filter(t => t.length > 0);
+    if (queryTokens.length === 0) return true;
+    
+    // Build a target searchable text list from perfume fields
+    const targetText = [
+        perfume.name_en,
+        perfume.name_ar,
+        perfume.oil_type,
+        perfume.num
+    ].join(' ').toLowerCase();
+    
+    // Split target text into words for fine-grained spell checking
+    const targetWords = targetText.split(/\s+/).filter(w => w.length > 0);
+
+    // Verify that EVERY token in the search query matches at least one word/value in the target
+    return queryTokens.every(qToken => {
+        // 1. Check exact partial match (substring, e.g. "ess" in "essence")
+        if (targetText.includes(qToken)) return true;
+        
+        // 2. Check approximate spelling matches for each target word
+        return targetWords.some(tWord => {
+            // Only spelling match if token is at least 3 characters to avoid noisy 1-letter typo matches
+            if (qToken.length < 3) return false;
+            
+            const maxDistance = qToken.length <= 4 ? 1 : (qToken.length <= 7 ? 2 : 3);
+            return getLevenshteinDistance(qToken, tWord) <= maxDistance;
+        });
+    });
 }
 
 // ==========================================================================

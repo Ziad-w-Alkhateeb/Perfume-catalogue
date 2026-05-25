@@ -25,6 +25,7 @@ const i18n = {
         labelType: 'Type',
         labelCode: 'Product Code',
         labelCollection: 'Collection',
+        currency: 'JD',
         noResultsTitle: 'No Results Found',
         noResultsDesc: 'Try adjusting your search or filters.',
         noDataTitle: 'No Data Found',
@@ -47,6 +48,7 @@ const i18n = {
         Niche: 'Niche',
         Swiss: 'Swiss',
         Women: 'Women',
+        Unisex: 'Unisex',
     },
     ar: {
         logo: '\u0645\u062c\u0645\u0648\u0639\u0629 \u0627\u0644\u0639\u0637\u0648\u0631',
@@ -70,6 +72,7 @@ const i18n = {
         labelType: '\u0627\u0644\u0646\u0648\u0639',
         labelCode: '\u0631\u0642\u0645 \u0627\u0644\u0645\u0646\u062a\u062c',
         labelCollection: '\u0627\u0644\u0645\u062c\u0645\u0648\u0639\u0629',
+        currency: '\u062f.\u0623',
         noResultsTitle: '\u0644\u0627 \u062a\u0648\u062c\u062f \u0626\u0646\u062a\u0627\u0626\u062c',
         noResultsDesc: '\u062d\u0627\u0648\u0644 \u062a\u0639\u062f\u064a\u0644 \u0628\u062d\u062b\u0643 \u0623\u0648 \u0627\u0644\u0641\u0644\u0627\u062a\u0631.',
         noDataTitle: '\u0644\u0627 \u062a\u0648\u062c\u062f \u0628\u064a\u0627\u0646\u0627\u062a',
@@ -92,5 +95,6 @@ const i18n = {
         Niche: '\u0646\u064a\u0634',
         Swiss: '\u0633\u0648\u064a\u0633\u0631\u064a',
         Women: '\u0646\u0633\u0627\u0626\u064a',
+        Unisex: '\u0644\u0644\u062c\u0646\u0633\u064a\u0646',
     }
 };
