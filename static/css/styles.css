@@ -490,6 +490,121 @@ body[dir="rtl"] .settings-panel {
     transform: translateX(20px);
 }
 
+.contact-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-option:hover {
+    background: var(--gold-bg);
+}
+
+.contact-option:hover .toggle-icon {
+    color: var(--gold);
+}
+
+.contact-arrow-icon {
+    color: var(--text-muted);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-option:hover .contact-arrow-icon {
+    color: var(--gold);
+    transform: translateX(4px);
+}
+
+body[dir="rtl"] .contact-arrow-icon {
+    transform: rotate(180deg);
+}
+
+body[dir="rtl"] .contact-option:hover .contact-arrow-icon {
+    transform: rotate(180deg) translateX(4px);
+}
+
+/* Social Contact Section */
+.social-contact-section {
+    padding: 0.5rem 0 0;
+}
+
+.social-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+    margin-top: 1.25rem;
+}
+
+.social-icons-wrapper {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.social-icon-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 2px 6px var(--shadow);
+    text-decoration: none;
+}
+
+.social-icon-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.social-icon-btn:hover {
+    transform: translateY(-2px) scale(1.05);
+}
+
+.social-icon-btn:hover svg {
+    transform: scale(1.1);
+}
+
+.social-icon-btn:active {
+    transform: scale(0.95);
+}
+
+/* WhatsApp Hover Styles */
+.social-icon-btn.whatsapp:hover {
+    color: #25D366;
+    border-color: #25D366;
+    background: rgba(37, 211, 102, 0.08);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+}
+
+/* Instagram Hover Styles */
+.social-icon-btn.instagram:hover {
+    color: #E1306C;
+    border-color: #E1306C;
+    background: rgba(225, 48, 108, 0.08);
+    box-shadow: 0 4px 12px rgba(225, 48, 108, 0.25);
+}
+
+/* Facebook Hover Styles */
+.social-icon-btn.facebook:hover {
+    color: #1877F2;
+    border-color: #1877F2;
+    background: rgba(24, 119, 242, 0.08);
+    box-shadow: 0 4px 12px rgba(24, 119, 242, 0.25);
+}
+
 /* ===== FILTERS BAR ===== */
 .filters-bar {
     background: var(--header-bg);
