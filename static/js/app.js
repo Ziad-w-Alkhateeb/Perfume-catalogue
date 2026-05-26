@@ -81,6 +81,12 @@ function applyTranslations() {
         if (t[key]) el.placeholder = t[key];
     });
     
+    // Translate element title tooltips
+    document.querySelectorAll('[data-i18n-title]').forEach(el => {
+        const key = el.getAttribute('data-i18n-title');
+        if (t[key]) el.setAttribute('title', t[key]);
+    });
+    
     // Translate sorting drop-down values
     const sortSelect = document.getElementById('sortSelect');
     if (sortSelect) {
