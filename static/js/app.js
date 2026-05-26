@@ -257,7 +257,7 @@ function renderPerfumes(perfumes) {
 
     // 2. Render cards for paginated items
     grid.innerHTML = paginatedItems.map((perfume, index) => {
-        // Calculate the absolute index in filteredPerfumes array
+        // Store the absolute index in filteredPerfumes as a data attribute
         const absoluteIndex = startIndex + index;
         const isArabic = currentLang === 'ar';
         const primaryName = isArabic ? perfume.name_ar : perfume.name_en;
@@ -265,7 +265,7 @@ function renderPerfumes(perfumes) {
         const delay = Math.min(index * 0.04, 0.4);
 
         return `
-        <div class="perfume-card" onclick="openModal(${absoluteIndex})" style="animation-delay: ${delay}s">
+        <div class="perfume-card" data-index="${absoluteIndex}" style="animation-delay: ${delay}s">
             <div class="card-image-wrapper">
                  <img class="card-image"
                       src="${perfume.image}"
@@ -461,8 +461,11 @@ function updateStats() {
 // ==========================================================================
 // LIGHTBOX DETAIL MODAL
 // ==========================================================================
-function openModal(index) {
-    const perfume = filteredPerfumes[index];
+function openModal(indexOrPerfume) {
+    // Accept either a perfume object directly or a numeric index into filteredPerfumes
+    const perfume = (typeof indexOrPerfume === 'object' && indexOrPerfume !== null)
+        ? indexOrPerfume
+        : filteredPerfumes[indexOrPerfume];
     if (!perfume) return;
 
     const t = i18n[currentLang];
@@ -688,6 +691,17 @@ function escapeHtml(text) {
 // ACTION LISTENERS MATRIX
 // ==========================================================================
 function setupEventListeners() {
+    // 0. Perfume Grid: event delegation for card clicks (uses data-index read at click time)
+    const perfumeGrid = document.getElementById('perfumeGrid');
+    if (perfumeGrid) {
+        perfumeGrid.addEventListener('click', (e) => {
+            const card = e.target.closest('.perfume-card');
+            if (!card) return;
+            const index = parseInt(card.dataset.index, 10);
+            if (!isNaN(index)) openModal(index);
+        });
+    }
+
     // 1. Search Actions
     const searchBtn = document.getElementById('searchBtn');
     const searchOverlay = document.getElementById('searchOverlay');
