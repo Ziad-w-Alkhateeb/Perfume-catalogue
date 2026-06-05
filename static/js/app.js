@@ -872,44 +872,16 @@ function setupEventListeners() {
             
             const activePanel = document.getElementById('panel' + target.charAt(0).toUpperCase() + target.slice(1));
             if (activePanel) activePanel.classList.add('active');
+
+            // Reset scroll positions so the tab content starts at the top
+            const modalContentPanel = document.querySelector('.modal-content-panel');
+            if (modalContentPanel) modalContentPanel.scrollTop = 0;
+            const modalContainer = document.querySelector('.modal-container');
+            if (modalContainer) modalContainer.scrollTop = 0;
         });
     });
 
-    // 3.8 Olfactory Pyramid interactive cross-hover sync
-    const pyramidParts = document.querySelectorAll('.pyramid-part');
-    const labelBlocks = document.querySelectorAll('.pyramid-label-block');
-    
-    if (pyramidParts.length > 0 && labelBlocks.length > 0) {
-        pyramidParts.forEach(part => {
-            part.addEventListener('mouseenter', () => {
-                const tier = part.dataset.tier;
-                labelBlocks.forEach(block => {
-                    if (block.dataset.tier === tier) block.classList.add('highlighted');
-                });
-            });
-            part.addEventListener('mouseleave', () => {
-                const tier = part.dataset.tier;
-                labelBlocks.forEach(block => {
-                    if (block.dataset.tier === tier) block.classList.remove('highlighted');
-                });
-            });
-        });
 
-        labelBlocks.forEach(block => {
-            block.addEventListener('mouseenter', () => {
-                const tier = block.dataset.tier;
-                pyramidParts.forEach(part => {
-                    if (part.dataset.tier === tier) part.classList.add('highlighted');
-                });
-            });
-            block.addEventListener('mouseleave', () => {
-                const tier = block.dataset.tier;
-                pyramidParts.forEach(part => {
-                    if (part.dataset.tier === tier) part.classList.remove('highlighted');
-                });
-            });
-        });
-    }
 
     // 4. Keyboard Shortcuts Hook
     document.addEventListener('keydown', (e) => {

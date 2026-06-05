@@ -650,7 +650,7 @@ body[dir="rtl"] .filters-dropdowns {
 
 .filter-chip {
     padding: 0.6rem 1.25rem;
-    background: var(--card-bg);
+    background: transparent;
     border: 1px solid var(--border);
     border-radius: 24px;
     color: var(--text-muted);
@@ -667,6 +667,7 @@ body[dir="rtl"] .filters-dropdowns {
 .filter-chip:hover {
     border-color: var(--gold-light);
     color: var(--gold);
+    background: var(--gold-bg);
     transform: translateY(-1px);
     box-shadow: 0 4px 8px var(--shadow);
 }
@@ -1049,7 +1050,7 @@ body[dir="rtl"] .card-title-secondary {
     --modal-emerald-glow: rgba(13, 92, 58, 0.15);
     --modal-gold-glow: rgba(212, 163, 89, 0.25);
     
-    background: var(--bg-secondary);
+    background: var(--bg);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     border-radius: 28px;
@@ -1168,69 +1169,66 @@ body[dir="rtl"] .modal-content-panel {
     font-family: 'Noto Naskh Arabic', serif;
 }
 
-/* Gold Divider Line */
-.modal-divider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0.75rem 0 0.25rem;
-    position: relative;
-}
 
-.modal-divider::before,
-.modal-divider::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(to right, transparent, var(--border), transparent);
-}
 
-.modal-divider-dot {
-    color: var(--modal-gold);
-    padding: 0 10px;
-    font-size: 0.95rem;
-    text-shadow: 0 0 5px var(--modal-gold-glow);
-}
-
-/* Luxury Interactive Tabs (Segmented Control style) */
+/* Luxury Interactive Navigation Tabs (Highly Prominent Pill buttons) */
 .modal-tabs {
-    display: flex;
-    gap: 0.25rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     background: var(--bg);
-    padding: 0.3rem;
-    border-radius: 24px;
-    border: 1px solid var(--border);
+    backdrop-filter: var(--blur);
+    -webkit-backdrop-filter: var(--blur);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: -0.5rem;
     margin-bottom: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
+
 
 .modal-tab-btn {
     flex: 1;
-    padding: 0.6rem 1rem;
-    border: 1px solid transparent;
+    padding: 0.7rem 1.25rem;
     background: transparent;
-    border-radius: 20px;
+    border: 1.5px solid var(--border);
+    border-radius: 24px;
+    color: var(--text);
     font-size: 0.88rem;
-    font-weight: 600;
-    color: var(--text-muted);
+    font-weight: 700;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     white-space: nowrap;
     text-align: center;
+    box-shadow: 0 2px 5px var(--shadow);
 }
 
 .modal-tab-btn:hover {
-    color: var(--text);
+    border-color: var(--modal-gold);
+    background: var(--gold-bg);
+    color: var(--modal-emerald);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px var(--shadow);
+}
+
+[data-theme="dark"] .modal-tab-btn:hover {
+    color: var(--modal-gold);
 }
 
 .modal-tab-btn.active {
-    background: var(--card-bg);
-    border-color: var(--border);
-    color: var(--modal-emerald);
-    box-shadow: 0 4px 10px var(--shadow);
+    background: var(--modal-emerald);
+    color: #ffffff;
+    border-color: var(--modal-emerald);
+    box-shadow: 0 4px 12px var(--modal-emerald-glow);
 }
 
 [data-theme="dark"] .modal-tab-btn.active {
-    color: var(--modal-gold);
+    background: var(--modal-gold);
+    color: #09100C;
+    border-color: var(--modal-gold);
+    box-shadow: 0 4px 12px var(--modal-gold-glow);
 }
 
 .modal-tab-panel {
@@ -1300,171 +1298,81 @@ body[dir="rtl"] .modal-content-panel {
     box-shadow: 0 4px 12px var(--modal-gold-glow);
 }
 
-/* Scent Pyramid Infographic (Left Pyramid, Right Text) */
-.pyramid-wrapper {
+/* Luxury Notes Tiers Cards List */
+.notes-tiers-container {
     display: flex;
-    align-items: center;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 0.85rem;
     margin-top: 0.5rem;
-    position: relative;
 }
 
-body[dir="rtl"] .pyramid-wrapper {
-    flex-direction: row-reverse;
-}
-
-.pyramid-infographic {
-    display: flex;
-    position: relative;
-    width: 170px;
-    height: 200px;
-    flex-shrink: 0;
-}
-
-.pyramid-triangle {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    gap: 4px;
-}
-
-.pyramid-part {
-    width: 100%;
-    cursor: pointer;
-    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-    opacity: 0.8;
-    position: relative;
-}
-
-.top-part {
-    height: 28%;
-    background: linear-gradient(135deg, #FFE29F 0%, var(--modal-gold) 100%);
-    clip-path: polygon(50% 0%, 35% 100%, 65% 100%);
-}
-
-.heart-part {
-    height: 34%;
-    background: linear-gradient(135deg, var(--modal-gold) 0%, #B8860B 100%);
-    clip-path: polygon(35% 0%, 65% 0%, 20% 100%, 80% 100%);
-}
-
-.base-part {
-    height: 38%;
-    background: linear-gradient(135deg, #B8860B 0%, #5C4033 100%);
-    clip-path: polygon(20% 0%, 80% 0%, 5% 100%, 95% 100%);
-}
-
-.pyramid-part:hover,
-.pyramid-part.highlighted {
-    opacity: 1;
-    transform: scale(1.05);
-    filter: drop-shadow(0 0 10px var(--modal-gold-glow));
-}
-
-.pyramid-connectors {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-}
-
-.pyramid-line-group {
-    position: absolute;
+.notes-tier-card {
     display: flex;
     align-items: center;
-    width: 100px;
-    left: 100px;
+    gap: 1.15rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 0.95rem 1.25rem;
+    border-radius: 18px;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 2px 6px var(--shadow);
 }
 
-body[dir="rtl"] .pyramid-line-group {
-    left: auto;
-    right: 100px;
-    flex-direction: row-reverse;
-}
-
-.top-line-group {
-    top: 14%;
-}
-
-.heart-line-group {
-    top: 48%;
-}
-
-.base-line-group {
-    top: 80%;
-}
-
-.pyramid-indicator-dot {
-    width: 6px;
-    height: 6px;
-    background-color: var(--modal-gold);
-    border-radius: 50%;
-    box-shadow: 0 0 6px var(--modal-gold);
-    transition: transform 0.3s ease;
-}
-
-.pyramid-part:hover ~ .pyramid-connectors .pyramid-indicator-dot,
-.pyramid-part.highlighted ~ .pyramid-connectors .pyramid-indicator-dot {
-    transform: scale(1.4);
-}
-
-.pyramid-connecting-line {
-    flex-grow: 1;
-    height: 1px;
-    border-top: 1px dotted var(--border-glow);
-}
-
-.pyramid-labels {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 200px;
-    flex-grow: 1;
-    gap: 0.5rem;
-}
-
-.pyramid-label-block {
-    display: flex;
-    flex-direction: column;
-    gap: 0.1rem;
-    padding: 0.4rem 0.75rem;
-    border-radius: 12px;
-    border: 1px solid transparent;
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    background: transparent;
-}
-
-.pyramid-label-block:hover,
-.pyramid-label-block.highlighted {
-    border-color: var(--border-glow);
+.notes-tier-card:hover {
+    border-color: var(--modal-gold);
     background: var(--gold-bg);
-    transform: translateX(4px);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px var(--shadow);
 }
 
-body[dir="rtl"] .pyramid-label-block:hover,
-body[dir="rtl"] .pyramid-label-block.highlighted {
-    transform: translateX(-4px);
+.notes-tier-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: var(--gold-bg);
+    border-radius: 10px;
+    color: var(--modal-gold);
+    flex-shrink: 0;
+    transition: all 0.35s ease;
 }
 
-.pyramid-label-title {
+.notes-tier-card:hover .notes-tier-icon-wrapper {
+    background: var(--modal-gold);
+    color: #ffffff;
+}
+
+[data-theme="dark"] .notes-tier-card:hover .notes-tier-icon-wrapper {
+    color: #09100C;
+}
+
+.notes-tier-svg {
+    stroke: currentColor;
+    stroke-width: 2.2px;
+    transition: transform 0.35s ease;
+}
+
+.notes-tier-card:hover .notes-tier-svg {
+    transform: scale(1.1);
+}
+
+.notes-tier-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.notes-tier-label {
     font-size: 0.68rem;
     text-transform: uppercase;
     color: var(--text-muted);
     letter-spacing: 1.5px;
     font-weight: 700;
-    transition: color 0.3s ease;
 }
 
-.pyramid-label-block.highlighted .pyramid-label-title,
-.pyramid-label-block:hover .pyramid-label-title {
-    color: var(--modal-gold);
-}
-
-.pyramid-label-value {
-    font-size: 0.9rem;
+.notes-tier-value {
+    font-size: 0.95rem;
     color: var(--text);
     font-weight: 600;
 }
@@ -1875,6 +1783,7 @@ body[dir="rtl"] .modal-close {
 
     .modal-content-panel {
         padding: 1.25rem;
+        overflow-y: visible;
     }
 
     .modal-title-en {
@@ -1886,42 +1795,39 @@ body[dir="rtl"] .modal-close {
     }
 
     .modal-tabs {
-        overflow-x: auto;
-        scrollbar-width: none;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: var(--bg);
+        backdrop-filter: var(--blur);
+        -webkit-backdrop-filter: var(--blur);
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-top: -0.5rem;
+        margin-bottom: 1.25rem;
+        display: flex;
+        gap: 0.35rem;
         flex-wrap: nowrap;
-        gap: 0.25rem;
-    }
-
-    .modal-tabs::-webkit-scrollbar {
-        display: none;
-    }
-
-    .pyramid-wrapper {
-        flex-direction: column !important;
-        gap: 1rem;
-        align-items: center;
-    }
-
-    .pyramid-connectors {
-        display: none !important;
-    }
-
-    .pyramid-labels {
+        overflow-x: visible;
         width: 100%;
-        gap: 0.5rem;
-        height: auto;
     }
 
-    .pyramid-label-block {
-        text-align: center;
-        padding: 0.35rem 0.5rem;
+    .modal-tab-btn {
+        flex: 1;
+        padding: 0.5rem 0.25rem;
+        font-size: 0.75rem;
+        white-space: normal;
+        line-height: 1.2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 38px;
     }
-    
-    body[dir="rtl"] .pyramid-label-block:hover,
-    body[dir="rtl"] .pyramid-label-block.highlighted,
-    .pyramid-label-block:hover,
-    .pyramid-label-block.highlighted {
-        transform: none;
+
+    .notes-tier-card {
+        padding: 0.8rem 1rem;
+        gap: 0.85rem;
+        border-radius: 14px;
     }
 
     .modal-specs-grid {
@@ -2031,7 +1937,7 @@ body[dir="rtl"] .modal-close {
     height: 38px;
     border-radius: 50%;
     border: 1px solid var(--border);
-    background: var(--card-bg);
+    background: transparent;
     color: var(--text-muted);
     font-size: 0.9rem;
     font-weight: 600;

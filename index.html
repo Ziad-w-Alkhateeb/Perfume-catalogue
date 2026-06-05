@@ -161,9 +161,6 @@
                     <div class="modal-header-section">
                         <h2 class="modal-title-en" id="modalTitleEn"></h2>
                         <div class="modal-title-ar" id="modalTitleAr"></div>
-                        <div class="modal-divider">
-                            <span class="modal-divider-dot">✦</span>
-                        </div>
                     </div>
                     
                     <!-- Luxury Interactive Navigation Tabs -->
@@ -190,40 +187,32 @@
                     <!-- Tab Panel 2: Olfactory Notes / Pyramid -->
                     <div class="modal-tab-panel" id="panelNotes">
                         <h3 class="panel-section-title" data-i18n="notesTitle">Olfactory Notes</h3>
-                        <div class="pyramid-wrapper">
-                            <div class="pyramid-infographic">
-                                <div class="pyramid-triangle">
-                                    <div class="pyramid-part top-part" data-tier="top"></div>
-                                    <div class="pyramid-part heart-part" data-tier="heart"></div>
-                                    <div class="pyramid-part base-part" data-tier="base"></div>
-                                </div>
-                                <div class="pyramid-connectors">
-                                    <div class="pyramid-line-group top-line-group">
-                                        <div class="pyramid-indicator-dot"></div>
-                                        <div class="pyramid-connecting-line"></div>
-                                    </div>
-                                    <div class="pyramid-line-group heart-line-group">
-                                        <div class="pyramid-indicator-dot"></div>
-                                        <div class="pyramid-connecting-line"></div>
-                                    </div>
-                                    <div class="pyramid-line-group base-line-group">
-                                        <div class="pyramid-indicator-dot"></div>
-                                        <div class="pyramid-connecting-line"></div>
-                                    </div>
+                        <div class="notes-tiers-container">
+                            <div class="notes-tier-card">
+                                <span class="notes-tier-icon-wrapper">
+                                    <svg class="notes-tier-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 1 8a7 7 0 0 1-9 10z"/><path d="M9 22v-6"/></svg>
+                                </span>
+                                <div class="notes-tier-details">
+                                    <span class="notes-tier-label" data-i18n="topNotes">Top Notes</span>
+                                    <span class="notes-tier-value" id="modalNotesTop"></span>
                                 </div>
                             </div>
-                            <div class="pyramid-labels">
-                                <div class="pyramid-label-block" data-tier="top">
-                                    <span class="pyramid-label-title" data-i18n="topNotes">Top Notes</span>
-                                    <span class="pyramid-label-value" id="modalNotesTop"></span>
+                            <div class="notes-tier-card">
+                                <span class="notes-tier-icon-wrapper">
+                                    <svg class="notes-tier-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10c-2.7 0-4.5 1-4.5 3.5S9.3 17 12 17s4.5-1 4.5-3.5S14.7 10 12 10z"/><path d="M12 2v8M12 17v5M4.9 4.9l4.9 4.9M14.2 14.2l4.9 4.9M2 12h8M14 12h8M4.9 19.1l4.9-4.9M14.2 9.8l4.9-4.9"/></svg>
+                                </span>
+                                <div class="notes-tier-details">
+                                    <span class="notes-tier-label" data-i18n="heartNotes">Heart/Middle Notes</span>
+                                    <span class="notes-tier-value" id="modalNotesHeart"></span>
                                 </div>
-                                <div class="pyramid-label-block" data-tier="heart">
-                                    <span class="pyramid-label-title" data-i18n="heartNotes">Heart/Middle Notes</span>
-                                    <span class="pyramid-label-value" id="modalNotesHeart"></span>
-                                </div>
-                                <div class="pyramid-label-block" data-tier="base">
-                                    <span class="pyramid-label-title" data-i18n="baseNotes">Base Notes</span>
-                                    <span class="pyramid-label-value" id="modalNotesBase"></span>
+                            </div>
+                            <div class="notes-tier-card">
+                                <span class="notes-tier-icon-wrapper">
+                                    <svg class="notes-tier-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V8M5 12H2M22 12h-3M19.4 19.4l-2.1-2.1M6.7 6.7L4.6 4.6M19.4 4.6l-2.1 2.1M6.7 17.3l-2.1 2.1M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/></svg>
+                                </span>
+                                <div class="notes-tier-details">
+                                    <span class="notes-tier-label" data-i18n="baseNotes">Base Notes</span>
+                                    <span class="notes-tier-value" id="modalNotesBase"></span>
                                 </div>
                             </div>
                         </div>
