@@ -936,6 +936,72 @@ body[dir="rtl"] .card-title-secondary {
     color: #09100C;
 }
 
+/* Category-Specific Badge Colors (French, Europe, Synthetic, Swiss, Niche, Arabic, Fragrant) */
+.badge-type-men,
+.badge-type-women {
+    background: #2B6CB0 !important;
+    color: #ffffff !important;
+}
+[data-theme="dark"] .badge-type-men,
+[data-theme="dark"] .badge-type-women {
+    background: #63B3ED !important;
+    color: #09100C !important;
+}
+
+.badge-type-europe {
+    background: #6B46C1 !important;
+    color: #ffffff !important;
+}
+[data-theme="dark"] .badge-type-europe {
+    background: #B794F4 !important;
+    color: #09100C !important;
+}
+
+.badge-type-synthetic {
+    background: #2C7A7B !important;
+    color: #ffffff !important;
+}
+[data-theme="dark"] .badge-type-synthetic {
+    background: #4FD1C5 !important;
+    color: #09100C !important;
+}
+
+.badge-type-swiss {
+    background: #2F855A !important;
+    color: #ffffff !important;
+}
+[data-theme="dark"] .badge-type-swiss {
+    background: #68D391 !important;
+    color: #09100C !important;
+}
+
+.badge-type-niche {
+    background: #B7791F !important;
+    color: #ffffff !important;
+}
+[data-theme="dark"] .badge-type-niche {
+    background: #ECC94B !important;
+    color: #09100C !important;
+}
+
+.badge-type-arabic {
+    background: #C05621 !important;
+    color: #ffffff !important;
+}
+[data-theme="dark"] .badge-type-arabic {
+    background: #ED8936 !important;
+    color: #09100C !important;
+}
+
+.badge-type-fragrant {
+    background: #4A5568 !important;
+    color: #ffffff !important;
+}
+[data-theme="dark"] .badge-type-fragrant {
+    background: #A0AEC0 !important;
+    color: #09100C !important;
+}
+
 /* ===== LOADING / EMPTY / ERROR ===== */
 .loading,
 .empty-state,

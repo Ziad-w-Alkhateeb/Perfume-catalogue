@@ -304,7 +304,7 @@ function renderPerfumes(perfumes) {
                 </div>
                 <div class="card-meta">
                     <span class="badge badge-gender-${perfume.gender.toLowerCase()}">${translateGender(perfume.gender)}</span>
-                    <span class="badge badge-type">${perfume.oil_type}</span>
+                    <span class="badge badge-type badge-type-${perfume.collection.toLowerCase()}">${perfume.oil_type}</span>
                 </div>
             </div>
         </div>
@@ -584,8 +584,8 @@ function openModal(indexOrPerfume) {
     const waName = isArabic ? perfume.name_ar : perfume.name_en;
     const waCode = perfume.num;
     const waMessage = isArabic
-        ? `مرحباً Essence Collection، أود الاستفسار عن عطر: ${waName} (رمز المنتج: ${waCode})`
-        : `Hello Essence Collection, I would like to inquire about: ${waName} (Product Code: ${waCode})`;
+        ? `مرحباً نضالكو، أود الاستفسار عن عطر: ${waName} (رمز المنتج: ${waCode})`
+        : `Hello Nidalco, I would like to inquire about: ${waName} (Product Code: ${waCode})`;
     
     // Choose between Ahmed (962797574022) and Saif (962790494976) randomly to balance load
     const waPhones = ['962797574022', '962790494976'];
