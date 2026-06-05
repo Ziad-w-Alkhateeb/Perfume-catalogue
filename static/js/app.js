@@ -38,6 +38,7 @@ const ITEMS_PER_PAGE = 12;
 // ==========================================================================
 function init() {
     if (isInitialized) return;
+    if (typeof i18n === 'undefined') return;
     isInitialized = true;
 
     // 1. Initialize Visual Theme
@@ -579,6 +580,22 @@ function openModal(indexOrPerfume) {
     }
     document.getElementById('modalBrand').textContent = brand;
 
+    // 5.5 Set dynamic WhatsApp Inquiry Link
+    const waName = isArabic ? perfume.name_ar : perfume.name_en;
+    const waCode = perfume.num;
+    const waMessage = isArabic
+        ? `مرحباً Essence Collection، أود الاستفسار عن عطر: ${waName} (رمز المنتج: ${waCode})`
+        : `Hello Essence Collection, I would like to inquire about: ${waName} (Product Code: ${waCode})`;
+    
+    // Choose between Ahmed (962797574022) and Saif (962790494976) randomly to balance load
+    const waPhones = ['962797574022', '962790494976'];
+    const selectedPhone = waPhones[Math.floor(Math.random() * waPhones.length)];
+    const waUrl = `https://wa.me/${selectedPhone}?text=${encodeURIComponent(waMessage)}`;
+    const waBtn = document.getElementById('modalWhatsAppBtn');
+    if (waBtn) {
+        waBtn.href = waUrl;
+    }
+
     // 6. Reset Interactive Tabs to default Overview panel
     const tabs = document.querySelectorAll('.modal-tab-btn');
     const panels = document.querySelectorAll('.modal-tab-panel');
@@ -858,6 +875,42 @@ function setupEventListeners() {
         });
     });
 
+    // 3.8 Olfactory Pyramid interactive cross-hover sync
+    const pyramidParts = document.querySelectorAll('.pyramid-part');
+    const labelBlocks = document.querySelectorAll('.pyramid-label-block');
+    
+    if (pyramidParts.length > 0 && labelBlocks.length > 0) {
+        pyramidParts.forEach(part => {
+            part.addEventListener('mouseenter', () => {
+                const tier = part.dataset.tier;
+                labelBlocks.forEach(block => {
+                    if (block.dataset.tier === tier) block.classList.add('highlighted');
+                });
+            });
+            part.addEventListener('mouseleave', () => {
+                const tier = part.dataset.tier;
+                labelBlocks.forEach(block => {
+                    if (block.dataset.tier === tier) block.classList.remove('highlighted');
+                });
+            });
+        });
+
+        labelBlocks.forEach(block => {
+            block.addEventListener('mouseenter', () => {
+                const tier = block.dataset.tier;
+                pyramidParts.forEach(part => {
+                    if (part.dataset.tier === tier) part.classList.add('highlighted');
+                });
+            });
+            block.addEventListener('mouseleave', () => {
+                const tier = block.dataset.tier;
+                pyramidParts.forEach(part => {
+                    if (part.dataset.tier === tier) part.classList.remove('highlighted');
+                });
+            });
+        });
+    }
+
     // 4. Keyboard Shortcuts Hook
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
@@ -872,6 +925,7 @@ function setupEventListeners() {
 // STARTUP ENGINE
 // ==========================================================================
 document.addEventListener('DOMContentLoaded', init);
+window.addEventListener('load', init);
 // Fallback if script loads late or defer acts immediately
 if (document.readyState === 'interactive' || document.readyState === 'complete') {
     init();

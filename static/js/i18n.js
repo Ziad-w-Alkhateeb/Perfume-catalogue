@@ -70,6 +70,7 @@ const i18n = {
         baseNotes: 'Base Notes',
         brandTitle: 'Manufacturer',
         fallbackBrand: 'Essence Premium Fragrances',
+        modalOrderWhatsApp: 'Inquire via WhatsApp',
     },
     ar: {
         logo: '\u0645\u062c\u0645\u0648\u0639\u0629 \u0627\u0644\u0639\u0637\u0648\u0631',
@@ -138,5 +139,6 @@ const i18n = {
         baseNotes: '\u0627\u0644\u0646\u0648\u062a\u0627\u062a\u200c\u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629',
         brandTitle: '\u0627\u0644\u0634\u0631\u0643\u0629\u200c\u0627\u0644\u0645\u0635\u0646\u0639\u0629',
         fallbackBrand: '\u062f\u0627\u0631\u200c\u0639\u062a\u0648\u0631\u200c\u0625\u064a\u0633\u0646\u0633\u200c\u0627\u0644\u0641\u0627\u062e\u0631\u0629',
+        modalOrderWhatsApp: 'استفسار عبر الواتساب',
     }
 };
