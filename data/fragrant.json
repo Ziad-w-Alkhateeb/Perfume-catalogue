@@ -1,0 +1,956 @@
+[
+    {
+        "name_ar": "اريل",
+        "name_en": "ARIAL",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "1"
+    },
+    {
+        "name_ar": "اعشاب",
+        "name_en": "HERBAL",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "2"
+    },
+    {
+        "name_ar": "افوكادو",
+        "name_en": "AVOCADO",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "3"
+    },
+    {
+        "name_ar": "اناناس",
+        "name_en": "PINEAPPLE",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "4"
+    },
+    {
+        "name_ar": "اوركيدا",
+        "name_en": "ORCHID",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "5"
+    },
+    {
+        "name_ar": "اوركيدا",
+        "name_en": "ORCHID",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "6"
+    },
+    {
+        "name_ar": "اوشن فروت",
+        "name_en": "Ocean Fruit",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "7"
+    },
+    {
+        "name_ar": "اومو",
+        "name_en": "OMO",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "8"
+    },
+    {
+        "name_ar": "اومو",
+        "name_en": "OMO",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "9"
+    },
+    {
+        "name_ar": "ايس كريم",
+        "name_en": "ICE CREAM",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "10"
+    },
+    {
+        "name_ar": "بابايا",
+        "name_en": "PAPAYA",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "11"
+    },
+    {
+        "name_ar": "باشن فروت",
+        "name_en": "PASSION FRUTE",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "12"
+    },
+    {
+        "name_ar": "باقة الزهور",
+        "name_en": "ESCUL TURE",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "13"
+    },
+    {
+        "name_ar": "بتلات الورد",
+        "name_en": "ROSE PETALS",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "14"
+    },
+    {
+        "name_ar": "برتقال",
+        "name_en": "ORANGE",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "15"
+    },
+    {
+        "name_ar": "برسيل",
+        "name_en": "PERSIL",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "16"
+    },
+    {
+        "name_ar": "برسيل ازرق",
+        "name_en": "BLU PERSIL",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "17"
+    },
+    {
+        "name_ar": "بطيخ",
+        "name_en": "WATERMELON",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "18"
+    },
+    {
+        "name_ar": "بلاك ايس",
+        "name_en": "Black Ice",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "19"
+    },
+    {
+        "name_ar": "بلاك بيري",
+        "name_en": "BlackBerry",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "20"
+    },
+    {
+        "name_ar": "بلو بيري",
+        "name_en": "Blueberry",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "21"
+    },
+    {
+        "name_ar": "بنفسج",
+        "name_en": "VIOLET",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "22"
+    },
+    {
+        "name_ar": "بنفسج مائي",
+        "name_en": "VIOLET",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "23"
+    },
+    {
+        "name_ar": "بومب سويت",
+        "name_en": "Bomb Sweet",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "24"
+    },
+    {
+        "name_ar": "بي كلين",
+        "name_en": "BE CLEAN",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "25"
+    },
+    {
+        "name_ar": "بيور وايت       (دوف)",
+        "name_en": "PURE WHITE",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "26"
+    },
+    {
+        "name_ar": "تاك تو",
+        "name_en": "TAC 2",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "27"
+    },
+    {
+        "name_ar": "تايد",
+        "name_en": "TIDE",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "28"
+    },
+    {
+        "name_ar": "تفاح",
+        "name_en": "APPLE",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "29"
+    },
+    {
+        "name_ar": "تفاح اخضر",
+        "name_en": "GREEN APPLE",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "30"
+    },
+    {
+        "name_ar": "تفاح وقرفة",
+        "name_en": "Apple and cinnamon",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "31"
+    },
+    {
+        "name_ar": "توت احمر",
+        "name_en": "RED BERRY",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "32"
+    },
+    {
+        "name_ar": "توت ازرق",
+        "name_en": "BLUE BERRY",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "33"
+    },
+    {
+        "name_ar": "توت بري",
+        "name_en": "TOOTH BERRY",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "34"
+    },
+    {
+        "name_ar": "توت وردي",
+        "name_en": "PINK BRRRY",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "35"
+    },
+    {
+        "name_ar": "جاردينيا",
+        "name_en": "GARDENIA",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "36"
+    },
+    {
+        "name_ar": "جوافة",
+        "name_en": "GUAVA",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "37"
+    },
+    {
+        "name_ar": "جوز هند",
+        "name_en": "Coconut",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "38"
+    },
+    {
+        "name_ar": "حمضيات",
+        "name_en": "Citrus",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "39"
+    },
+    {
+        "name_ar": "خوخ",
+        "name_en": "PEACH",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "40"
+    },
+    {
+        "name_ar": "خوخ + مشمش",
+        "name_en": "APRICOT & PEACH",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "41"
+    },
+    {
+        "name_ar": "خوخ ابيض",
+        "name_en": "WHITE PEACH",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "42"
+    },
+    {
+        "name_ar": "خوخ مسكر",
+        "name_en": "PEACHSWEET",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "43"
+    },
+    {
+        "name_ar": "خيار وشاي اخضر",
+        "name_en": "CUCUMBER & TEA",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "44"
+    },
+    {
+        "name_ar": "داوني",
+        "name_en": "DOWNY",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "45"
+    },
+    {
+        "name_ar": "داوني ازرق",
+        "name_en": "BLUE DOWNY",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "46"
+    },
+    {
+        "name_ar": "داوني زهري",
+        "name_en": "PINK DOWNY",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "47"
+    },
+    {
+        "name_ar": "دراجون فروت",
+        "name_en": "DRAGON FRUIT",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "48"
+    },
+    {
+        "name_ar": "دراق",
+        "name_en": "PEACH",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "49"
+    },
+    {
+        "name_ar": "رمان",
+        "name_en": "PO MEGRATE",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "50"
+    },
+    {
+        "name_ar": "روز داوني",
+        "name_en": "Rose Downey",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "51"
+    },
+    {
+        "name_ar": "ري فريش",
+        "name_en": "REFRSH",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "52"
+    },
+    {
+        "name_ar": "ريف دور",
+        "name_en": "REVEDOR",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "53"
+    },
+    {
+        "name_ar": "زيت زيتون",
+        "name_en": "OLIVE OIL",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "54"
+    },
+    {
+        "name_ar": "سبورتنج",
+        "name_en": "SPORTING",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "55"
+    },
+    {
+        "name_ar": "ستار فروت",
+        "name_en": "STAR FRUIT",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "56"
+    },
+    {
+        "name_ar": "شانيل روز",
+        "name_en": "CHANEL ROSE",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "57"
+    },
+    {
+        "name_ar": "شمام",
+        "name_en": "MELON",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "58"
+    },
+    {
+        "name_ar": "شوكولاته",
+        "name_en": "CHOCOLATE",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "59"
+    },
+    {
+        "name_ar": "صانسيلك",
+        "name_en": "SUNSILK",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "60"
+    },
+    {
+        "name_ar": "صانسيلك جولد",
+        "name_en": "SUNSILK GOLD",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "61"
+    },
+    {
+        "name_ar": "صبار",
+        "name_en": "CACTUS",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "62"
+    },
+    {
+        "name_ar": "صندل مسك",
+        "name_en": "MUSK SANDAL",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "63"
+    },
+    {
+        "name_ar": "صنوبر",
+        "name_en": "PINE",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "64"
+    },
+    {
+        "name_ar": "عسل",
+        "name_en": "HONEY",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "65"
+    },
+    {
+        "name_ar": "عسل + شمام",
+        "name_en": "HONEY & MELON",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "66"
+    },
+    {
+        "name_ar": "علكة",
+        "name_en": "GUM",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "67"
+    },
+    {
+        "name_ar": "علكة VIP",
+        "name_en": "GUM VIP",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "68"
+    },
+    {
+        "name_ar": "علكة هندي",
+        "name_en": "",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "69"
+    },
+    {
+        "name_ar": "عنب اسود",
+        "name_en": "black grapes",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "70"
+    },
+    {
+        "name_ar": "فا",
+        "name_en": "FA",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "71"
+    },
+    {
+        "name_ar": "فا 2",
+        "name_en": "FA 2",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "72"
+    },
+    {
+        "name_ar": "فانيلا",
+        "name_en": "VANILLA",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "73"
+    },
+    {
+        "name_ar": "فراولة",
+        "name_en": "STRAWBERRY",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "74"
+    },
+    {
+        "name_ar": "فرش اند كلين",
+        "name_en": "FRESH & CLEAN",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "75"
+    },
+    {
+        "name_ar": "فريش اوشن",
+        "name_en": "FRESH & CEANO",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "76"
+    },
+    {
+        "name_ar": "فل",
+        "name_en": "PHIL",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "77"
+    },
+    {
+        "name_ar": "فواكة",
+        "name_en": "FRUTE",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "78"
+    },
+    {
+        "name_ar": "فواكة استوائية",
+        "name_en": "TROPICAL FRUIT",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "79"
+    },
+    {
+        "name_ar": "فواكة مشكلة",
+        "name_en": "Mixed fruits",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "80"
+    },
+    {
+        "name_ar": "قهوة",
+        "name_en": "COFFEE",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "81"
+    },
+    {
+        "name_ar": "كرز",
+        "name_en": "CHERRY",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "82"
+    },
+    {
+        "name_ar": "كمفورت ازرق",
+        "name_en": "BLUE COMFORT",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "83"
+    },
+    {
+        "name_ar": "كمفورت زهري",
+        "name_en": "PINK COMFORT",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "84"
+    },
+    {
+        "name_ar": "كوارتينا",
+        "name_en": "KWARTINA",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "85"
+    },
+    {
+        "name_ar": "كيوي",
+        "name_en": "KIWI",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "86"
+    },
+    {
+        "name_ar": "لافندر",
+        "name_en": "LAVENDER",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "87"
+    },
+    {
+        "name_ar": "ليلك",
+        "name_en": "LILAC",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "88"
+    },
+    {
+        "name_ar": "ليلك احمر",
+        "name_en": "LILAC RED",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "89"
+    },
+    {
+        "name_ar": "ليمون",
+        "name_en": "LEMON",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "90"
+    },
+    {
+        "name_ar": "ليمون اخضر",
+        "name_en": "green lemon",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "91"
+    },
+    {
+        "name_ar": "ليمون زيست",
+        "name_en": "Lemon Zest",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "92"
+    },
+    {
+        "name_ar": "مانجا",
+        "name_en": "MANGO",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "93"
+    },
+    {
+        "name_ar": "مشمش",
+        "name_en": "APRICOT",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "94"
+    },
+    {
+        "name_ar": "موز",
+        "name_en": "BANANA",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "95"
+    },
+    {
+        "name_ar": "نسيم البحر",
+        "name_en": "SEA BREEZE",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "96"
+    },
+    {
+        "name_ar": "نعنع",
+        "name_en": "MINT",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "97"
+    },
+    {
+        "name_ar": "هامول",
+        "name_en": "HAMOL",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "98"
+    },
+    {
+        "name_ar": "هيد اند شولدرز",
+        "name_en": "HEAD & SHOULDERS",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "99"
+    },
+    {
+        "name_ar": "هيربل",
+        "name_en": "HERBAL",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "100"
+    },
+    {
+        "name_ar": "ورد",
+        "name_en": "ROSE",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "101"
+    },
+    {
+        "name_ar": "ورد جوري",
+        "name_en": "ROSE JOURI",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "102"
+    },
+    {
+        "name_ar": "ورد زهري",
+        "name_en": "PINK ROSE",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "103"
+    },
+    {
+        "name_ar": "ورد طائفي",
+        "name_en": "ROSE TAIFI",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "104"
+    },
+    {
+        "name_ar": "ورد فرنسي",
+        "name_en": "French rose",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "105"
+    },
+    {
+        "name_ar": "ياسمين",
+        "name_en": "JASMINE",
+        "image": "static/images/Fragrant.webp",
+        "gender": "Unisex",
+        "oil_type": "معطر",
+        "price": 20,
+        "num": "106"
+    }
+]

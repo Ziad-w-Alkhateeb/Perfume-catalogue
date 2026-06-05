@@ -33,11 +33,12 @@ A state-of-the-art, highly visual, and fully responsive luxury perfume catalog. 
 Perfume catalogue/
 ├── data/                    # JSON category database
 │   ├── arabic.json
-│   ├── europe.json
-│   ├── fragrant.json
+│   ├── Europe.json
+│   ├── Fragrant.json
 │   ├── men.json
 │   ├── niche.json
 │   ├── swiss.json
+│   ├── synthetic.json
 │   └── women.json
 ├── static/
 │   ├── css/

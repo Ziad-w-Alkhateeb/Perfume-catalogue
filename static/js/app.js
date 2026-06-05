@@ -7,12 +7,13 @@
 // ==========================================================================
 const JSON_FILES = [
     'data/arabic.json',
-    'data/europe.json',
-    'data/fragrant.json',
+    'data/Europe.json',
+    'data/Fragrant.json',
     'data/men.json',
     'data/niche.json',
     'data/swiss.json',
     'data/women.json',
+    'data/synthetic.json',
 ];
 
 // ==========================================================================
@@ -21,6 +22,7 @@ const JSON_FILES = [
 let allPerfumes = [];
 let filteredPerfumes = [];
 let currentFilter = 'all';
+let currentGender = 'all';
 let currentSort = 'name';
 let searchQuery = '';
 let currentLang = localStorage.getItem('perfumeLang') || 'ar';
@@ -95,6 +97,15 @@ function applyTranslations() {
             if (t[key]) opt.textContent = t[key];
         });
     }
+
+    // Translate gender filter drop-down values
+    const genderFilter = document.getElementById('genderFilter');
+    if (genderFilter) {
+        genderFilter.querySelectorAll('option').forEach(opt => {
+            const key = opt.getAttribute('data-i18n');
+            if (t[key]) opt.textContent = t[key];
+        });
+    }
 }
 
 function toggleLanguage() {
@@ -127,8 +138,8 @@ function toggleTheme() {
 // CATEGORY FILTERS CONTROLLER
 // ==========================================================================
 function buildCategoryFilters() {
-    const filtersBar = document.getElementById('filtersBar');
-    if (!filtersBar) return;
+    const categoryChips = document.getElementById('categoryChips');
+    if (!categoryChips) return;
     
     const t = i18n[currentLang];
 
@@ -156,12 +167,12 @@ function buildCategoryFilters() {
         html += `<button class="filter-chip ${currentFilter === cat ? 'active' : ''}" data-filter="${cat}">${translatedCat}</button>`;
     });
 
-    filtersBar.innerHTML = html;
+    categoryChips.innerHTML = html;
 
     // Attach Event Listeners to New Chips
-    filtersBar.querySelectorAll('.filter-chip').forEach(btn => {
+    categoryChips.querySelectorAll('.filter-chip').forEach(btn => {
         btn.addEventListener('click', () => {
-            filtersBar.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
+            categoryChips.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             currentFilter = btn.dataset.filter;
             applyFilters();
@@ -270,8 +281,11 @@ function renderPerfumes(perfumes) {
         const secondaryName = isArabic ? perfume.name_en : perfume.name_ar;
         const delay = Math.min(index * 0.04, 0.4);
 
+        const isFragrant = perfume.collection === 'Fragrant';
+        const cardClass = isFragrant ? 'perfume-card no-details' : 'perfume-card';
+
         return `
-        <div class="perfume-card" data-index="${absoluteIndex}" style="animation-delay: ${delay}s">
+        <div class="${cardClass}" data-index="${absoluteIndex}" style="animation-delay: ${delay}s">
             <div class="card-image-wrapper">
                  <img class="card-image"
                       src="${perfume.image}"
@@ -431,12 +445,18 @@ function applyFilters(resetPage = true) {
         result = result.filter(p => p.collection === currentFilter);
     }
 
+    // 1.5. Filter by gender
+    if (currentGender !== 'all') {
+        result = result.filter(p => p.gender.toLowerCase() === currentGender.toLowerCase());
+    }
+
     // 2. Filter by search input match
     if (searchQuery) {
         result = result.filter(p => matchesFuzzy(searchQuery, p));
     }
 
     // 3. Sort dynamic results array
+    const isArabic = currentLang === 'ar';
     switch (currentSort) {
         case 'price-asc':
             result.sort((a, b) => a.price - b.price);
@@ -447,8 +467,13 @@ function applyFilters(resetPage = true) {
         case 'type':
             result.sort((a, b) => a.oil_type.localeCompare(b.oil_type) || a.name_en.localeCompare(b.name_en));
             break;
+        case 'name':
         default:
-            // Do not sort, preserving the initial randomized stable array order
+            result.sort((a, b) => {
+                const nameA = isArabic ? a.name_ar : a.name_en;
+                const nameB = isArabic ? b.name_ar : b.name_en;
+                return nameA.localeCompare(nameB, currentLang);
+            });
             break;
     }
 
@@ -701,7 +726,7 @@ function setupEventListeners() {
     const perfumeGrid = document.getElementById('perfumeGrid');
     if (perfumeGrid) {
         perfumeGrid.addEventListener('click', (e) => {
-            const card = e.target.closest('.perfume-card');
+            const card = e.target.closest('.perfume-card:not(.no-details)');
             if (!card) return;
             const index = parseInt(card.dataset.index, 10);
             if (!isNaN(index)) openModal(index);
@@ -786,6 +811,23 @@ function setupEventListeners() {
             const langSwitch = document.getElementById('langSwitch');
             if (langSwitch) langSwitch.classList.toggle('active');
             toggleLanguage();
+        });
+    }
+
+    // 2.5 Filters and Sort controls
+    const sortSelect = document.getElementById('sortSelect');
+    if (sortSelect) {
+        sortSelect.addEventListener('change', (e) => {
+            currentSort = e.target.value;
+            applyFilters();
+        });
+    }
+
+    const genderFilter = document.getElementById('genderFilter');
+    if (genderFilter) {
+        genderFilter.addEventListener('change', (e) => {
+            currentGender = e.target.value;
+            applyFilters();
         });
     }
 

@@ -614,17 +614,38 @@ body[dir="rtl"] .contact-option:hover .contact-arrow-icon {
     padding: 0.85rem 2rem;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    overflow-x: auto;
-    scrollbar-width: none;
+    justify-content: space-between;
+    gap: 1.5rem;
     position: sticky;
     top: var(--header-height);
     z-index: 100;
     transition: background 0.4s ease, border-color 0.4s ease;
 }
 
-.filters-bar::-webkit-scrollbar {
+.category-chips-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    flex-grow: 1;
+}
+
+.category-chips-wrapper::-webkit-scrollbar {
     display: none;
+}
+
+.filters-dropdowns {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+body[dir="rtl"] .filters-dropdowns {
+    margin-left: 0;
+    margin-right: auto;
 }
 
 .filter-chip {
@@ -668,7 +689,6 @@ body[dir="rtl"] .contact-option:hover .contact-arrow-icon {
     font-weight: 500;
     cursor: pointer;
     font-family: inherit;
-    margin-left: auto;
     flex-shrink: 0;
     box-shadow: 0 2px 4px var(--shadow);
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -680,8 +700,6 @@ body[dir="rtl"] .contact-option:hover .contact-arrow-icon {
 }
 
 body[dir="rtl"] .sort-select {
-    margin-left: 0;
-    margin-right: auto;
     padding: 0.6rem 1.25rem 0.6rem 2.25rem;
     background-position: left 1rem center;
 }
@@ -756,6 +774,25 @@ body[dir="rtl"] .sort-select {
 
 [data-theme="dark"] .perfume-card:hover {
     box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7), 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 0 1px var(--gold-light);
+}
+
+/* Disable hover effects for Fragrant/no-details air fresheners */
+.perfume-card.no-details {
+    cursor: default;
+}
+.perfume-card.no-details:hover {
+    transform: none;
+    box-shadow: 0 8px 24px rgba(13, 92, 58, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+    border-color: var(--border);
+}
+[data-theme="dark"] .perfume-card.no-details:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.perfume-card.no-details:hover .card-image {
+    transform: none;
+}
+.perfume-card.no-details:hover .card-title-primary {
+    color: var(--text);
 }
 
 .card-image-wrapper {
@@ -1360,6 +1397,35 @@ body[dir="rtl"] .modal-close {
 
     .filters-bar {
         padding: 0.75rem 1.25rem;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    .category-chips-wrapper {
+        width: 100%;
+    }
+
+    .filters-dropdowns {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+
+    .filters-dropdowns .sort-select {
+        flex: 1;
+        max-width: none;
+        padding-right: 1.75rem;
+        padding-left: 0.75rem;
+        background-position: right 0.75rem center;
+    }
+
+    body[dir="rtl"] .filters-dropdowns .sort-select {
+        padding-left: 1.75rem;
+        padding-right: 0.75rem;
+        background-position: left 0.75rem center;
     }
 
     .stats-bar {
