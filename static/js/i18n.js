@@ -4,7 +4,7 @@
 
 const i18n = {
     en: {
-        logo: 'Essence Collection',
+        logo: 'Nidalco Catalog',
         tagline: 'Premium Fragrances',
         searchPlaceholder: 'Search perfumes...',
         searchHint: 'Type to search instantly \u2022 ESC to close',
@@ -73,7 +73,7 @@ const i18n = {
         modalOrderWhatsApp: 'Inquire via WhatsApp',
     },
     ar: {
-        logo: '\u0645\u062c\u0645\u0648\u0639\u0629 \u0627\u0644\u0639\u0637\u0648\u0631',
+        logo: '\u0643\u062a\u0627\u0644\u0648\u062c \u0646\u0636\u0627\u0644\u0643\u0648',
         tagline: '\u0639\u0637\u0648\u0631 \u0641\u0627\u062e\u0631\u0629',
         searchPlaceholder: '\u0627\u0628\u062d\u062b \u0639\u0646 \u0639\u0637\u0631...',
         searchHint: '\u0627\u0643\u062a\u0628 \u0644\u0644\u0628\u062d\u062b \u2022 ESC \u0644\u0644\u0625\u063a\u0644\u0627\u0642',
