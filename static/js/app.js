@@ -7,8 +7,8 @@
 // ==========================================================================
 const JSON_FILES = [
     'data/arabic.json',
-    'data/Europe.json',
-    'data/Fragrant.json',
+    'data/europe.json',
+    'data/fragrant.json',
     'data/men.json',
     'data/niche.json',
     'data/swiss.json',

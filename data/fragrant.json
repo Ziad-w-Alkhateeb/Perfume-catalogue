@@ -45,15 +45,6 @@
         "num": "5"
     },
     {
-        "name_ar": "اوركيدا",
-        "name_en": "ORCHID",
-        "image": "static/images/Fragrant.webp",
-        "gender": "Unisex",
-        "oil_type": "معطر",
-        "price": 20,
-        "num": "6"
-    },
-    {
         "name_ar": "اوشن فروت",
         "name_en": "Ocean Fruit",
         "image": "static/images/Fragrant.webp",
