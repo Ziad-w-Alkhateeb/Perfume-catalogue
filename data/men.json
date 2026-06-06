@@ -527,7 +527,7 @@
   {
     "name_ar": "اريبين تونكا",
     "name_en": "ARABIAN TONKA",
-    "image": "app/static/images/French/man/ARABIAN TONKA.jpg",
+    "image": "app/static/images/French/man/ARABIAN TONKA.webp",
     "gender": "Men",
     "oil_type": "فرنسي",
     "price": 50,
@@ -3278,7 +3278,7 @@
   {
     "name_ar": "كارتير باشا",
     "name_en": "CARTIER BASHA",
-    "image": "app/static/images/French/man/CARTIER BASHA.webp",
+    "image": "app/static/images/French/man/CARTIER PASHA.webp",
     "gender": "Men",
     "oil_type": "فرنسي",
     "price": 50,
@@ -3698,7 +3698,7 @@
   {
     "name_ar": "لاكوست اصفر",
     "name_en": "LACOST YELLOW",
-    "image": "app/static/images/French/man/LACOST 12.12 YELLOW.webp",
+    "image": "app/static/images/French/man/LACOST YELLOW.webp",
     "gender": "Men",
     "oil_type": "فرنسي",
     "price": 50,
@@ -3887,7 +3887,7 @@
   {
     "name_ar": "مونت بلانك ليجند",
     "name_en": "MONT BLANC LEGEND",
-    "image": "app/static/images/French/man/MONT BLANC LEGEND.webp",
+    "image": "app/static/images/French/man/MONT BLANC BLACK.webp",
     "gender": "Men",
     "oil_type": "فرنسي",
     "price": 50,
