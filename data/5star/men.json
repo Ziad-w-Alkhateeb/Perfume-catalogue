@@ -1,0 +1,19 @@
+[
+    {
+        "name_ar": "فايف ستار ليجند رجالي",
+        "name_en": "5 Star Legend Male",
+        "image": "static/images/logo.webp",
+        "gender": "Men",
+        "oil_type": "رجالي",
+        "price": 48,
+        "num": "5S-401",
+        "description_ar": "عطر رجالي قيادي يبرز قوة الشخصية والجاذبية.",
+        "description_en": "A commanding men's fragrance highlighting strength of character and charisma.",
+        "notes_top_ar": "الليمون، التفاح الأخضر",
+        "notes_top_en": "Lemon, Green Apple",
+        "notes_heart_ar": "إكليل الجبل، الجلود",
+        "notes_heart_en": "Rosemary, Leather",
+        "notes_base_ar": "خشب الأرز، الباتشولي",
+        "notes_base_en": "Cedarwood, Patchouli"
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "name_ar": "فايف ستار رويال كراون",
+        "name_en": "5 Star Royal Crown",
+        "image": "static/images/logo.webp",
+        "gender": "Unisex",
+        "oil_type": "ملكي",
+        "price": 60,
+        "num": "5S-201",
+        "description_ar": "عطر ملكي مهيب مصمم من أرقى الخلاصات العطرية ليعبر عن الكبرياء والأناقة الملكية.",
+        "description_en": "A majestic royal fragrance crafted from fine aromatic essences embodying royal elegance.",
+        "notes_top_ar": "الهيل، العود الخفيف",
+        "notes_top_en": "Cardamom, Light Oud",
+        "notes_heart_ar": "الياسمين الملكي، اللافندر",
+        "notes_heart_en": "Royal Jasmine, Lavender",
+        "notes_base_ar": "العنبر الملكي، خشب الكشمير",
+        "notes_base_en": "Royal Amber, Cashmere Wood"
+    },
+    {
+        "name_ar": "فايف ستار إمبريال",
+        "name_en": "5 Star Imperial",
+        "image": "static/images/logo.webp",
+        "gender": "Women",
+        "oil_type": "ملكي",
+        "price": 55,
+        "num": "5S-202",
+        "description_ar": "إكسير إمبراطوري أنثوي يفيض بالسحر والأنوثة الفاخرة.",
+        "description_en": "An imperial feminine elixir overflowing with charm and luxury.",
+        "notes_top_ar": "زهر البرتقال، الفراولة الملكية",
+        "notes_top_en": "Orange Blossom, Royal Strawberry",
+        "notes_heart_ar": "الفانيليا الفاخرة، الأوركيد",
+        "notes_heart_en": "Luxury Vanilla, Orchid",
+        "notes_base_ar": "المسك الناعم، خشب الصندل",
+        "notes_base_en": "Soft Musk, Sandalwood"
+    }
+]

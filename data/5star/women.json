@@ -1,0 +1,19 @@
+[
+    {
+        "name_ar": "فايف ستار كوين نسائي",
+        "name_en": "5 Star Queen Female",
+        "image": "static/images/logo.webp",
+        "gender": "Women",
+        "oil_type": "نسائي",
+        "price": 48,
+        "num": "5S-501",
+        "description_ar": "عطر نسائي راقٍ يلفت الأنظار بنغمات الزهور والفاكهة الاستوائية.",
+        "description_en": "A refined women's scent captivating all with notes of blossoms and tropical fruits.",
+        "notes_top_ar": "الخوخ الأبيض، التوت الاحمر",
+        "notes_top_en": "White Peach, Red Berry",
+        "notes_heart_ar": "الياسمين، الغاردينيا",
+        "notes_heart_en": "Jasmine, Gardenia",
+        "notes_base_ar": "المسك الأبيض، الفانيليا",
+        "notes_base_en": "White Musk, Vanilla"
+    }
+]

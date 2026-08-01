@@ -1,0 +1,36 @@
+[
+    {
+        "name_ar": "فايف ستار جولد",
+        "name_en": "5 Star Gold",
+        "image": "static/images/logo.webp",
+        "gender": "Unisex",
+        "oil_type": "فاخر",
+        "price": 45,
+        "num": "5S-101",
+        "description_ar": "عطر فاخر يجمع بين نفحات العنبر والذهب الخالص ليعكس الفخامة المطلقة لعلامة فايف ستار.",
+        "description_en": "A luxurious fragrance blending golden amber notes to reflect the ultimate prestige of 5 Star Brand.",
+        "notes_top_ar": "الزعفران الخالص، البرغموت الملكي",
+        "notes_top_en": "Pure Saffron, Royal Bergamot",
+        "notes_heart_ar": "الورد الجوري، العنبر الذهبي",
+        "notes_heart_en": "Damask Rose, Golden Amber",
+        "notes_base_ar": "خشب الصندل، المسك الأبيض",
+        "notes_base_en": "Sandalwood, White Musk"
+    },
+    {
+        "name_ar": "فايف ستار بلاتينيوم",
+        "name_en": "5 Star Platinum",
+        "image": "static/images/logo.webp",
+        "gender": "Men",
+        "oil_type": "فاخر",
+        "price": 50,
+        "num": "5S-102",
+        "description_ar": "عبير بلاتيني عصري يمنحك جاذبية استثنائية وحضوراً لا يُنسى.",
+        "description_en": "A modern platinum scent offering exceptional allure and an unforgettable presence.",
+        "notes_top_ar": "الجريب فروت، النعناع البري",
+        "notes_top_en": "Grapefruit, Wild Mint",
+        "notes_heart_ar": "الفلفل الوردي، الأرز",
+        "notes_heart_en": "Pink Pepper, Cedar",
+        "notes_base_ar": "نجيل الهند، العنبر الداكن",
+        "notes_base_en": "Vetiver, Dark Amber"
+    }
+]

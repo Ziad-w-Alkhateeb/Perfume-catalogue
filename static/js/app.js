@@ -1,24 +1,73 @@
 // ==========================================================================
-// ESSENCE COLLECTION - CORE APPLICATION LOGIC
+// CONFIGURATION & MULTI-CATALOG REGISTRY
 // ==========================================================================
+const CATALOG_CONFIGS = {
+    'perfume-catalog': {
+        id: 'perfume-catalog',
+        titleKey: 'catalogPerfume',
+        brandKey: 'brandNidalco',
+        files: [
+            'data/arabic.json',
+            'data/europe.json',
+            'data/fragrant.json',
+            'data/men.json',
+            'data/niche.json',
+            'data/swiss.json',
+            'data/women.json',
+            'data/synthetic.json'
+        ]
+    },
+    '5star-brand': {
+        id: '5star-brand',
+        titleKey: 'catalog5Star',
+        brandKey: 'brand5Star',
+        files: [
+            'data/5star/luxury.json',
+            'data/5star/royal.json',
+            'data/5star/oriental.json',
+            'data/5star/men.json',
+            'data/5star/women.json'
+        ]
+    }
+};
 
-// ==========================================================================
-// CONFIGURATION
-// ==========================================================================
-const JSON_FILES = [
-    'data/arabic.json',
-    'data/europe.json',
-    'data/fragrant.json',
-    'data/men.json',
-    'data/niche.json',
-    'data/swiss.json',
-    'data/women.json',
-    'data/synthetic.json',
-];
+function detectActiveCatalog() {
+    const bodyCatalog = document.body.getAttribute('data-catalog');
+    if (bodyCatalog && CATALOG_CONFIGS[bodyCatalog]) {
+        return bodyCatalog;
+    }
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const queryCatalog = urlParams.get('catalog');
+    if (queryCatalog && CATALOG_CONFIGS[queryCatalog]) {
+        return queryCatalog;
+    }
+    
+    const path = window.location.pathname.toLowerCase();
+    if (path.includes('5star-brand') || path.includes('5star')) {
+        return '5star-brand';
+    }
+    
+    return 'perfume-catalog';
+}
+
+function getPathPrefix() {
+    if (document.body.hasAttribute('data-base-prefix')) {
+        return document.body.getAttribute('data-base-prefix');
+    }
+    const segments = window.location.pathname.split('/').filter(Boolean);
+    const lastSeg = segments[segments.length - 1];
+    // If the URL ends with a directory like /5star-brand/ or /perfume-cataloge/ without .html extension
+    if (segments.length >= 1 && (segments.includes('5star-brand') || segments.includes('perfume-catalog') || segments.includes('perfume-cataloge') || segments.includes('perfume-catalogue')) && !lastSeg.endsWith('.html')) {
+        return '../';
+    }
+    return '';
+}
 
 // ==========================================================================
 // STATE MANAGEMENT
 // ==========================================================================
+let activeCatalogId = 'perfume-catalog';
 let allPerfumes = [];
 let filteredPerfumes = [];
 let currentFilter = 'all';
@@ -41,6 +90,9 @@ function init() {
     if (typeof i18n === 'undefined') return;
     isInitialized = true;
 
+    // Detect active catalog from URL sub-link or body data attribute
+    activeCatalogId = detectActiveCatalog();
+
     // 1. Initialize Visual Theme
     if (isDark) {
         document.documentElement.setAttribute('data-theme', 'dark');
@@ -55,7 +107,7 @@ function init() {
         if (langSwitch) langSwitch.classList.add('active');
     }
     
-    // 3. Apply Multi-language Localizations
+    // 3. Apply Multi-language Localizations & Branding
     applyTranslations();
     
     // 4. Run Async Catalog Fetching
@@ -71,11 +123,28 @@ function init() {
 function applyTranslations() {
     const t = i18n[currentLang];
     if (!t) return;
+
+    const catalogConfig = CATALOG_CONFIGS[activeCatalogId] || CATALOG_CONFIGS['perfume-catalog'];
+    
+    // Set document title dynamically
+    const catalogTitle = t[catalogConfig.titleKey] || catalogConfig.id;
+    const brandName = t[catalogConfig.brandKey] || 'Nidalco';
+    document.title = `${brandName} - ${catalogTitle}`;
+
+    // Set header logo title
+    const logoTitleEl = document.querySelector('.logo-title');
+    if (logoTitleEl) {
+        logoTitleEl.textContent = brandName;
+    }
     
     // Translate plain nodes
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (t[key]) el.textContent = t[key];
+        if (key === 'logo') {
+            el.textContent = brandName;
+        } else if (t[key]) {
+            el.textContent = t[key];
+        }
     });
     
     // Translate search/input placeholders
@@ -187,13 +256,16 @@ function buildCategoryFilters() {
 async function loadData() {
     loadErrors = [];
     const t = i18n[currentLang];
+    const prefix = getPathPrefix();
+    const catalogConfig = CATALOG_CONFIGS[activeCatalogId] || CATALOG_CONFIGS['perfume-catalog'];
 
     try {
-        const loadPromises = JSON_FILES.map(async (file) => {
+        const loadPromises = catalogConfig.files.map(async (file) => {
+            const fetchPath = prefix + file;
             try {
-                const response = await fetch(file);
+                const response = await fetch(fetchPath);
                 if (!response.ok) {
-                    throw new Error('HTTP status ' + response.status + ' for ' + file);
+                    throw new Error('HTTP status ' + response.status + ' for ' + fetchPath);
                 }
                 const data = await response.json();
 
@@ -204,14 +276,21 @@ async function loadData() {
                     .replace(/_/g, ' ')
                     .replace(/\b\w/g, l => l.toUpperCase());
 
-                return data.map(item => ({
-                    ...item,
-                    collection: collectionName,
-                    image: item.image.replace(/^app\//, '') // strip optional development paths
-                }));
+                return data.map(item => {
+                    let itemImage = item.image.replace(/^app\//, '');
+                    // Normalize relative image paths if in subdirectory
+                    if (prefix && !itemImage.startsWith('http') && !itemImage.startsWith('/')) {
+                        itemImage = prefix + itemImage;
+                    }
+                    return {
+                        ...item,
+                        collection: collectionName,
+                        image: itemImage
+                    };
+                });
             } catch (e) {
-                loadErrors.push({ file: file, error: e.message });
-                console.warn('Could not load ' + file + ':', e);
+                loadErrors.push({ file: fetchPath, error: e.message });
+                console.warn('Could not load ' + fetchPath + ':', e);
                 return [];
             }
         });
@@ -282,6 +361,7 @@ function renderPerfumes(perfumes) {
         const secondaryName = isArabic ? perfume.name_en : perfume.name_ar;
         const delay = Math.min(index * 0.04, 0.4);
 
+        const is5Star = activeCatalogId === '5star-brand';
         const isFragrant = perfume.collection === 'Fragrant';
         const cardClass = isFragrant ? 'perfume-card no-details' : 'perfume-card';
 
@@ -292,7 +372,7 @@ function renderPerfumes(perfumes) {
                       src="${perfume.image}"
                       alt="${escapeHtml(perfume.name_en)}"
                       loading="lazy"
-                      onerror="this.onerror=null; this.src='static/images/logo.webp';">
+                      onerror="this.onerror=null; this.src='${getPathPrefix()}static/images/logo.webp';">
             </div>
             <div class="card-body">
                 <div class="card-header">
@@ -300,11 +380,11 @@ function renderPerfumes(perfumes) {
                         <div class="card-title-primary">${escapeHtml(primaryName)}</div>
                         <div class="card-title-secondary">${escapeHtml(secondaryName)}</div>
                     </div>
-                    <div class="card-code">${perfume.num}</div>
+                    ${is5Star ? '' : `<div class="card-code">${perfume.num}</div>`}
                 </div>
                 <div class="card-meta">
                     <span class="badge badge-gender-${perfume.gender.toLowerCase()}">${translateGender(perfume.gender)}</span>
-                    <span class="badge badge-type badge-type-${perfume.collection.toLowerCase()}">${perfume.oil_type}</span>
+                    ${is5Star ? '' : `<span class="badge badge-type badge-type-${perfume.collection.toLowerCase()}">${perfume.oil_type}</span>`}
                 </div>
             </div>
         </div>

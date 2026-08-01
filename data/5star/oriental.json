@@ -1,0 +1,36 @@
+[
+    {
+        "name_ar": "فايف ستار عود الملوك",
+        "name_en": "5 Star Oud Al-Muluk",
+        "image": "static/images/logo.webp",
+        "gender": "Unisex",
+        "oil_type": "شرقي",
+        "price": 65,
+        "num": "5S-301",
+        "description_ar": "دهن عود شرقي أصيل معتق يفوح برائحة الأصالة والفخامة الشرقية.",
+        "description_en": "A deeply aged oriental Oud oil echoing authentic Eastern heritage and grandeur.",
+        "notes_top_ar": "دهن العود الهندي، الزعفران",
+        "notes_top_en": "Indian Oud Oil, Saffron",
+        "notes_heart_ar": "الورد الجوري المعتق، العنبر",
+        "notes_heart_en": "Aged Damask Rose, Amber",
+        "notes_base_ar": "الخشب المعتق، المسك الأسود",
+        "notes_base_en": "Aged Woods, Black Musk"
+    },
+    {
+        "name_ar": "فايف ستار مسك الليل",
+        "name_en": "5 Star Night Musk",
+        "image": "static/images/logo.webp",
+        "gender": "Unisex",
+        "oil_type": "شرقي",
+        "price": 40,
+        "num": "5S-302",
+        "description_ar": "مسك ناعم ودافئ مستوحى من سحر الليالي الشرقية.",
+        "description_en": "Soft and warm musk inspired by the magic of oriental nights.",
+        "notes_top_ar": "اللافندر، الورد الأبيض",
+        "notes_top_en": "Lavender, White Rose",
+        "notes_heart_ar": "المسك الأسبق، زهر اللوتس",
+        "notes_heart_en": "Prime Musk, Lotus Flower",
+        "notes_base_ar": "العنبر، خشب الصندل",
+        "notes_base_en": "Amber, Sandalwood"
+    }
+]
