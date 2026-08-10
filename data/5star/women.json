@@ -1,19 +1,86 @@
 [
     {
-        "name_ar": "فايف ستار كوين نسائي",
-        "name_en": "5 Star Queen Female",
-        "image": "static/images/logo.webp",
+        "name_ar": "بربري هير",
+        "name_en": "Burberry Her",
+        "image": "app/static/images/French/women/Burberry Her.webp",
         "gender": "Women",
-        "oil_type": "نسائي",
-        "price": 48,
-        "num": "5S-501",
-        "description_ar": "عطر نسائي راقٍ يلفت الأنظار بنغمات الزهور والفاكهة الاستوائية.",
-        "description_en": "A refined women's scent captivating all with notes of blossoms and tropical fruits.",
-        "notes_top_ar": "الخوخ الأبيض، التوت الاحمر",
-        "notes_top_en": "White Peach, Red Berry",
-        "notes_heart_ar": "الياسمين، الغاردينيا",
-        "notes_heart_en": "Jasmine, Gardenia",
-        "notes_base_ar": "المسك الأبيض، الفانيليا",
-        "notes_base_en": "White Musk, Vanilla"
-    }
+        "notes_top_en": "Raspberry, Red Berries, Bergamot",
+        "notes_top_ar": "التوت الأحمر اللذيذ، التوت البري، البرغموت المنعش",
+        "notes_heart_en": "Peony, Rose, Jasmine, Gardenia",
+        "notes_heart_ar": "زهرة الفاوانيا، الورد الجوري، الياسمين، الغاردينيا",
+        "notes_base_en": "White Musk, Vanilla, Sandalwood",
+        "notes_base_ar": "المسك الأبيض الناعم، الفانيليا الحلوة، خشب الصندل"
+    },
+    {
+        "name_ar": "ماي واي",
+        "name_en": "My Way",
+        "image": "app/static/images/French/women/My Way.webp",
+        "gender": "Women",
+        "notes_top_en": "Raspberry, Red Berries, Bergamot",
+        "notes_top_ar": "التوت الأحمر اللذيذ، التوت البري، البرغموت المنعش",
+        "notes_heart_en": "Peony, Rose, Jasmine, Gardenia",
+        "notes_heart_ar": "زهرة الفاوانيا، الورد الجوري، الياسمين، الغاردينيا",
+        "notes_base_en": "White Musk, Vanilla, Sandalwood",
+        "notes_base_ar": "المسك الأبيض الناعم، الفانيليا الحلوة، خشب الصندل"
+    },
+    {
+        "name_ar": "اتيرنتي",
+        "name_en": "Eternity",
+        "image": "app/static/images/French/women/Eternity.webp",
+        "gender": "Women",
+        "notes_top_en": "Raspberry, Red Berries, Bergamot",
+        "notes_top_ar": "التوت الأحمر اللذيذ، التوت البري، البرغموت المنعش",
+        "notes_heart_en": "Peony, Rose, Jasmine, Gardenia",
+        "notes_heart_ar": "زهرة الفاوانيا، الورد الجوري، الياسمين، الغاردينيا",
+        "notes_base_en": "White Musk, Vanilla, Sandalwood",
+        "notes_base_ar": "المسك الأبيض الناعم، الفانيليا الحلوة، خشب الصندل"
+    },  
+    {
+        "name_ar": "اسكادا روكن ريو ",
+        "name_en": "escada rockin rio",
+        "image": "app/static/images/French/women/escada rockin rio.webp",
+        "gender": "Women",
+        "notes_top_en": "Raspberry, Red Berries, Bergamot",
+        "notes_top_ar": "التوت الأحمر اللذيذ، التوت البري، البرغموت المنعش",
+        "notes_heart_en": "Peony, Rose, Jasmine, Gardenia",
+        "notes_heart_ar": "زهرة الفاوانيا، الورد الجوري، الياسمين، الغاردينيا",
+        "notes_base_en": "White Musk, Vanilla, Sandalwood",
+        "notes_base_ar": "المسك الأبيض الناعم، الفانيليا الحلوة، خشب الصندل"
+    },
+    {
+        "name_ar": "بي ديليشص",
+        "name_en": "Be Delicious",
+        "image": "app/static/images/French/women/Be Delicious.webp",
+        "gender": "Women",
+        "notes_top_en": "Raspberry, Red Berries, Bergamot",
+        "notes_top_ar": "التوت الأحمر، التوت البري، البرغموت",
+        "notes_heart_en": "Peony, Rose, Jasmine, Gardenia",
+        "notes_heart_ar": "زهرة الفاوانيا، الورد الجوري، الياسمين، الغاردينيا",
+        "notes_base_en": "White Musk, Vanilla, Sandalwood",
+        "notes_base_ar": "المسك الأبيض الناعم، الفانيليا الحلوة، خشب الصندل"
+    },
+    {
+        "name_ar": "اسكادا بلو",
+        "name_en": "Escada blue",
+        "image": "app/static/images/French/women/Escada blue.webp",
+        "gender": "Women",
+        "notes_top_en": "Mango, Strawberry, Passionfruit, Red Apple",
+        "notes_top_ar": "المانجو الاستوائي، الفراولة، باشن فروت، التفاح الأحمر",
+        "notes_heart_en": "Freesia, Jasmine, Rose, Peach",
+        "notes_heart_ar": "زهرة الفريزيا، الياسمين الناعم، الورد، الخوخ الحلو",
+        "notes_base_en": "Vanilla, Coconut, Musk, Sandalwood",
+        "notes_base_ar": "الفانيليا الغنية، جوز الهند الكريمي، المسك، خشب الصندل"
+        },
+    {
+        "name_ar": "يارا",
+        "name_en": "Yara",
+        "image": "static/images/arabic/Yara.webp",
+        "gender": "Women",
+        "notes_top_en": "Sweet Tangerine, Heliotrope, Orchid",
+        "notes_top_ar": "اليوسفي الحلو، الهليوتروب، الأوركيد",
+        "notes_heart_en": "Tropical Fruits, Gourmand Accords, Fluffy Marshmallow",
+        "notes_heart_ar": "الفواكه الاستوائية، نوتات الغورماند، المارشميلو الهش",
+        "notes_base_en": "Vanilla, Velvety Musk, Smooth Sandalwood",
+        "notes_base_ar": "الفانيليا، المسك المخملي، خشب الصندل السلس"
+       }
 ]

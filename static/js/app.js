@@ -33,6 +33,9 @@ const CATALOG_CONFIGS = {
 
 function detectActiveCatalog() {
     const bodyCatalog = document.body.getAttribute('data-catalog');
+    if (bodyCatalog === 'home') {
+        return 'home';
+    }
     if (bodyCatalog && CATALOG_CONFIGS[bodyCatalog]) {
         return bodyCatalog;
     }
@@ -110,8 +113,10 @@ function init() {
     // 3. Apply Multi-language Localizations & Branding
     applyTranslations();
     
-    // 4. Run Async Catalog Fetching
-    loadData();
+    // 4. Run Async Catalog Fetching (only if on a catalog page)
+    if (activeCatalogId !== 'home') {
+        loadData();
+    }
     
     // 5. Setup Action Click and Keyboard Hooks
     setupEventListeners();
@@ -129,7 +134,14 @@ function applyTranslations() {
     // Set document title dynamically
     const catalogTitle = t[catalogConfig.titleKey] || catalogConfig.id;
     const brandName = t[catalogConfig.brandKey] || 'Nidalco';
-    document.title = `${brandName} - ${catalogTitle}`;
+    
+    if (activeCatalogId === 'home') {
+        document.title = `${t.brandNidalco || 'Nidalco'} - ${t.tagline || 'Premium Fragrances'}`;
+    } else if (brandName === catalogTitle || catalogTitle.toLowerCase().includes(brandName.toLowerCase())) {
+        document.title = `${brandName} - ${t.catalogPerfume || catalogTitle}`;
+    } else {
+        document.title = `${brandName} - ${catalogTitle}`;
+    }
 
     // Set header logo title
     const logoTitleEl = document.querySelector('.logo-title');
@@ -212,6 +224,34 @@ function buildCategoryFilters() {
     if (!categoryChips) return;
     
     const t = i18n[currentLang];
+
+    if (activeCatalogId === '5star-brand') {
+        const genders = [
+            { id: 'all', key: 'filterAll' },
+            { id: 'Women', key: 'Women' },
+            { id: 'Men', key: 'Men' }
+        ];
+
+        let html = '';
+        genders.forEach(g => {
+            const isActive = currentGender === g.id;
+            const label = t[g.key] || g.id;
+            html += `<button class="filter-chip ${isActive ? 'active' : ''}" data-gender="${g.id}">${label}</button>`;
+        });
+
+        categoryChips.innerHTML = html;
+
+        categoryChips.querySelectorAll('.filter-chip').forEach(btn => {
+            btn.addEventListener('click', () => {
+                categoryChips.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentGender = btn.dataset.gender;
+                currentFilter = 'all';
+                applyFilters();
+            });
+        });
+        return;
+    }
 
     // Extract unique collection names from catalog database
     const collections = [...new Set(allPerfumes.map(p => p.collection))];
@@ -528,7 +568,11 @@ function applyFilters(resetPage = true) {
 
     // 1.5. Filter by gender
     if (currentGender !== 'all') {
-        result = result.filter(p => p.gender.toLowerCase() === currentGender.toLowerCase());
+        result = result.filter(p => {
+            const g = (p.gender || '').toLowerCase();
+            const target = currentGender.toLowerCase();
+            return g === target || g === 'unisex';
+        });
     }
 
     // 2. Filter by search input match
@@ -584,81 +628,112 @@ function openModal(indexOrPerfume) {
     const isArabic = currentLang === 'ar';
 
     // 1. Load data properties into template fields
-    document.getElementById('modalImage').src = perfume.image;
-    document.getElementById('modalTitleEn').textContent = perfume.name_en;
-    document.getElementById('modalTitleAr').textContent = perfume.name_ar;
-    document.getElementById('modalGender').textContent = translateGender(perfume.gender);
-    document.getElementById('modalType').textContent = perfume.oil_type;
-    document.getElementById('modalNum').textContent = perfume.num;
-    document.getElementById('modalCollection').textContent = t[perfume.collection] || perfume.collection;
+    const elImg = document.getElementById('modalImage');
+    if (elImg) elImg.src = perfume.image;
+
+    const elTitleEn = document.getElementById('modalTitleEn');
+    if (elTitleEn) elTitleEn.textContent = perfume.name_en;
+
+    const elTitleAr = document.getElementById('modalTitleAr');
+    if (elTitleAr) elTitleAr.textContent = perfume.name_ar;
+
+    const elGender = document.getElementById('modalGender');
+    if (elGender) elGender.textContent = translateGender(perfume.gender);
+
+    const elType = document.getElementById('modalType');
+    if (elType) elType.textContent = perfume.oil_type;
+
+    const elNum = document.getElementById('modalNum');
+    if (elNum) elNum.textContent = perfume.num;
+
+    const elCollection = document.getElementById('modalCollection');
+    if (elCollection) elCollection.textContent = t[perfume.collection] || perfume.collection;
 
     // 2. Resolve Description
-    let desc = isArabic ? perfume.description_ar : perfume.description_en;
-    if (!desc) {
-        if (isArabic) {
-            desc = `عطر فاخر ومميز يجسد التراث الأصيل لـ ${perfume.oil_type}. تم تصميمه بعناية فائقة ليلائم الذوق الرفيع للـ ${translateGender(perfume.gender)}، مع تباينات رائعة تدوم طويلاً وتمنحك حضوراً ساحراً.`;
-        } else {
-            desc = `A luxury fragrance that perfectly embodies the rich heritage of ${perfume.oil_type} scents. Meticulously crafted for ${perfume.gender.toLowerCase()}, it opens with vibrant notes leading into a warm, lingering and sophisticated trail.`;
+    const elDesc = document.getElementById('modalDesc');
+    if (elDesc) {
+        let desc = isArabic ? perfume.description_ar : perfume.description_en;
+        if (!desc) {
+            if (isArabic) {
+                desc = `عطر فاخر ومميز يجسد التراث الأصيل لـ ${perfume.oil_type}. تم تصميمه بعناية فائقة ليلائم الذوق الرفيع للـ ${translateGender(perfume.gender)}، مع تباينات رائعة تدوم طويلاً وتمنحك حضوراً ساحراً.`;
+            } else {
+                desc = `A luxury fragrance that perfectly embodies the rich heritage of ${perfume.oil_type} scents. Meticulously crafted for ${perfume.gender.toLowerCase()}, it opens with vibrant notes leading into a warm, lingering and sophisticated trail.`;
+            }
         }
+        elDesc.textContent = desc;
     }
-    document.getElementById('modalDesc').textContent = desc;
 
     // 3. Resolve Scent Character
-    let char = isArabic ? perfume.character_ar : perfume.character_en;
-    if (!char) {
-        if (perfume.oil_type === 'عربي') {
-            char = isArabic ? 'خشبي، شرقي ودافئ' : 'Woody, Oriental & Warm';
-        } else if (perfume.gender === 'Women') {
-            char = isArabic ? 'زهري، حلو وناعم' : 'Floral, Sweet & Soft';
-        } else {
-            char = isArabic ? 'منعش، حمضيات وأخشاب' : 'Fresh, Citrus & Woods';
+    const elChar = document.getElementById('modalCharacter');
+    if (elChar) {
+        let char = isArabic ? perfume.character_ar : perfume.character_en;
+        if (!char) {
+            if (perfume.oil_type === 'عربي') {
+                char = isArabic ? 'خشبي، شرقي ودافئ' : 'Woody, Oriental & Warm';
+            } else if (perfume.gender === 'Women') {
+                char = isArabic ? 'زهري، حلو وناعم' : 'Floral, Sweet & Soft';
+            } else {
+                char = isArabic ? 'منعش، حمضيات وأخشاب' : 'Fresh, Citrus & Woods';
+            }
         }
+        elChar.textContent = char;
     }
-    document.getElementById('modalCharacter').textContent = char;
 
     // 4. Resolve Olfactory Pyramid Notes (Top, Heart, Base)
-    let notesTop = isArabic ? perfume.notes_top_ar : perfume.notes_top_en;
-    if (!notesTop) {
-        if (perfume.oil_type === 'عربي') {
-            notesTop = isArabic ? 'البرغموت، الزعفران، الهيل' : 'Bergamot, Saffron, Cardamom';
-        } else if (perfume.gender === 'Women') {
-            notesTop = isArabic ? 'الفراولة، الياسمين، الحمضيات' : 'Strawberry, Jasmine, Citrus';
-        } else {
-            notesTop = isArabic ? 'الليمون، النعناع، الجريب فروت' : 'Lemon, Mint, Grapefruit';
+    const elNotesTop = document.getElementById('modalNotesTop');
+    if (elNotesTop) {
+        let notesTop = isArabic ? perfume.notes_top_ar : perfume.notes_top_en;
+        if (!notesTop) {
+            if (perfume.oil_type === 'عربي') {
+                notesTop = isArabic ? 'البرغموت، الزعفران، الهيل' : 'Bergamot, Saffron, Cardamom';
+            } else if (perfume.gender === 'Women') {
+                notesTop = isArabic ? 'الفراولة، الياسمين، الحمضيات' : 'Strawberry, Jasmine, Citrus';
+            } else {
+                notesTop = isArabic ? 'الليمون، النعناع، الجريب فروت' : 'Lemon, Mint, Grapefruit';
+            }
         }
+        elNotesTop.textContent = notesTop;
     }
-    document.getElementById('modalNotesTop').textContent = notesTop;
 
-    let notesHeart = isArabic ? perfume.notes_heart_ar : perfume.notes_heart_en;
-    if (!notesHeart) {
-        if (perfume.oil_type === 'عربي') {
-            notesHeart = isArabic ? 'الورد التركي، الياسمين، العود الخفيف' : 'Turkish Rose, Jasmine, Soft Oud';
-        } else if (perfume.gender === 'Women') {
-            notesHeart = isArabic ? 'الفانيليا، الغاردينيا، أزهار البرتقال' : 'Vanilla, Gardenia, Orange Blossom';
-        } else {
-            notesHeart = isArabic ? 'الزنجبيل، اللافندر، المريمية' : 'Ginger, Lavender, Sage';
+    const elNotesHeart = document.getElementById('modalNotesHeart');
+    if (elNotesHeart) {
+        let notesHeart = isArabic ? perfume.notes_heart_ar : perfume.notes_heart_en;
+        if (!notesHeart) {
+            if (perfume.oil_type === 'عربي') {
+                notesHeart = isArabic ? 'الورد التركي، الياسمين، العود الخفيف' : 'Turkish Rose, Jasmine, Soft Oud';
+            } else if (perfume.gender === 'Women') {
+                notesHeart = isArabic ? 'الفانيليا، الغاردينيا، أزهار البرتقال' : 'Vanilla, Gardenia, Orange Blossom';
+            } else {
+                notesHeart = isArabic ? 'الزنجبيل، اللافندر، المريمية' : 'Ginger, Lavender, Sage';
+            }
         }
+        elNotesHeart.textContent = notesHeart;
     }
-    document.getElementById('modalNotesHeart').textContent = notesHeart;
 
-    let notesBase = isArabic ? perfume.notes_base_ar : perfume.notes_base_en;
-    if (!notesBase) {
-        if (perfume.oil_type === 'عربي') {
-            notesBase = isArabic ? 'خشب الصندل، العنبر، المسك، العود الفاخر' : 'Sandalwood, Amber, Musk, Premium Oud';
-        } else if (perfume.gender === 'Women') {
-            notesBase = isArabic ? 'المسك الأبيض، حبوب التونكا، خشب الأرز' : 'White Musk, Tonka Bean, Cedarwood';
-        } else {
-            notesBase = isArabic ? 'خشب الصندل، الباتشولي، المسك، نجيل الهند' : 'Sandalwood, Patchouli, Musk, Vetiver';
+    const elNotesBase = document.getElementById('modalNotesBase');
+    if (elNotesBase) {
+        let notesBase = isArabic ? perfume.notes_base_ar : perfume.notes_base_en;
+        if (!notesBase) {
+            if (perfume.oil_type === 'عربي') {
+                notesBase = isArabic ? 'خشب الصندل، العنبر، المسك، العود الفاخر' : 'Sandalwood, Amber, Musk, Premium Oud';
+            } else if (perfume.gender === 'Women') {
+                notesBase = isArabic ? 'المسك الأبيض، حبوب التونكا، خشب الأرز' : 'White Musk, Tonka Bean, Cedarwood';
+            } else {
+                notesBase = isArabic ? 'خشب الصندل، الباتشولي، المسك، نجيل الهند' : 'Sandalwood, Patchouli, Musk, Vetiver';
+            }
         }
+        elNotesBase.textContent = notesBase;
     }
-    document.getElementById('modalNotesBase').textContent = notesBase;
 
     // 5. Resolve Manufacturer/Brand
-    let brand = isArabic ? perfume.manufacturer_ar : perfume.manufacturer_en;
-    if (!brand) {
-        brand = t.fallbackBrand;
+    const elBrand = document.getElementById('modalBrand');
+    if (elBrand) {
+        let brand = isArabic ? perfume.manufacturer_ar : perfume.manufacturer_en;
+        if (!brand) {
+            brand = t.fallbackBrand;
+        }
+        elBrand.textContent = brand;
     }
-    document.getElementById('modalBrand').textContent = brand;
 
     // 5.5 Set dynamic WhatsApp Inquiry Link
     const waName = isArabic ? perfume.name_ar : perfume.name_en;
@@ -888,6 +963,29 @@ function setupEventListeners() {
     if (settingsWrapper) {
         settingsWrapper.addEventListener('click', (e) => {
             if (e.target.id === 'settingsBackdrop') closeSettings();
+        });
+    }
+
+    // 2.2 Mobile Navigation Drawer Actions
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileNavDrawer = document.getElementById('mobileNavDrawer');
+    const mobileNavClose = document.getElementById('mobileNavClose');
+    const mobileNavBackdrop = document.getElementById('mobileNavBackdrop');
+
+    function openMobileNav() {
+        if (mobileNavDrawer) mobileNavDrawer.classList.add('active');
+    }
+    function closeMobileNav() {
+        if (mobileNavDrawer) mobileNavDrawer.classList.remove('active');
+    }
+
+    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileNav);
+    if (mobileNavClose) mobileNavClose.addEventListener('click', closeMobileNav);
+    if (mobileNavBackdrop) mobileNavBackdrop.addEventListener('click', closeMobileNav);
+
+    if (mobileNavDrawer) {
+        mobileNavDrawer.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', closeMobileNav);
         });
     }
 

@@ -3,27 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfume Catalog</title>
+    <title>Nidalco - List of Perfume Oils</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/styles.css">
-    <base target="_blank">
+    <base target="_self">
 </head>
 <body data-catalog="perfume-catalog">
     <!-- ===== TOP BAR ===== -->
     <div class="top-bar">
-        <a href="#" class="logo-area">
+        <a href="index.html" class="logo-area">
             <img src="static/images/logo.webp" alt="Logo" class="logo-img" onerror="this.style.display='none'">
             <div class="logo-text">
                 <span class="logo-title" data-i18n="logo">Nidalco</span>
             </div>
         </a>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link" data-i18n="navHome">Home</a>
+            <a href="perfume-catalog.html" class="nav-link active" data-i18n="optionPerfumeTitle">List of Perfume Oils</a>
+            <a href="5star-brand.html" class="nav-link" data-i18n="option5StarTitle">5 Star Brand</a>
+            <a href="index.html#contactSection" class="nav-link" data-i18n="navContact">Contact</a>
+        </nav>
+
         <div class="top-actions">
+            <button class="mobile-menu-btn" id="mobileMenuBtn" title="Menu">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
             <button class="icon-btn" id="searchBtn" title="Search">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
             </button>
             <button class="icon-btn" id="settingsBtn" title="Settings">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
             </button>
+        </div>
+    </div>
+
+    <!-- ===== MOBILE NAVIGATION DRAWER ===== -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+        <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+        <div class="mobile-nav-content">
+            <div class="mobile-nav-header">
+                <span class="mobile-nav-title" data-i18n="logo">Nidalco</span>
+                <button class="mobile-nav-close" id="mobileNavClose">&times;</button>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="index.html" class="mobile-nav-link" data-i18n="navHome">Home</a>
+                <a href="perfume-catalog.html" class="mobile-nav-link" data-i18n="optionPerfumeTitle">List of Perfume Oils</a>
+                <a href="5star-brand.html" class="mobile-nav-link" data-i18n="option5StarTitle">5 Star Brand</a>
+                <a href="index.html#contactSection" class="mobile-nav-link" data-i18n="navContact">Contact</a>
+            </div>
         </div>
     </div>
 
