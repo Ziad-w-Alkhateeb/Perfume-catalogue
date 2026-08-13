@@ -3,55 +3,55 @@
    ========================================================================== */
 
 :root {
-    --bg: #F7F8F6;
+    --bg: #FAFAFA;
     --bg-secondary: #FFFFFF;
     --card-bg: #FFFFFF;
-    --text: #0F1A14;
-    --text-muted: #5C6B61;
-    --border: rgba(197, 160, 89, 0.22);
-    --border-glow: rgba(197, 160, 89, 0.45);
-    --gold: #B8860B;
-    --gold-light: #C5A059;
-    --gold-bg: rgba(197, 160, 89, 0.08);
-    --shadow: rgba(13, 59, 39, 0.06);
-    --shadow-hover: rgba(197, 160, 89, 0.2);
-    --shadow-modal: rgba(15, 26, 20, 0.2);
-    --header-bg: rgba(247, 248, 246, 0.92);
-    --badge-women: #C5A059;
-    --badge-women-bg: rgba(197, 160, 89, 0.12);
-    --badge-men: #0D3B27;
-    --badge-men-bg: rgba(13, 59, 39, 0.1);
-    --badge-unisex: #B8860B;
-    --badge-unisex-bg: rgba(184, 134, 11, 0.12);
+    --text: #181111;
+    --text-muted: #665555;
+    --border: rgba(210, 0, 0, 0.15);
+    --border-glow: rgba(210, 0, 0, 0.3);
+    --gold: #D20000;
+    --gold-light: #E52E2E;
+    --gold-bg: rgba(210, 0, 0, 0.06);
+    --shadow: rgba(210, 0, 0, 0.05);
+    --shadow-hover: rgba(210, 0, 0, 0.15);
+    --shadow-modal: rgba(24, 17, 17, 0.18);
+    --header-bg: rgba(250, 250, 250, 0.95);
+    --badge-women: #D20000;
+    --badge-women-bg: rgba(210, 0, 0, 0.08);
+    --badge-men: #990000;
+    --badge-men-bg: rgba(153, 0, 0, 0.08);
+    --badge-unisex: #D20000;
+    --badge-unisex-bg: rgba(210, 0, 0, 0.08);
     --blur: blur(14px);
     --card-radius: 20px;
     --btn-radius: 12px;
-    --header-height: 70px;
-    --accent: #B8860B;
+    --header-height: 80px;
+    --accent: #D20000;
 }
 
 [data-theme="dark"] {
-    --bg: #080E0B;
-    --bg-secondary: #111A15;
-    --card-bg: #121C16;
-    --text: #F0F4F1;
-    --text-muted: #8E9E94;
-    --border: rgba(212, 175, 55, 0.25);
-    --border-glow: rgba(212, 175, 55, 0.5);
-    --gold: #D4AF37;
-    --gold-light: #E6CA65;
-    --gold-bg: rgba(212, 175, 55, 0.16);
-    --shadow: rgba(0, 0, 0, 0.55);
-    --shadow-hover: rgba(0, 0, 0, 0.75);
-    --shadow-modal: rgba(0, 0, 0, 0.85);
-    --header-bg: rgba(8, 14, 11, 0.92);
-    --badge-women: #E6CA65;
-    --badge-women-bg: rgba(230, 202, 101, 0.18);
-    --badge-men: #3A7D5C;
-    --badge-men-bg: rgba(58, 125, 92, 0.25);
-    --badge-unisex: #D4AF37;
-    --badge-unisex-bg: rgba(212, 175, 55, 0.18);
-    --accent: #D4AF37;
+    --bg: #0A0A0C;
+    --bg-secondary: #121215;
+    --card-bg: #17171B;
+    --text: #F7F7F8;
+    --text-muted: #A0A0AA;
+    --border: rgba(255, 255, 255, 0.08);
+    --border-glow: rgba(229, 46, 46, 0.3);
+    --gold: #E52E2E;
+    --gold-light: #FF4D4D;
+    --gold-bg: rgba(229, 46, 46, 0.08);
+    --shadow: rgba(0, 0, 0, 0.65);
+    --shadow-hover: rgba(0, 0, 0, 0.85);
+    --shadow-modal: rgba(0, 0, 0, 0.9);
+    --header-bg: rgba(10, 10, 12, 0.92);
+    --badge-women: #E52E2E;
+    --badge-women-bg: rgba(229, 46, 46, 0.12);
+    --badge-men: #C62828;
+    --badge-men-bg: rgba(198, 40, 40, 0.12);
+    --badge-unisex: #E52E2E;
+    --badge-unisex-bg: rgba(229, 46, 46, 0.12);
+    --accent: #E52E2E;
 }
 
 * {
@@ -689,9 +689,8 @@ body[dir="rtl"] .contact-option:hover .contact-arrow-icon {
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
-    position: sticky;
-    top: var(--header-height);
-    z-index: 100;
+    position: relative;
+    z-index: 10;
     transition: background 0.4s ease, border-color 0.4s ease;
 }
 
@@ -3156,13 +3155,106 @@ body.drawer-open {
     background: rgba(255,255,255,0.08);
 }
 
+/* ===== PORTAL CARDS (SCREENSHOT 2 LUXURY STYLE) ===== */
+.portals-showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portal-card-card2 {
+    position: relative;
+    height: 230px;
+    border-radius: 24px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    border: 1px solid var(--border);
+}
+
+.portal-card-card2:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.portal-card2-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(20, 10, 10, 0.35) 0%, rgba(15, 8, 8, 0.75) 100%);
+    transition: opacity 0.3s ease;
+}
+
+.portal-card-card2:hover .portal-card2-overlay {
+    background: linear-gradient(180deg, rgba(20, 10, 10, 0.25) 0%, rgba(15, 8, 8, 0.82) 100%);
+}
+
+.portal-card2-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    padding: 1.75rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+body[dir="rtl"] .portal-card2-content {
+    align-items: flex-start;
+}
+
+.portal-card2-title {
+    font-family: 'Playfair Display', 'Noto Naskh Arabic', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    line-height: 1.25;
+    margin: 0;
+}
+
+.portal-card2-pill {
+    background: #FFFFFF;
+    color: #181111;
+    border-radius: 30px;
+    padding: 0.65rem 1.35rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.portal-card-card2:hover .portal-card2-pill {
+    background: #FFFFFF;
+    color: var(--gold);
+    transform: translateX(4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+body[dir="rtl"] .portal-card-card2:hover .portal-card2-pill {
+    transform: translateX(-4px);
+}
+
+body[dir="rtl"] .portal-card2-arrow {
+    transform: rotate(180deg);
+}
+
 /* ==========================================================================
    LUXURY MOBILE RESPONSIVE UI/UX REFINEMENT SYSTEM (<= 768px)
    ========================================================================== */
 @media (max-width: 768px) {
     /* 1. Global Spacing & Layout Constraints */
     .home-section {
-        padding: 2rem 1rem !important;
+        padding: 2.25rem 1.1rem !important;
     }
 
     .section-header-center {
@@ -3171,56 +3263,60 @@ body.drawer-open {
     }
 
     .section-tag {
-        font-size: 0.62rem;
+        font-size: 0.65rem;
         letter-spacing: 1.5px;
         margin-bottom: 0.25rem;
     }
 
     .section-title {
-        font-size: 1.3rem !important;
+        font-size: 1.35rem !important;
         margin-bottom: 0.25rem !important;
     }
 
     .section-subtitle {
-        font-size: 0.8rem !important;
+        font-size: 0.82rem !important;
         line-height: 1.45 !important;
     }
 
-    /* 2. Hero Banner Mobile Optimizations */
+    /* 2. Hero Banner Mobile Optimizations (Increased Height) */
     .hero-banner {
-        padding: 2.5rem 1rem 2rem !important;
-        min-height: auto !important;
+        padding: 4.5rem 1.25rem 3.5rem !important;
+        min-height: 480px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .hero-badge {
-        font-size: 0.72rem;
-        padding: 0.35rem 0.85rem;
-        margin-bottom: 0.75rem;
+        font-size: 0.75rem;
+        padding: 0.4rem 0.95rem;
+        margin-bottom: 0.85rem;
     }
 
     .hero-title {
-        font-size: 1.65rem !important;
+        font-size: 1.75rem !important;
         line-height: 1.25 !important;
-        margin-bottom: 0.5rem !important;
+        margin-bottom: 0.65rem !important;
     }
 
     .hero-subtitle {
-        font-size: 0.84rem !important;
-        line-height: 1.5 !important;
-        margin-bottom: 1.25rem !important;
+        font-size: 0.88rem !important;
+        line-height: 1.55 !important;
+        margin-bottom: 1.5rem !important;
     }
 
     .hero-actions {
         flex-direction: column;
         width: 100%;
-        gap: 0.65rem !important;
+        gap: 0.75rem !important;
     }
 
     .btn-primary-gold, .btn-secondary-glass {
         width: 100%;
         justify-content: center;
-        padding: 0.75rem 1.25rem !important;
-        font-size: 0.88rem !important;
+        padding: 0.85rem 1.35rem !important;
+        font-size: 0.92rem !important;
         border-radius: 14px !important;
     }
 
@@ -3231,103 +3327,106 @@ body.drawer-open {
     }
 
     .about-text-panel h2 {
-        font-size: 1.3rem !important;
+        font-size: 1.35rem !important;
         margin-bottom: 0.4rem !important;
     }
 
     .about-text-panel p {
-        font-size: 0.84rem !important;
+        font-size: 0.86rem !important;
         line-height: 1.55 !important;
         margin-bottom: 0.4rem !important;
     }
 
     .stats-counter-grid {
         grid-template-columns: repeat(2, 1fr) !important;
-        gap: 0.65rem !important;
+        gap: 0.75rem !important;
         margin-top: 1rem !important;
     }
 
     .stat-item-card {
-        padding: 0.85rem 0.65rem !important;
+        padding: 0.95rem 0.75rem !important;
         text-align: center;
         border-radius: 14px !important;
     }
 
     .stat-number {
-        font-size: 1.25rem !important;
+        font-size: 1.3rem !important;
         margin-bottom: 0.15rem !important;
     }
 
     .stat-label {
-        font-size: 0.75rem !important;
+        font-size: 0.78rem !important;
         line-height: 1.25 !important;
     }
 
-    /* 4. Portals Showcase Cards Mobile */
+    /* 4. Portals Showcase Cards Mobile (Screenshot 2 Style) */
     .portals-showcase-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+
+    .portal-card-card2 {
+        height: 185px !important;
+        border-radius: 20px !important;
+    }
+
+    .portal-card2-content {
+        padding: 1.35rem 1.25rem 1.15rem !important;
+    }
+
+    .portal-card2-title {
+        font-size: 1.3rem !important;
+    }
+
+    .portal-card2-pill {
+        padding: 0.55rem 1.15rem !important;
+        font-size: 0.82rem !important;
+    }
+
+    /* 5. Olfactory Families & Pillars Grid (Enlarged & Centered Titles) */
+    .families-grid, .pillars-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
         gap: 0.85rem !important;
     }
 
-    .portal-luxury-card {
-        border-radius: 16px !important;
-    }
-
-    .portal-content-body {
-        padding: 1.1rem 1.15rem !important;
-    }
-
-    .portal-title {
-        font-size: 1.05rem !important;
-    }
-
-    .portal-desc {
-        font-size: 0.78rem !important;
-        line-height: 1.45 !important;
-    }
-
-    .portal-cta {
-        margin-top: 0.5rem !important;
-        font-size: 0.8rem !important;
-    }
-
-    /* 5. Olfactory Families & Pillars Grid (2-Column Compact Layout) */
-    .families-grid, .pillars-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 0.65rem !important;
-    }
-
     .family-card, .pillar-card {
-        padding: 1rem 0.75rem !important;
-        border-radius: 14px !important;
-        text-align: center;
+        padding: 1.35rem 0.95rem !important;
+        border-radius: 16px !important;
+        text-align: center !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .family-card-title, .pillar-title {
-        font-size: 0.92rem !important;
-        margin-bottom: 0.35rem !important;
-        line-height: 1.3 !important;
+        font-size: 1.05rem !important;
+        margin-bottom: 0.45rem !important;
+        line-height: 1.35 !important;
+        text-align: center !important;
     }
 
     .family-card-desc, .pillar-desc {
-        font-size: 0.74rem !important;
-        line-height: 1.4 !important;
+        font-size: 0.82rem !important;
+        line-height: 1.45 !important;
+        text-align: center !important;
     }
 
     /* 6. Contact Hub Mobile Grid */
     .contact-hub-grid {
         grid-template-columns: 1fr !important;
-        gap: 0.65rem !important;
+        gap: 0.75rem !important;
     }
 
     .contact-card-item {
-        padding: 0.85rem 1rem !important;
+        padding: 0.95rem 1.1rem !important;
         border-radius: 14px !important;
         gap: 0.85rem !important;
     }
 
     .contact-card-icon {
-        width: 42px !important;
-        height: 42px !important;
+        width: 44px !important;
+        height: 44px !important;
     }
 
     .contact-card-icon svg {
@@ -3336,17 +3435,17 @@ body.drawer-open {
     }
 
     .contact-card-info h3 {
-        font-size: 0.92rem !important;
+        font-size: 0.95rem !important;
         margin-bottom: 0.15rem !important;
     }
 
     .contact-card-info p {
-        font-size: 0.76rem !important;
+        font-size: 0.78rem !important;
     }
 
     /* 7. Compact Footer Layout */
     .site-footer {
-        padding: 1.75rem 1rem 1.25rem !important;
+        padding: 2rem 1rem 1.5rem !important;
     }
 
     .footer-grid {
@@ -3367,56 +3466,10 @@ body.drawer-open {
 
     .footer-heading {
         margin-bottom: 0.5rem !important;
-        font-size: 0.7rem !important;
-    }
-
-    .footer-links a {
-        font-size: 0.8rem !important;
-    }
-
-    /* 8. Perfume Catalog Product Grid Mobile (2-Column Compact Grid) */
-    .container {
-        padding: 0.5rem 0.75rem 2.5rem !important;
-    }
-
-    .perfume-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 0.75rem !important;
-    }
-
-    .perfume-card {
-        border-radius: 14px !important;
-    }
-
-    .card-image-wrapper {
-        height: 130px !important;
-    }
-
-    .card-body {
-        padding: 0.75rem 0.65rem !important;
-    }
-
-    .card-title-primary {
-        font-size: 0.88rem !important;
-        line-height: 1.25 !important;
-    }
-
-    .card-title-secondary {
         font-size: 0.72rem !important;
     }
 
-    .filters-bar {
-        padding: 0.65rem 0.75rem !important;
-        gap: 0.5rem !important;
-    }
-
-    .filter-chip {
-        padding: 0.45rem 0.85rem !important;
-        font-size: 0.78rem !important;
-    }
-
-    .sort-select {
-        padding: 0.45rem 1.75rem 0.45rem 0.75rem !important;
-        font-size: 0.78rem !important;
+    .footer-links a {
+        font-size: 0.82rem !important;
     }
 }
