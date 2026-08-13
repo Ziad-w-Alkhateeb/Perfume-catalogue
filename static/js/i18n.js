@@ -81,6 +81,7 @@ const i18n = {
 
         // Landing Homepage Keys
         navHome: 'Home',
+        navMenu: 'Menu',
         navAbout: 'About Us',
         navPortals: 'Collections',
         navFamilies: 'Scent Notes',
@@ -199,7 +200,7 @@ const i18n = {
         Fragrant: 'فواح',
         Men: 'رجالي',
         Niche: 'نيش',
-        Swiss: 'سويصري',
+        Swiss: 'سويسري',
         Synthetic: 'صناعي',
         Women: 'نسائي',
         Unisex: 'للجنسين',
@@ -225,6 +226,7 @@ const i18n = {
 
         // Landing Homepage Keys
         navHome: 'الرئيسية',
+        navMenu: 'القائمة',
         navAbout: 'من نحن',
         navPortals: 'المجموعات',
         navFamilies: 'النوتات العطرية',

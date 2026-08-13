@@ -99,15 +99,21 @@ function init() {
     // 1. Initialize Visual Theme
     if (isDark) {
         document.documentElement.setAttribute('data-theme', 'dark');
-        const themeSwitch = document.getElementById('themeSwitch');
-        if (themeSwitch) themeSwitch.classList.add('active');
     }
+    // Highlight the active theme selector button
+    updateThemeSelectorUI();
+    // Highlight the active language selector button
+    updateLangSelectorUI();
     
     // 2. Initialize Text Direction & Layout Language
     if (currentLang === 'ar') {
+        document.documentElement.setAttribute('dir', 'rtl');
+        document.documentElement.lang = 'ar';
         document.body.setAttribute('dir', 'rtl');
-        const langSwitch = document.getElementById('langSwitch');
-        if (langSwitch) langSwitch.classList.add('active');
+    } else {
+        document.documentElement.removeAttribute('dir');
+        document.documentElement.lang = 'en';
+        document.body.removeAttribute('dir');
     }
     
     // 3. Apply Multi-language Localizations & Branding
@@ -120,6 +126,26 @@ function init() {
     
     // 5. Setup Action Click and Keyboard Hooks
     setupEventListeners();
+}
+
+function updateThemeSelectorUI() {
+    const lightBtn = document.getElementById('themeLightBtn');
+    const darkBtn = document.getElementById('themeDarkBtn');
+    if (lightBtn) lightBtn.classList.toggle('active', !isDark);
+    if (darkBtn) darkBtn.classList.toggle('active', isDark);
+    // Legacy support
+    const themeSwitch = document.getElementById('themeSwitch');
+    if (themeSwitch) themeSwitch.classList.toggle('active', isDark);
+}
+
+function updateLangSelectorUI() {
+    const arBtn = document.getElementById('langArBtn');
+    const enBtn = document.getElementById('langEnBtn');
+    if (arBtn) arBtn.classList.toggle('active', currentLang === 'ar');
+    if (enBtn) enBtn.classList.toggle('active', currentLang === 'en');
+    // Legacy support
+    const langSwitch = document.getElementById('langSwitch');
+    if (langSwitch) langSwitch.classList.toggle('active', currentLang === 'ar');
 }
 
 // ==========================================================================
@@ -195,8 +221,12 @@ function toggleLanguage() {
     localStorage.setItem('perfumeLang', currentLang);
     
     if (currentLang === 'ar') {
+        document.documentElement.setAttribute('dir', 'rtl');
+        document.documentElement.lang = 'ar';
         document.body.setAttribute('dir', 'rtl');
     } else {
+        document.documentElement.removeAttribute('dir');
+        document.documentElement.lang = 'en';
         document.body.removeAttribute('dir');
     }
     
@@ -952,60 +982,97 @@ function setupEventListeners() {
         });
     }
 
-    // 2. Settings Panel Drawer Actions
+    // 2. Unified Menu Drawer Actions (replaces old settingsBtn + mobileMenuBtn)
+    const menuBtn = document.getElementById('menuBtn');
+    const unifiedDrawer = document.getElementById('unifiedDrawer');
+    const unifiedClose = document.getElementById('unifiedClose');
+    const unifiedBackdrop = document.getElementById('unifiedBackdrop');
+
+    function openUnifiedDrawer() {
+        if (unifiedDrawer) {
+            unifiedDrawer.classList.add('active');
+            document.body.classList.add('drawer-open');
+        }
+    }
+    function closeUnifiedDrawer() {
+        if (unifiedDrawer) {
+            unifiedDrawer.classList.remove('active');
+            document.body.classList.remove('drawer-open');
+        }
+    }
+
+    if (menuBtn) menuBtn.addEventListener('click', openUnifiedDrawer);
+    if (unifiedClose) unifiedClose.addEventListener('click', closeUnifiedDrawer);
+    if (unifiedBackdrop) unifiedBackdrop.addEventListener('click', closeUnifiedDrawer);
+
+    // Close drawer when nav links are clicked
+    if (unifiedDrawer) {
+        unifiedDrawer.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', closeUnifiedDrawer);
+        });
+    }
+
+    // Fallback: support old settingsBtn / mobileMenuBtn if they still exist
     const settingsBtn = document.getElementById('settingsBtn');
-    if (settingsBtn) settingsBtn.addEventListener('click', openSettings);
-    
+    if (settingsBtn) settingsBtn.addEventListener('click', openUnifiedDrawer);
     const settingsClose = document.getElementById('settingsClose');
-    if (settingsClose) settingsClose.addEventListener('click', closeSettings);
-    
+    if (settingsClose) settingsClose.addEventListener('click', closeUnifiedDrawer);
     const settingsWrapper = document.getElementById('settingsWrapper');
     if (settingsWrapper) {
         settingsWrapper.addEventListener('click', (e) => {
-            if (e.target.id === 'settingsBackdrop') closeSettings();
+            if (e.target.id === 'settingsBackdrop') closeUnifiedDrawer();
         });
     }
-
-    // 2.2 Mobile Navigation Drawer Actions
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const mobileNavDrawer = document.getElementById('mobileNavDrawer');
+    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openUnifiedDrawer);
     const mobileNavClose = document.getElementById('mobileNavClose');
+    if (mobileNavClose) mobileNavClose.addEventListener('click', closeUnifiedDrawer);
     const mobileNavBackdrop = document.getElementById('mobileNavBackdrop');
+    if (mobileNavBackdrop) mobileNavBackdrop.addEventListener('click', closeUnifiedDrawer);
 
-    function openMobileNav() {
-        if (mobileNavDrawer) mobileNavDrawer.classList.add('active');
-    }
-    function closeMobileNav() {
-        if (mobileNavDrawer) mobileNavDrawer.classList.remove('active');
-    }
-
-    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileNav);
-    if (mobileNavClose) mobileNavClose.addEventListener('click', closeMobileNav);
-    if (mobileNavBackdrop) mobileNavBackdrop.addEventListener('click', closeMobileNav);
-
-    if (mobileNavDrawer) {
-        mobileNavDrawer.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', closeMobileNav);
+    // Theme selector buttons (Light / Dark)
+    const themeLightBtn = document.getElementById('themeLightBtn');
+    const themeDarkBtn = document.getElementById('themeDarkBtn');
+    const themeToggle = document.getElementById('themeToggle'); // legacy fallback
+    
+    if (themeLightBtn) {
+        themeLightBtn.addEventListener('click', () => {
+            if (isDark) { toggleTheme(); updateThemeSelectorUI(); }
         });
     }
-
-    // Theme Switch Slider
-    const themeToggle = document.getElementById('themeToggle');
-    if (themeToggle) {
+    if (themeDarkBtn) {
+        themeDarkBtn.addEventListener('click', () => {
+            if (!isDark) { toggleTheme(); updateThemeSelectorUI(); }
+        });
+    }
+    // Legacy toggle (for pages still using toggle-switch)
+    if (themeToggle && !themeLightBtn) {
         themeToggle.addEventListener('click', () => {
-            const themeSwitch = document.getElementById('themeSwitch');
-            if (themeSwitch) themeSwitch.classList.toggle('active');
             toggleTheme();
+            updateThemeSelectorUI();
         });
     }
 
-    // Language Toggle Switch Slider
-    const langToggle = document.getElementById('langToggle');
-    if (langToggle) {
+    // Language selector buttons (AR / EN)
+    const langArBtn = document.getElementById('langArBtn');
+    const langEnBtn = document.getElementById('langEnBtn');
+    const langToggle = document.getElementById('langToggle'); // legacy fallback
+
+    if (langArBtn) {
+        langArBtn.addEventListener('click', () => {
+            if (currentLang !== 'ar') { currentLang = 'ar'; applyLangChange(); updateLangSelectorUI(); }
+        });
+    }
+    if (langEnBtn) {
+        langEnBtn.addEventListener('click', () => {
+            if (currentLang !== 'en') { currentLang = 'en'; applyLangChange(); updateLangSelectorUI(); }
+        });
+    }
+    // Legacy toggle (for pages still using toggle-switch)
+    if (langToggle && !langArBtn) {
         langToggle.addEventListener('click', () => {
-            const langSwitch = document.getElementById('langSwitch');
-            if (langSwitch) langSwitch.classList.toggle('active');
             toggleLanguage();
+            updateLangSelectorUI();
         });
     }
 
@@ -1059,13 +1126,11 @@ function setupEventListeners() {
         });
     });
 
-
-
     // 4. Keyboard Shortcuts Hook
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             closeSearch();
-            closeSettings();
+            closeUnifiedDrawer();
             closeModal();
         }
     });
