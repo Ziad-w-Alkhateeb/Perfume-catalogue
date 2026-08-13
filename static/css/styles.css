@@ -3,55 +3,55 @@
    ========================================================================== */
 
 :root {
-    --bg: #FAFAFA;
+    --bg: #F7F8F6;
     --bg-secondary: #FFFFFF;
     --card-bg: #FFFFFF;
-    --text: #181111;
-    --text-muted: #665555;
-    --border: rgba(220, 200, 200, 0.7);
-    --border-glow: rgba(210, 0, 0, 0.25);
-    --gold: #D20000;
-    --gold-light: #FF2A2A;
-    --gold-bg: rgba(210, 0, 0, 0.07);
-    --shadow: rgba(210, 0, 0, 0.08);
-    --shadow-hover: rgba(210, 0, 0, 0.18);
-    --shadow-modal: rgba(24, 17, 17, 0.15);
-    --header-bg: rgba(255, 255, 255, 0.95);
-    --badge-women: #D20000;
-    --badge-women-bg: rgba(210, 0, 0, 0.1);
-    --badge-men: #990000;
-    --badge-men-bg: rgba(153, 0, 0, 0.1);
-    --badge-unisex: #D20000;
-    --badge-unisex-bg: rgba(210, 0, 0, 0.1);
+    --text: #0F1A14;
+    --text-muted: #5C6B61;
+    --border: rgba(197, 160, 89, 0.22);
+    --border-glow: rgba(197, 160, 89, 0.45);
+    --gold: #B8860B;
+    --gold-light: #C5A059;
+    --gold-bg: rgba(197, 160, 89, 0.08);
+    --shadow: rgba(13, 59, 39, 0.06);
+    --shadow-hover: rgba(197, 160, 89, 0.2);
+    --shadow-modal: rgba(15, 26, 20, 0.2);
+    --header-bg: rgba(247, 248, 246, 0.92);
+    --badge-women: #C5A059;
+    --badge-women-bg: rgba(197, 160, 89, 0.12);
+    --badge-men: #0D3B27;
+    --badge-men-bg: rgba(13, 59, 39, 0.1);
+    --badge-unisex: #B8860B;
+    --badge-unisex-bg: rgba(184, 134, 11, 0.12);
     --blur: blur(14px);
     --card-radius: 20px;
     --btn-radius: 12px;
-    --header-height: 80px;
-    --accent: #D20000;
+    --header-height: 70px;
+    --accent: #B8860B;
 }
 
 [data-theme="dark"] {
-    --bg: #0D0707;
-    --bg-secondary: rgba(22, 12, 12, 0.9);
-    --card-bg: #1A1010;
-    --text: #FFFFFF;
-    --text-muted: #BFAFAF;
-    --border: rgba(60, 30, 30, 0.8);
-    --border-glow: rgba(255, 42, 42, 0.35);
-    --gold: #FF3333;
-    --gold-light: #FF6666;
-    --gold-bg: rgba(210, 0, 0, 0.22);
+    --bg: #080E0B;
+    --bg-secondary: #111A15;
+    --card-bg: #121C16;
+    --text: #F0F4F1;
+    --text-muted: #8E9E94;
+    --border: rgba(212, 175, 55, 0.25);
+    --border-glow: rgba(212, 175, 55, 0.5);
+    --gold: #D4AF37;
+    --gold-light: #E6CA65;
+    --gold-bg: rgba(212, 175, 55, 0.16);
     --shadow: rgba(0, 0, 0, 0.55);
     --shadow-hover: rgba(0, 0, 0, 0.75);
     --shadow-modal: rgba(0, 0, 0, 0.85);
-    --header-bg: rgba(18, 10, 10, 0.92);
-    --badge-women: #FF5252;
-    --badge-women-bg: rgba(255, 82, 82, 0.18);
-    --badge-men: #FF3333;
-    --badge-men-bg: rgba(255, 51, 51, 0.18);
-    --badge-unisex: #FF7070;
-    --badge-unisex-bg: rgba(255, 112, 112, 0.18);
-    --accent: #FF3333;
+    --header-bg: rgba(8, 14, 11, 0.92);
+    --badge-women: #E6CA65;
+    --badge-women-bg: rgba(230, 202, 101, 0.18);
+    --badge-men: #3A7D5C;
+    --badge-men-bg: rgba(58, 125, 92, 0.25);
+    --badge-unisex: #D4AF37;
+    --badge-unisex-bg: rgba(212, 175, 55, 0.18);
+    --accent: #D4AF37;
 }
 
 * {
@@ -380,8 +380,9 @@ body[dir="rtl"] .settings-panel {
     box-shadow: 10px 0 35px var(--shadow-modal);
 }
 
-.settings-wrapper.active .settings-panel {
-    transform: translateX(0);
+.settings-wrapper.active .settings-panel,
+body[dir="rtl"] .settings-wrapper.active .settings-panel {
+    transform: translateX(0) !important;
 }
 
 .settings-header {
@@ -434,6 +435,64 @@ body[dir="rtl"] .settings-panel {
     color: var(--text-muted);
     margin-bottom: 0.85rem;
     font-weight: 700;
+}
+
+/* Segmented Option Control (Appearance & Language Selectors) */
+.option-selector-row {
+    display: flex;
+    background: var(--bg-tertiary, rgba(0, 0, 0, 0.04));
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 3px;
+    gap: 4px;
+}
+
+[data-theme="dark"] .option-selector-row {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.option-selector-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: transparent;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    user-select: none;
+}
+
+.option-selector-btn:hover {
+    color: var(--text);
+}
+
+.option-selector-btn.active {
+    color: var(--gold);
+    background: var(--bg-secondary, #ffffff);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .option-selector-btn.active {
+    background: var(--card-bg, #111a14);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.option-selector-btn svg {
+    opacity: 0.75;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.option-selector-btn:hover svg,
+.option-selector-btn.active svg {
+    opacity: 1;
+    transform: scale(1.08);
 }
 
 .toggle-option {
@@ -2455,7 +2514,7 @@ body[dir="rtl"] .page-btn svg {
     font-weight: 500;
 }
 
-/* ===== PORTALS SHOWCASE — PREMIUM REDESIGN ===== */
+/* ===== PORTALS SHOWCASE — ULTRA LUXURY REDESIGN ===== */
 .portals-showcase-grid {
     display: flex;
     flex-direction: column;
@@ -2470,44 +2529,53 @@ body[dir="rtl"] .page-btn svg {
     border-radius: 20px;
     overflow: hidden;
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
+    flex-direction: column;
     transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     box-shadow: 0 4px 18px var(--shadow);
     text-decoration: none;
     color: inherit;
+    position: relative;
 }
 
 .portal-luxury-card:hover {
-    border-color: var(--border-glow);
+    border-color: var(--gold-light);
     box-shadow: 0 10px 32px var(--shadow-hover);
     transform: translateY(-3px);
 }
 
-/* Left accent strip with icon */
-.portal-icon-strip {
-    width: 72px;
-    flex-shrink: 0;
+.portal-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.portal-icon-pill {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--gold-bg);
+    border: 1px solid var(--border);
+    color: var(--gold);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--gold-bg);
-    border-inline-end: 1px solid var(--border);
-    color: var(--gold);
-    transition: background 0.3s ease;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.portal-luxury-card:hover .portal-icon-strip {
-    background: rgba(210, 0, 0, 0.12);
+.portal-luxury-card:hover .portal-icon-pill {
+    transform: scale(1.08);
+    background: var(--gold);
+    color: #ffffff;
 }
 
 .portal-content-body {
-    padding: 1.4rem 1.5rem;
+    padding: 1.5rem 1.65rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-grow: 1;
-    gap: 0.35rem;
+    gap: 0.4rem;
 }
 
 .portal-badge {
@@ -2517,12 +2585,11 @@ body[dir="rtl"] .page-btn svg {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: var(--gold);
-    opacity: 0.85;
 }
 
 .portal-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
+    font-family: var(--font-title);
+    font-size: 1.25rem;
     font-weight: 700;
     color: var(--text);
     line-height: 1.3;
@@ -2530,51 +2597,37 @@ body[dir="rtl"] .page-btn svg {
 }
 
 .portal-desc {
-    font-size: 0.84rem;
+    font-size: 0.85rem;
     color: var(--text-muted);
     line-height: 1.55;
     margin: 0;
 }
 
-/* Arrow CTA on the far end */
-.portal-arrow {
-    display: flex;
+.portal-cta {
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    padding: 0 1.25rem;
-    color: var(--text-muted);
-    transition: color 0.3s ease, transform 0.3s ease;
-    flex-shrink: 0;
-}
-
-.portal-luxury-card:hover .portal-arrow {
+    gap: 0.4rem;
+    margin-top: 0.65rem;
+    font-size: 0.85rem;
+    font-weight: 700;
     color: var(--gold);
-    transform: translateX(4px);
+    transition: gap 0.25s ease;
 }
 
-body[dir="rtl"] .portal-luxury-card:hover .portal-arrow {
-    transform: translateX(-4px);
+.portal-luxury-card:hover .portal-cta {
+    gap: 0.75rem;
 }
 
-/* hide old button (if any) */
-.portal-action-btn { display: none; }
+.cta-arrow {
+    transition: transform 0.25s ease;
+}
 
-@media (max-width: 540px) {
-    .portals-showcase-grid {
-        gap: 0.9rem;
-    }
-    .portal-icon-strip {
-        width: 56px;
-    }
-    .portal-content-body {
-        padding: 1rem 1rem;
-    }
-    .portal-title {
-        font-size: 1rem;
-    }
-    .portal-desc {
-        font-size: 0.78rem;
-    }
+body[dir="rtl"] .cta-arrow {
+    transform: rotate(180deg);
+}
+
+body[dir="rtl"] .portal-luxury-card:hover .cta-arrow {
+    transform: rotate(180deg) translateX(3px);
 }
 
 /* Olfactory Families Grid */
@@ -3101,4 +3154,269 @@ body.drawer-open {
 
 [data-theme="dark"] .option-selector-btn.active {
     background: rgba(255,255,255,0.08);
+}
+
+/* ==========================================================================
+   LUXURY MOBILE RESPONSIVE UI/UX REFINEMENT SYSTEM (<= 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* 1. Global Spacing & Layout Constraints */
+    .home-section {
+        padding: 2rem 1rem !important;
+    }
+
+    .section-header-center {
+        margin-bottom: 1.25rem !important;
+        padding: 0 0.25rem;
+    }
+
+    .section-tag {
+        font-size: 0.62rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 0.25rem;
+    }
+
+    .section-title {
+        font-size: 1.3rem !important;
+        margin-bottom: 0.25rem !important;
+    }
+
+    .section-subtitle {
+        font-size: 0.8rem !important;
+        line-height: 1.45 !important;
+    }
+
+    /* 2. Hero Banner Mobile Optimizations */
+    .hero-banner {
+        padding: 2.5rem 1rem 2rem !important;
+        min-height: auto !important;
+    }
+
+    .hero-badge {
+        font-size: 0.72rem;
+        padding: 0.35rem 0.85rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .hero-title {
+        font-size: 1.65rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .hero-subtitle {
+        font-size: 0.84rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 1.25rem !important;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.65rem !important;
+    }
+
+    .btn-primary-gold, .btn-secondary-glass {
+        width: 100%;
+        justify-content: center;
+        padding: 0.75rem 1.25rem !important;
+        font-size: 0.88rem !important;
+        border-radius: 14px !important;
+    }
+
+    /* 3. About Section & Compact 2x2 Stats Grid */
+    .about-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.25rem !important;
+    }
+
+    .about-text-panel h2 {
+        font-size: 1.3rem !important;
+        margin-bottom: 0.4rem !important;
+    }
+
+    .about-text-panel p {
+        font-size: 0.84rem !important;
+        line-height: 1.55 !important;
+        margin-bottom: 0.4rem !important;
+    }
+
+    .stats-counter-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.65rem !important;
+        margin-top: 1rem !important;
+    }
+
+    .stat-item-card {
+        padding: 0.85rem 0.65rem !important;
+        text-align: center;
+        border-radius: 14px !important;
+    }
+
+    .stat-number {
+        font-size: 1.25rem !important;
+        margin-bottom: 0.15rem !important;
+    }
+
+    .stat-label {
+        font-size: 0.75rem !important;
+        line-height: 1.25 !important;
+    }
+
+    /* 4. Portals Showcase Cards Mobile */
+    .portals-showcase-grid {
+        gap: 0.85rem !important;
+    }
+
+    .portal-luxury-card {
+        border-radius: 16px !important;
+    }
+
+    .portal-content-body {
+        padding: 1.1rem 1.15rem !important;
+    }
+
+    .portal-title {
+        font-size: 1.05rem !important;
+    }
+
+    .portal-desc {
+        font-size: 0.78rem !important;
+        line-height: 1.45 !important;
+    }
+
+    .portal-cta {
+        margin-top: 0.5rem !important;
+        font-size: 0.8rem !important;
+    }
+
+    /* 5. Olfactory Families & Pillars Grid (2-Column Compact Layout) */
+    .families-grid, .pillars-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.65rem !important;
+    }
+
+    .family-card, .pillar-card {
+        padding: 1rem 0.75rem !important;
+        border-radius: 14px !important;
+        text-align: center;
+    }
+
+    .family-card-title, .pillar-title {
+        font-size: 0.92rem !important;
+        margin-bottom: 0.35rem !important;
+        line-height: 1.3 !important;
+    }
+
+    .family-card-desc, .pillar-desc {
+        font-size: 0.74rem !important;
+        line-height: 1.4 !important;
+    }
+
+    /* 6. Contact Hub Mobile Grid */
+    .contact-hub-grid {
+        grid-template-columns: 1fr !important;
+        gap: 0.65rem !important;
+    }
+
+    .contact-card-item {
+        padding: 0.85rem 1rem !important;
+        border-radius: 14px !important;
+        gap: 0.85rem !important;
+    }
+
+    .contact-card-icon {
+        width: 42px !important;
+        height: 42px !important;
+    }
+
+    .contact-card-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contact-card-info h3 {
+        font-size: 0.92rem !important;
+        margin-bottom: 0.15rem !important;
+    }
+
+    .contact-card-info p {
+        font-size: 0.76rem !important;
+    }
+
+    /* 7. Compact Footer Layout */
+    .site-footer {
+        padding: 1.75rem 1rem 1.25rem !important;
+    }
+
+    .footer-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.25rem !important;
+        margin-bottom: 1.25rem !important;
+    }
+
+    .footer-col:first-child {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .footer-brand-logo {
+        justify-content: center;
+    }
+
+    .footer-heading {
+        margin-bottom: 0.5rem !important;
+        font-size: 0.7rem !important;
+    }
+
+    .footer-links a {
+        font-size: 0.8rem !important;
+    }
+
+    /* 8. Perfume Catalog Product Grid Mobile (2-Column Compact Grid) */
+    .container {
+        padding: 0.5rem 0.75rem 2.5rem !important;
+    }
+
+    .perfume-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.75rem !important;
+    }
+
+    .perfume-card {
+        border-radius: 14px !important;
+    }
+
+    .card-image-wrapper {
+        height: 130px !important;
+    }
+
+    .card-body {
+        padding: 0.75rem 0.65rem !important;
+    }
+
+    .card-title-primary {
+        font-size: 0.88rem !important;
+        line-height: 1.25 !important;
+    }
+
+    .card-title-secondary {
+        font-size: 0.72rem !important;
+    }
+
+    .filters-bar {
+        padding: 0.65rem 0.75rem !important;
+        gap: 0.5rem !important;
+    }
+
+    .filter-chip {
+        padding: 0.45rem 0.85rem !important;
+        font-size: 0.78rem !important;
+    }
+
+    .sort-select {
+        padding: 0.45rem 1.75rem 0.45rem 0.75rem !important;
+        font-size: 0.78rem !important;
+    }
 }

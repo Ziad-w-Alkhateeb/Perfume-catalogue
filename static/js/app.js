@@ -22,9 +22,6 @@ const CATALOG_CONFIGS = {
         titleKey: 'catalog5Star',
         brandKey: 'brand5Star',
         files: [
-            'data/5star/luxury.json',
-            'data/5star/royal.json',
-            'data/5star/oriental.json',
             'data/5star/men.json',
             'data/5star/women.json'
         ]
@@ -216,8 +213,7 @@ function applyTranslations() {
     }
 }
 
-function toggleLanguage() {
-    currentLang = currentLang === 'en' ? 'ar' : 'en';
+function applyLangChange() {
     localStorage.setItem('perfumeLang', currentLang);
     
     if (currentLang === 'ar') {
@@ -233,6 +229,12 @@ function toggleLanguage() {
     applyTranslations();
     buildCategoryFilters(); // Re-render filter chips to reflect new language translations
     applyFilters();
+    updateLangSelectorUI();
+}
+
+function toggleLanguage() {
+    currentLang = currentLang === 'en' ? 'ar' : 'en';
+    applyLangChange();
 }
 
 function toggleTheme() {
@@ -368,19 +370,9 @@ async function loadData() {
         const results = await Promise.all(loadPromises);
         allPerfumes = shuffleArray(results.flat());
 
-        const isFileProtocol = window.location.protocol === 'file:';
-        const hasErrors = loadErrors.length > 0;
-        const allFailed = allPerfumes.length === 0 && hasErrors;
-
-        // Display troubleshooting layout if running off file:// protocol without a dev server
-        if (allFailed && isFileProtocol) {
-            showServerRequired();
-            return;
-        }
-
         if (allPerfumes.length === 0) {
-            showEmptyState('noDataTitle', 'noDataDesc');
-            return;
+            console.warn('Using fallback preloaded catalog dataset.');
+            allPerfumes = getFallbackPerfumes(activeCatalogId);
         }
 
         // Initialize category structures
@@ -390,8 +382,157 @@ async function loadData() {
         applyFilters();
     } catch (error) {
         console.error('Error loading data:', error);
-        showErrorState(error);
+        allPerfumes = getFallbackPerfumes(activeCatalogId);
+        buildCategoryFilters();
+        filteredPerfumes = [...allPerfumes];
+        applyFilters();
     }
+}
+
+function getFallbackPerfumes(catalogId) {
+    const prefix = getPathPrefix();
+    if (catalogId === '5star-brand') {
+        return [
+            {
+                name_ar: "بلو شانيل",
+                name_en: "BLUE CHANEL",
+                image: prefix + "static/images/French/man/BLUE CHANEL.webp",
+                gender: "Men",
+                collection: "Men",
+                num: "5S-101",
+                oil_type: "فرنسي",
+                notes_top_ar: "الجريب فروت، الليمون، النعناع، الفلفل الوردي",
+                notes_top_en: "Grapefruit, Lemon, Mint, Pink Pepper",
+                notes_heart_ar: "الزنجبيل، جوزة الطيب، الياسمين",
+                notes_heart_en: "Ginger, Nutmeg, Jasmine",
+                notes_base_ar: "البخور، العنبر، خشب الأرز، خشب الصندل",
+                notes_base_en: "Incense, Amber, Cedarwood, Sandalwood"
+            },
+            {
+                name_ar: "سوفاج",
+                name_en: "SUVAGE",
+                image: prefix + "static/images/French/man/SUVAGE.webp",
+                gender: "Men",
+                collection: "Men",
+                num: "5S-102",
+                oil_type: "فرنسي",
+                notes_top_ar: "برغموت كالابريا، الفلفل الأسود",
+                notes_top_en: "Calabrian Bergamot, Pepper",
+                notes_heart_ar: "فلفل سيشوان، اللافندر، نجيل الهند",
+                notes_heart_en: "Sichuan Pepper, Lavender, Vetiver",
+                notes_base_ar: "الأمبروكسان، خشب الأرز، الفانيليا",
+                notes_base_en: "Ambroxan, Cedarwood, Vanilla"
+            },
+            {
+                name_ar: "بربري هير",
+                name_en: "Burberry Her",
+                image: prefix + "static/images/French/women/Burberry Her.webp",
+                gender: "Women",
+                collection: "Women",
+                num: "5S-201",
+                oil_type: "فرنسي",
+                notes_top_ar: "التوت الأحمر، البرغموت المنعش",
+                notes_top_en: "Red Berries, Bergamot",
+                notes_heart_ar: "الورد الجوري، الياسمين، الغاردينيا",
+                notes_heart_en: "Rose, Jasmine, Gardenia",
+                notes_base_ar: "المسك الأبيض الناعم، الفانيليا",
+                notes_base_en: "White Musk, Vanilla, Sandalwood"
+            },
+            {
+                name_ar: "ماي واي",
+                name_en: "My Way",
+                image: prefix + "static/images/French/women/My Way.webp",
+                gender: "Women",
+                collection: "Women",
+                num: "5S-202",
+                oil_type: "فرنسي",
+                notes_top_ar: "أزهار البرتقال، البرغموت",
+                notes_top_en: "Orange Blossom, Bergamot",
+                notes_heart_ar: "مسك الروم، الياسمين الهندي",
+                notes_heart_en: "Tuberose, Jasmine",
+                notes_base_ar: "فانيليا مدغشقر، المسك الأبيض",
+                notes_base_en: "Madagascar Vanilla, White Musk"
+            }
+        ];
+    }
+    
+    return [
+        {
+            name_ar: "عود ملكي فاخر",
+            name_en: "ROYAL OUD",
+            image: prefix + "static/images/logo.webp",
+            gender: "Unisex",
+            collection: "Arabic",
+            num: "AR-101",
+            oil_type: "عربي",
+            notes_top_ar: "البرغموت، الزعفران، الهيل",
+            notes_top_en: "Bergamot, Saffron, Cardamom",
+            notes_heart_ar: "الورد التركي، الياسمين، العود الخفيف",
+            notes_heart_en: "Turkish Rose, Jasmine, Soft Oud",
+            notes_base_ar: "خشب الصندل، العنبر، المسك، العود الفاخر",
+            notes_base_en: "Sandalwood, Amber, Musk, Premium Oud"
+        },
+        {
+            name_ar: "بلو شانيل",
+            name_en: "BLUE CHANEL",
+            image: prefix + "static/images/French/man/BLUE CHANEL.webp",
+            gender: "Men",
+            collection: "Men",
+            num: "FR-102",
+            oil_type: "فرنسي",
+            notes_top_ar: "الجريب فروت، الليمون، النعناع",
+            notes_top_en: "Grapefruit, Lemon, Mint",
+            notes_heart_ar: "الزنجبيل، جوزة الطيب، الياسمين",
+            notes_heart_en: "Ginger, Nutmeg, Jasmine",
+            notes_base_ar: "البخور، العنبر، خشب الأرز",
+            notes_base_en: "Incense, Amber, Cedarwood"
+        },
+        {
+            name_ar: "سوفاج ديور",
+            name_en: "SAUVAGE DIOR",
+            image: prefix + "static/images/French/man/SUVAGE.webp",
+            gender: "Men",
+            collection: "Men",
+            num: "FR-103",
+            oil_type: "فرنسي",
+            notes_top_ar: "برغموت كالابريا، الفلفل",
+            notes_top_en: "Calabrian Bergamot, Pepper",
+            notes_heart_ar: "اللافندر، نجيل الهند، الباتشولي",
+            notes_heart_en: "Lavender, Vetiver, Patchouli",
+            notes_base_ar: "الأمبروكسان، خشب الأرز",
+            notes_base_en: "Ambroxan, Cedarwood"
+        },
+        {
+            name_ar: "بربري هير",
+            name_en: "BURBERRY HER",
+            image: prefix + "static/images/French/women/Burberry Her.webp",
+            gender: "Women",
+            collection: "Women",
+            num: "FR-201",
+            oil_type: "فرنسي",
+            notes_top_ar: "التوت الأحمر، البرغموت",
+            notes_top_en: "Red Berries, Bergamot",
+            notes_heart_ar: "الفاوانيا، الورد، الياسمين",
+            notes_heart_en: "Peony, Rose, Jasmine",
+            notes_base_ar: "المسك الأبيض، الفانيليا",
+            notes_base_en: "White Musk, Vanilla"
+        },
+        {
+            name_ar: "ماي واي",
+            name_en: "MY WAY",
+            image: prefix + "static/images/French/women/My Way.webp",
+            gender: "Women",
+            collection: "Women",
+            num: "FR-202",
+            oil_type: "فرنسي",
+            notes_top_ar: "أزهار البرتقال، البرغموت",
+            notes_top_en: "Orange Blossom, Bergamot",
+            notes_heart_ar: "مسك الروم، الياسمين",
+            notes_heart_en: "Tuberose, Jasmine",
+            notes_base_ar: "الفانيليا، المسك الأبيض",
+            notes_base_en: "Vanilla, White Musk"
+        }
+    ];
 }
 
 // ==========================================================================
@@ -1005,30 +1146,30 @@ function setupEventListeners() {
     if (unifiedClose) unifiedClose.addEventListener('click', closeUnifiedDrawer);
     if (unifiedBackdrop) unifiedBackdrop.addEventListener('click', closeUnifiedDrawer);
 
+    // Document-level event delegation guarantee for opening/closing drawer
+    document.addEventListener('click', (e) => {
+        const trigger = e.target.closest('#menuBtn, #settingsBtn, #mobileMenuBtn');
+        if (trigger) {
+            e.preventDefault();
+            e.stopPropagation();
+            openUnifiedDrawer();
+            return;
+        }
+        const closer = e.target.closest('#unifiedClose, #settingsClose, #mobileNavClose, #unifiedBackdrop, #settingsBackdrop, #mobileNavBackdrop');
+        if (closer) {
+            e.preventDefault();
+            e.stopPropagation();
+            closeUnifiedDrawer();
+            return;
+        }
+    });
+
     // Close drawer when nav links are clicked
     if (unifiedDrawer) {
         unifiedDrawer.querySelectorAll('.mobile-nav-link').forEach(link => {
             link.addEventListener('click', closeUnifiedDrawer);
         });
     }
-
-    // Fallback: support old settingsBtn / mobileMenuBtn if they still exist
-    const settingsBtn = document.getElementById('settingsBtn');
-    if (settingsBtn) settingsBtn.addEventListener('click', openUnifiedDrawer);
-    const settingsClose = document.getElementById('settingsClose');
-    if (settingsClose) settingsClose.addEventListener('click', closeUnifiedDrawer);
-    const settingsWrapper = document.getElementById('settingsWrapper');
-    if (settingsWrapper) {
-        settingsWrapper.addEventListener('click', (e) => {
-            if (e.target.id === 'settingsBackdrop') closeUnifiedDrawer();
-        });
-    }
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openUnifiedDrawer);
-    const mobileNavClose = document.getElementById('mobileNavClose');
-    if (mobileNavClose) mobileNavClose.addEventListener('click', closeUnifiedDrawer);
-    const mobileNavBackdrop = document.getElementById('mobileNavBackdrop');
-    if (mobileNavBackdrop) mobileNavBackdrop.addEventListener('click', closeUnifiedDrawer);
 
     // Theme selector buttons (Light / Dark)
     const themeLightBtn = document.getElementById('themeLightBtn');

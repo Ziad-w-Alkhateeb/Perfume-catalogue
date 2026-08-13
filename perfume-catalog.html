@@ -71,24 +71,28 @@
             <!-- Appearance Settings -->
             <div class="settings-section">
                 <div class="settings-label" data-i18n="appearance">Appearance</div>
-                <div class="toggle-option" id="themeToggle">
-                    <div class="toggle-label-wrapper">
-                        <svg class="toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-                        <span class="toggle-option-text" data-i18n="darkMode">Dark Mode</span>
-                    </div>
-                    <div class="toggle-switch" id="themeSwitch"></div>
+                <div class="option-selector-row" id="themeToggle">
+                    <button class="option-selector-btn" data-value="light" id="themeLightBtn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+                        <span data-i18n="lightMode">Light</span>
+                    </button>
+                    <button class="option-selector-btn" data-value="dark" id="themeDarkBtn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                        <span data-i18n="darkMode">Dark</span>
+                    </button>
                 </div>
             </div>
 
             <!-- Language Settings -->
             <div class="settings-section">
                 <div class="settings-label" data-i18n="language">Language</div>
-                <div class="toggle-option" id="langToggle">
-                    <div class="toggle-label-wrapper">
-                        <svg class="toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20"/><path d="M2 12h20"/></svg>
-                        <span class="toggle-option-text" data-i18n="arabicLang">العربية</span>
-                    </div>
-                    <div class="toggle-switch" id="langSwitch"></div>
+                <div class="option-selector-row" id="langToggle">
+                    <button class="option-selector-btn" data-value="ar" id="langArBtn">
+                        <span>العربية</span>
+                    </button>
+                    <button class="option-selector-btn" data-value="en" id="langEnBtn">
+                        <span>English</span>
+                    </button>
                 </div>
             </div>
 
